@@ -39,6 +39,7 @@
     <li><a href="#passos">Passos</a></li>
     <li><a href="#exemplo">Exemplo</a></li>
     <li><a href="#prompts">Prompts</a></li>
+    <li><a href="#som">Som</a></li>
     <li><a href="#custo">Custo</a></li>
     <li><a href="resumo-de-jogos.html">Jogos</a></li>
     <li><a href="viralizar.html">Viralizar</a></li>
@@ -55,6 +56,7 @@
     <li><a href="#prompts">Os prompts</a></li>
     <li><a href="#regras">As regras do estilo B4</a></li>
     <li><a href="#custo">Custo e tropeços</a></li>
+    <li><a href="#som">O som</a></li>
     <li><a href="#cuidados">Cuidados</a></li>
     <li><a href="resumo-de-jogos.html">Resumo de jogos</a></li>
     <li><a href="viralizar.html">Viralizar</a></li>
@@ -368,8 +370,47 @@ Depois de eu aprovar, renderize e confira quadros tirados do próprio MP4.</pre>
       <li><b>O modelo muda muito o preço.</b> Com duas imagens de referência anexadas, um modelo cobrou cerca de 150 créditos por imagem e outro mais de 600.</li>
       <li><b>Peça espaço vazio para o título.</b> A primeira abertura veio com a janela ocupando o alto da imagem. Só deu certo pedindo a metade de cima vazia.</li>
       <li><b>A imagem do Flow é menor que a tela.</b> Elas saem com 768 por 1.376 pontos. Em closes muito fechados a ampliação fica macia.</li>
-      <li><b>O vídeo de exemplo ainda não tem som de ambiente.</b> Só a voz. O estilo B4 pede ambiência baixa e efeitos ligados à história, e isso ficou para a próxima versão.</li>
+      <li><b>O som entrou por último.</b> A primeira versão só tinha a voz. A música baixa e os efeitos foram mixados depois, com o ffmpeg, direto no MP4 pronto e sem renderizar de novo.</li>
     </ul>
+  </div>
+</section>
+
+<section id="som">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Som</span>
+      <h2 class="heading-2">Música baixa e efeitos presos à história</h2>
+      <p class="lead">O skill traz uma biblioteca de áudio com a licença de cada arquivo registrada. Usamos uma música e 15 efeitos dela, mixados nos tempos da narração.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Momento</th><th>Som</th><th>Por quê</th></tr></thead>
+        <tbody>
+          <tr><td>O vídeo inteiro</td><td>Música de suspense, cerca de 16 dB abaixo da voz</td><td>Segura a tensão sem disputar com a narração</td></tr>
+          <tr><td class="num">0:20</td><td>A música some por um instante</td><td>A frase diz que a cantiga para. O silêncio é o efeito</td></tr>
+          <tr><td class="num">0:22</td><td>Três batidas pesadas na madeira e um rangido</td><td>Os degraus da varanda</td></tr>
+          <tr><td class="num">0:31</td><td>Porta abrindo e rangendo</td><td>A porta do quarto abre sozinha</td></tr>
+          <tr><td class="num">0:35</td><td>Um passo em cada número, cada vez mais forte</td><td>"Um passo, dois, três"</td></tr>
+          <tr><td class="num">0:41 e 1:05</td><td>Tecido</td><td>O colchão afunda e depois sobe</td></tr>
+          <tr><td class="num">1:06</td><td>Passos sumindo e a porta batendo</td><td>Ela vai embora</td></tr>
+          <tr><td class="num">1:09 a 1:22</td><td>Sem música, só pássaros</td><td>O alívio falso da manhã</td></tr>
+          <tr><td class="num">1:22</td><td>A música volta</td><td>A cantiga recomeça no quintal</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="prompt reveal" style="margin-top:24px">
+      <div class="prompt-head"><span class="title-4">Prompt P6: trilha sobre o vídeo pronto</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Adicione som ao vídeo já renderizado, sem renderizar a imagem de novo.
+
+1. Use só sons com licença registrada (CC0 ou CC BY) e me diga a origem e a licença de cada um.
+2. Música baixa e contínua, uns 15 dB abaixo da voz. A voz sempre na frente.
+3. Um efeito para cada acontecimento que a narração descreve, no tempo exato da palavra.
+4. Use o silêncio: corte a música quando a história pedir.
+5. Normalize a voz em -16 LUFS e limite o pico em -1 dB.
+6. Meça o nível da base sem a voz e do resultado final e me mostre os números.
+7. Escreva o texto de crédito pronto para a descrição do vídeo.</pre>
+    </div>
+    <p class="note reveal"><b>Crédito obrigatório.</b> Música: "Classic Horror 1" Kevin MacLeod (incompetech.com), licença <a href="http://creativecommons.org/licenses/by/4.0/" rel="noopener" target="_blank">Creative Commons Atribuição 4.0</a>, editada (volume reduzido e trechos silenciados). Os efeitos são de Kenney, OwlishMedia e isaiah658, todos em CC0. Quem escolheu os sons foi o Claude, que não ouve áudio: a escolha saiu da descrição de cada arquivo e a mixagem foi conferida por medição, não por ouvido.</p>
   </div>
 </section>
 
@@ -408,6 +449,7 @@ Depois de eu aprovar, renderize e confira quadros tirados do próprio MP4.</pre>
         <li><a href="https://github.com/kaomei/stickman-video-director" rel="noopener" target="_blank">Stickman Video Director, de kaomei (MIT)</a></li>
         <li><a href="https://x.com/AveryRunsAI/status/2124444676937621723" rel="noopener" target="_blank">Guia de Avery no X</a></li>
         <li>Fontes do vídeo: Anton e Nunito (licença OFL).</li>
+        <li>Música: "Classic Horror 1" Kevin MacLeod (incompetech.com), CC BY 4.0, editada.</li>
       </ul>
     </div>
     <div>
