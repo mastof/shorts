@@ -2,7 +2,7 @@
 
 Tutorial completo para criar Shorts de histórias animadas com Claude: os dois caminhos de produção, a fórmula do roteiro, todos os prompts, uma área sobre animação infantil sem fala com Seedance, um roteiro de teste de 14 dias e as métricas reais da sessão que produziu o vídeo de exemplo.
 
-**Página:** https://mastof.github.io/shorts-animados-com-claude/
+**Página:** https://mastof.github.io/shorts/
 
 ## O que tem aqui
 
