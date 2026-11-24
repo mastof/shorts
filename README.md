@@ -15,3 +15,4 @@ Tutorial completo para criar Shorts de histórias animadas com Claude: os dois c
 ## Créditos
 
 Roteiro, código, vídeo e página feitos com Claude Fable 5.2 no Claude Code. Voz gerada localmente com Kokoro (voz `pm_alex`), tempos de legenda com Whisper, animação com Remotion. Fonte do vídeo: Baloo 2 (licença OFL).
+- `viralizar.html`: aba à parte com os quatro passos para um canal de IA crescer e monetizar (resumo próprio do relato de Matheus Celtic, com link para o original)
