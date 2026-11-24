@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vídeos de boneco palito com IA | Shorts com Claude</title>
+<meta name="description" content="O método do Stickman Video Director resumido: dois motores, os estilos, o passo a passo e um vídeo de exemplo no estilo B4 feito com Claude, Google Flow e ElevenLabs.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vídeos de boneco palito com IA">
+<meta property="og:description" content="O método resumido, os prompts e um survival thriller de 1 min 30 s sobre a Cuca.">
+<meta property="og:image" content="https://mastof.github.io/shorts-animados-com-claude/assets/cuca-og.jpg">
+<meta property="og:url" content="https://mastof.github.io/shorts-animados-com-claude/boneco-palito.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181818'/%3E%3Ccircle cx='32' cy='34' r='20' fill='%23F6C9A4' stroke='%23FFFFFF' stroke-width='3'/%3E%3Ctext x='32' y='32' font-family='Arial' font-weight='700' font-size='18' text-anchor='middle' fill='%23FF2D3D'%3E1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.nav-links a{white-space:nowrap}
+.pedidos{display:grid;gap:12px;margin-top:16px}
+.pedido{display:grid;grid-template-columns:32px minmax(0,1fr);gap:16px;align-items:start;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--s1)}
+.pedido b{display:grid;place-items:center;width:32px;height:32px;border-radius:8px;background:var(--s2);color:var(--tx);font-family:var(--mono);font-weight:500}
+.pedido p{color:var(--tx)}
+.pedido small{display:block;margin-top:4px;color:var(--tx3)}
+.repo-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+</style>
+</head>
+<body class="no-js">
+<a class="skip button-sm" href="#conteudo">Pular para o conteúdo</a>
+
+<nav class="nav" aria-label="Seções desta página">
+  <a class="brand title-4" href="index.html"><b class="caption-3">1</b>Shorts com Claude</a>
+  <ul class="nav-links title-4">
+    <li><a href="index.html">Tutorial</a></li>
+    <li><a href="#metodo">Método</a></li>
+    <li><a href="#estilos">Estilos</a></li>
+    <li><a href="#passos">Passos</a></li>
+    <li><a href="#exemplo">Exemplo</a></li>
+    <li><a href="#prompts">Prompts</a></li>
+    <li><a href="#custo">Custo</a></li>
+    <li><a href="resumo-de-jogos.html">Jogos</a></li>
+    <li><a href="viralizar.html">Viralizar</a></li>
+  </ul>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="painel"><span></span><span></span></button>
+</nav>
+<div class="panel" id="painel">
+  <ul class="heading-5">
+    <li><a href="index.html">Voltar ao tutorial</a></li>
+    <li><a href="#metodo">O método em dois motores</a></li>
+    <li><a href="#estilos">Os estilos e seus códigos</a></li>
+    <li><a href="#passos">Passo a passo</a></li>
+    <li><a href="#exemplo">O exemplo: A Cuca</a></li>
+    <li><a href="#prompts">Os prompts</a></li>
+    <li><a href="#regras">As regras do estilo B4</a></li>
+    <li><a href="#custo">Custo e tropeços</a></li>
+    <li><a href="#cuidados">Cuidados</a></li>
+    <li><a href="resumo-de-jogos.html">Resumo de jogos</a></li>
+    <li><a href="viralizar.html">Viralizar</a></li>
+  </ul>
+</div>
+
+<main id="conteudo">
+
+<header class="hero" id="topo">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow caption-3"><i class="ph ph-person-simple"></i> Aba Boneco palito</span>
+      <h1 class="heading-1">Vídeos de boneco palito<br>que prendem do primeiro segundo</h1>
+      <p class="lead">Um resumo do método do Stickman Video Director, um projeto aberto que ensina um assistente de IA a dirigir vídeos de boneco palito. Testamos o estilo B4, de suspense, em um Short de terror sobre a Cuca. Aqui estão o método, os prompts e o que deu certo e errado.</p>
+      <div class="hero-cta">
+        <a class="btn button-md" href="#prompts">Ver os prompts <i class="ph ph-arrow-down"></i></a>
+      </div>
+      <ul class="proof caption-2" aria-label="Números do vídeo de exemplo">
+        <li>46 planos</li>
+        <li>1 min 30 s</li>
+        <li>15 ilustrações</li>
+        <li>nenhum plano com mais de 3 s</li>
+      </ul>
+    </div>
+    <div>
+      <div class="phone">
+        <video controls playsinline preload="metadata" poster="assets/cuca-poster.jpg" aria-label="Vídeo de exemplo: A Cuca está cantando, um suspense narrado com bonecos palito de cabeça branca e luvas brancas">
+          <source src="assets/cuca.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="phone-cap caption-2">O vídeo de exemplo: "A Cuca está cantando"</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="note" style="max-width:680px"><b>De onde vem o método.</b> O Stickman Video Director é de kaomei e Avery, com licença MIT. Esta página é um resumo com palavras nossas do <a href="https://x.com/AveryRunsAI/status/2124444676937621723" rel="noopener" target="_blank">guia publicado por Avery</a> e da documentação do <a href="https://github.com/kaomei/stickman-video-director" rel="noopener" target="_blank">repositório</a>, mais o relato do nosso teste.</p>
+  </div>
+</header>
+
+<section id="metodo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">O método</span>
+      <h2 class="heading-2">Um manual de direção para a IA, com dois motores</h2>
+      <p class="lead">Um assistente como o Claude Code lê, escreve e roda ferramentas, mas não sabe sozinho o ofício de um bom vídeo de boneco palito. O projeto entrega esse ofício como um skill: um manual de regras mais uma caixa de ferramentas. Você escolhe um de dois jeitos de produzir.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Peça</th><th>Motor A, de modelo</th><th>Motor B, de código</th></tr></thead>
+        <tbody>
+          <tr><td>Quem faz a imagem</td><td>Um gerador de vídeo, como o Google Flow, filma cada cena</td><td>O seu computador desenha as peças e anima por código</td></tr>
+          <tr><td>Papel do assistente</td><td>Escreve a história, o storyboard e um prompt fechado por cena</td><td>Escreve o roteiro, monta personagens e cenários, anima e renderiza</td></tr>
+          <tr><td>O que você faz</td><td>Cola os prompts no gerador, ou deixa o assistente operar o navegador</td><td>Aprova o roteiro e uma amostra de 20 segundos com áudio</td></tr>
+          <tr><td>Personagem igual em toda cena</td><td>Só com imagem de referência</td><td>Sim, as peças são reaproveitadas</td></tr>
+          <tr><td>Custo</td><td>Créditos do gerador de vídeo</td><td>Pode sair de graça</td></tr>
+          <tr><td>Quando escolher</td><td>Você quer movimento de cinema e já tem créditos</td><td>Você quer o primeiro vídeo hoje, sem gastar</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note reveal"><b>O que os dois têm em comum.</b> Partem de qualquer coisa: uma frase, um artigo, um link ou um roteiro pronto. Aceitam tela deitada ou em pé. E nos dois o assistente mostra o plano primeiro: nada é gerado antes do seu sim.</p>
+  </div>
+</section>
+
+<section id="estilos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Estilos</span>
+      <h2 class="heading-2">Cada estilo tem um código</h2>
+      <p class="lead">O código vai dentro do pedido. Os da letra A pertencem ao motor de modelo e os da letra B ao motor de código. O repositório tem vídeos de amostra de todos.</p>
+    </div>
+    <div class="grid g2 reveal">
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Código</th><th>Motor A</th></tr></thead>
+          <tbody>
+            <tr><td class="num">A1</td><td>Preto e branco clássico</td></tr>
+            <tr><td class="num">A2</td><td>Pop moderno</td></tr>
+            <tr><td class="num">A3</td><td>Cavernas da pré história</td></tr>
+            <tr><td class="num">A4</td><td>Histórias acolhedoras</td></tr>
+            <tr><td class="num">A5</td><td>Cartoon histórico</td></tr>
+            <tr><td class="num">A6</td><td>Noir em âmbar</td></tr>
+            <tr><td class="num">A7</td><td>Desenho antigo de mangueira</td></tr>
+            <tr><td class="num">A8</td><td>Inspirado no Ghibli</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Código</th><th>Motor B</th></tr></thead>
+          <tbody>
+            <tr><td class="num">B1</td><td>Traço minimalista, bom para explicar ideias</td></tr>
+            <tr><td class="num">B2</td><td>Desenho à mão colorido, para hábitos e psicologia do dia a dia</td></tr>
+            <tr><td class="num">B3</td><td>TV antiga</td></tr>
+            <tr><td class="num">B4</td><td>Suspense de sobrevivência, o que testamos aqui</td></tr>
+            <tr><td class="num">B5</td><td>Explicação com personagem</td></tr>
+            <tr><td class="num">B6</td><td>História em meme</td></tr>
+            <tr><td class="num">B7</td><td>Teatro em pixel</td></tr>
+            <tr><td class="num">B8</td><td>Mitologia grega</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="tagline" aria-label="Ideia central">
+  <div class="wrap">
+    <p class="heading-2" id="tagline">Fazer um vídeo animado ficou fácil. O que continua difícil é o primeiro segundo, e é para ele que o método gasta as regras.</p>
+  </div>
+</section>
+
+<section id="passos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Passo a passo</span>
+      <h2 class="heading-2">Do pedido ao vídeo em 5 passos</h2>
+      <p class="lead">O caminho do guia original, sem a parte de divulgação.</p>
+    </div>
+    <ol class="steps reveal">
+      <li><b>Instale o skill.</b> Mande ao assistente o link do repositório e peça para instalar e ler o <code>SKILL.md</code>. No primeiro uso ele confere o que falta na máquina e ajuda a instalar.</li>
+      <li><b>Dê uma voz ao boneco.</b> Crie uma conta em um serviço de voz. O guia recomenda a ElevenLabs. Música e efeitos sonoros já vêm no skill, com licença e crédito prontos, e a mixagem é automática.</li>
+      <li><b>Peça com o código do estilo.</b> Diga o motor, o tema, o formato da tela, a duração e o código. Os dois pedidos prontos estão na seção de prompts.</li>
+      <li><b>Aprove o plano antes da produção.</b> No motor A você aprova história, plano de som e storyboard. No motor B você aprova o roteiro inteiro e uma amostra de 20 segundos com áudio. Corrigir roteiro não custa nada, corrigir cena pronta custa.</li>
+      <li><b>Conserte só o trecho.</b> Se uma cena ou um som não agradar, peça o ajuste daquele pedaço. O que já foi aprovado fica como está. No fim, peça a miniatura, o título e a descrição no mesmo estilo.</li>
+    </ol>
+    <p class="note reveal"><b>A chave fica fora do chat.</b> O assistente explica como criar a chave do serviço de voz e onde guardar: em um arquivo privado no seu computador. Não cole a chave na conversa.</p>
+  </div>
+</section>
+
+<section id="exemplo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">O exemplo</span>
+      <h2 class="heading-2">A Cuca, do pedido ao quadro final</h2>
+      <p class="lead">O pedido foi curto: um vídeo no estilo B4, de terror, com ElevenLabs e roteiro inspirado na Cuca do folclore brasileiro. O caminho teve três tentativas de imagem, e a terceira é a que você vê no vídeo.</p>
+    </div>
+    <div class="pedidos reveal">
+      <div class="pedido"><b class="caption-3">1</b><div><p>Desenho por código, sem gerador de imagem.</p><small class="caption-4">Saiu de graça e consistente, mas simples demais perto das amostras do B4. Foi descartado.</small></div></div>
+      <div class="pedido"><b class="caption-3">2</b><div><p>Ilustrações geradas pela ElevenLabs, com as imagens de referência do B4 anexadas.</p><small class="caption-4">O estilo bateu, mas o plano gratuito libera só 3 imagens por dia.</small></div></div>
+      <div class="pedido"><b class="caption-3">3</b><div><p>Ilustrações geradas no Google Flow, com o Claude operando o navegador.</p><small class="caption-4">15 cenas, duas variações de cada, sem custo. O Claude monta, anima e renderiza por cima.</small></div></div>
+    </div>
+    <p class="note reveal"><b>Fizemos um híbrido.</b> Não instalamos o skill: lemos as regras do estilo B4 e aplicamos no nosso projeto Remotion. As ilustrações vieram de um gerador de imagem, como no motor A. A câmera, os letreiros, as legendas, a voz e o render ficaram por conta do código, como no motor B.</p>
+
+    <div class="frames reveal">
+      <figure><img src="assets/quadros-cuca/q1.webp" alt="Pôster de abertura com o letreiro A Cuca está cantando sobre um menino palito assustado na cama e uma sombra de jacaré na cortina" loading="lazy"><figcaption class="caption-4">0:02 a abertura</figcaption></figure>
+      <figure><img src="assets/quadros-cuca/q2.webp" alt="A Cuca de capuz roxo e cabeça de jacaré parada no quintal sob a mangueira" loading="lazy"><figcaption class="caption-4">0:08 o quintal</figcaption></figure>
+      <figure><img src="assets/quadros-cuca/q3.webp" alt="Degraus de madeira com pegadas molhadas e a sombra da Cuca na porta" loading="lazy"><figcaption class="caption-4">0:23 a varanda</figcaption></figure>
+      <figure><img src="assets/quadros-cuca/q4.webp" alt="Porta entreaberta com dois olhos amarelos no escuro e garras na borda" loading="lazy"><figcaption class="caption-4">0:32 a porta</figcaption></figure>
+      <figure><img src="assets/quadros-cuca/q5.webp" alt="Menino de olhos apertados na cama com o focinho da Cuca a um palmo do rosto" loading="lazy"><figcaption class="caption-4">0:45 o focinho</figcaption></figure>
+      <figure><img src="assets/quadros-cuca/q6.webp" alt="Cama vazia com uma escama verde molhada no travesseiro" loading="lazy"><figcaption class="caption-4">1:20 a escama</figcaption></figure>
+    </div>
+    <p class="caption-2 muted reveal" style="margin-top:12px">Os 6 quadros enviados para aprovação antes do render.</p>
+
+    <h3 class="heading-5 sub reveal">O roteiro</h3>
+    <p class="reveal">São 25 frases em segunda pessoa, no molde das histórias de regras de sobrevivência: um perigo, três regras e uma escolha no final para o público responder nos comentários.</p>
+    <div class="reveal" style="margin-top:16px">
+      <details>
+        <summary class="title-3">Ler a narração completa<i class="ph ph-plus"></i></summary>
+        <div>
+<pre>São três da manhã, e alguém está cantando no seu quintal.
+É a cantiga de ninar da sua avó, só que devagar demais.
+Antes de morrer, ela te deixou três regras para esta noite.
+Regra um: quando a cantiga começar, apague a luz e deite.
+Você apaga a luz, e a cantiga para.
+Alguma coisa pesada sobe os degraus da varanda.
+Regra dois: a Cuca só leva quem está acordado.
+Então feche os olhos e respire devagar.
+A porta do quarto abre sozinha.
+O assoalho range: um passo, dois, três.
+Um cheiro de lama de rio enche o quarto.
+O colchão afunda do seu lado.
+Um focinho comprido e gelado para a um palmo do seu rosto.
+Ela fareja, e espera você piscar.
+Regra três: ela usa a voz de quem você ama. Nunca responda.
+Abre o olho, meu bem, é a vovó.
+A voz é igualzinha, mas a sua avó está enterrada desde março.
+Você não responde, só conta as respirações.
+O colchão sobe, os passos se afastam, a porta fecha.
+Você só abre os olhos quando o galo canta.
+Tem sol na janela. Você conseguiu.
+Aí você olha para a cama do seu irmão.
+Vazia, com o cobertor no chão e uma escama molhada no travesseiro.
+No quintal, a cantiga recomeça, agora com a voz dele.
+Você abre a porta, ou volta para a cama?</pre>
+        </div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="prompts">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Prompts</span>
+      <h2 class="heading-2">Os pedidos prontos</h2>
+      <p class="lead">Os dois primeiros são para quem instalou o skill. Os três últimos são os que usamos no nosso híbrido e funcionam em qualquer projeto Remotion.</p>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Prompt P1: instalar o skill</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Uma vez por máquina</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Instale este skill:
+https://github.com/kaomei/stickman-video-director
+
+Depois de instalar, leia o SKILL.md, confira o que falta no meu computador e me avise quando estiver pronto.</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Prompt P2: pedir um vídeo pelo motor de código</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Troque o tema, o formato e o código do estilo</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Use o motor de código (modo B) para transformar este tema em um vídeo de boneco palito:
+[TEMA, TEXTO OU LINK]
+
+Formato: vertical 9:16, 90 segundos, estilo B4 "Suspense de sobrevivência", com narração, legendas e efeitos sonoros.
+
+Primeiro confira as ferramentas de imagem e de render do meu computador e me mostre o roteiro completo e uma amostra com áudio dos primeiros 20 segundos.
+Só depois da minha aprovação produza e renderize o vídeo inteiro.</pre>
+    </div>
+    <p class="note reveal"><b>Para o motor de modelo</b>, troque a primeira linha por "Use o motor de modelos (modo A)" e peça a estrutura da história, a direção de som e o storyboard antes dos prompts de cada cena. O texto original dos dois pedidos está no README do repositório.</p>
+
+    <h3 class="heading-5 sub reveal">Prompt P3: roteiro de regras de sobrevivência</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Troque [LENDA] pelo seu tema</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Escreva a narração de um Short de terror de 1:30 inspirado em [LENDA], em português do Brasil, em segunda pessoa ("você").
+
+Estrutura: uma frase de abertura com hora, lugar e algo errado → três regras para sobreviver à noite, cada uma seguida da cena em que ela é testada → a regra mais cruel por último → alívio falso → uma descoberta que muda tudo → uma pergunta com duas escolhas para o público responder.
+
+Regras:
+- 200 a 240 palavras, uma frase por linha;
+- frases de até 14 palavras;
+- toda frase precisa de uma imagem que dê para desenhar;
+- o monstro aparece aos poucos: primeiro som, depois sombra, depois um pedaço, só então o rosto;
+- nada de sangue: o medo vem do que quase acontece;
+- não cite letra de música nem fala de obra que exista.
+
+Entregue só a narração.</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Prompt P4: ilustração de uma cena</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">O bloco de estilo se repete em toda cena. Só a parte SCENE muda</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>STYLE: refined full-color 2D hand-drawn story illustration, like a frame of a 2D animated thriller: clear black ink contours, broad painted color fields, restrained cel-shaded shadows, detailed readable painted background, one coherent outlined 2D treatment, not photorealistic, not 3D.
+CHARACTERS are stick figures: plain circular pure-white head, small solid black oval eyes, thin eyebrows, single thick black line torso, thick black stick limbs, compact rounded white cartoon gloves outlined in black, no clothes, no realistic skin.
+THE BOY: stick-figure child with three short thin black hair strands sticking up on top of his head.
+THE CUCA (Brazilian folklore): tall hunched old witch in a ragged dark purple-gray hooded cloak with the hood up; long dark-green crocodile head with cream lower jaw and cream teeth, glowing amber-yellow eyes, long stringy black hair hanging from under the hood, green three-clawed hands.
+
+SCENE: [descreva o lugar, a hora, quem aparece, o que cada um faz e onde fica na imagem].
+
+Night palette of broad cool blue fields with small warm accents, legible, no crushed black, no heavy bloom, no gore. Portrait 9:16. No text, no letters, no captions, no speech bubbles, no watermark.</pre>
+    </div>
+    <p class="note reveal"><b>Por que em inglês.</b> Os geradores de imagem seguem melhor instruções em inglês. Repetir a descrição do menino e da Cuca palavra por palavra em toda cena foi o que manteve os dois iguais do começo ao fim, mesmo sem imagem de referência.</p>
+
+    <h3 class="heading-5 sub reveal">Prompt P5: montagem sobre as ilustrações</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Para o Claude, no projeto Remotion</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Monte o vídeo desta narração sobre as ilustrações da pasta public/, em 1080x1920, 30 fps, seguindo as regras do estilo B4:
+
+1. Nenhum plano passa de 3 segundos. Frases longas viram dois ou três planos, cortados no começo de uma palavra.
+2. Cada plano usa uma ilustração com um enquadramento próprio e uma mudança visível: câmera lenta, luz que apaga, olhos que acendem, pálpebras que fecham, fumaça, notas musicais.
+3. Abertura em pôster: chamada curta no alto, depois o bloco inteiro do título entra de uma vez, com a figura na metade de baixo.
+4. Cada regra da história ganha um cartão "REGRA 1", "REGRA 2", "REGRA 3" no alto da tela.
+5. Legendas em uma linha por grupo de sentido, branco quente com contorno escuro, sem caixa, no terço inferior.
+6. Os dois últimos planos mostram as escolhas A e B.
+
+Antes do render, gere um quadro de cada plano em baixa resolução, revise os enquadramentos e me mostre 6 quadros em tamanho real.
+Depois de eu aprovar, renderize e confira quadros tirados do próprio MP4.</pre>
+    </div>
+  </div>
+</section>
+
+<section id="regras">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Estilo B4</span>
+      <h2 class="heading-2">As regras que fazem o suspense funcionar</h2>
+      <p class="lead">A documentação do B4 é longa. Estas são as regras que mais mudaram o nosso vídeo.</p>
+    </div>
+    <div class="grid g2 reveal">
+      <article class="card"><div class="ico"><i class="ph ph-timer"></i></div><h3 class="heading-6">Três segundos, no máximo</h3><p>Nenhum plano e nenhuma imagem parada duram mais que isso. Trocar a legenda ou dar um leve zoom não conta como mudança.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-eye"></i></div><h3 class="heading-6">O medo tem que estar na imagem</h3><p>Escuro, névoa e som pesado não substituem a ameaça desenhada. Sem som e sem legenda, o plano ainda precisa mostrar o que há de errado.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-stairs"></i></div><h3 class="heading-6">Revele aos poucos</h3><p>Primeiro o rastro, depois a sombra, depois um pedaço. Mostrar o monstro inteiro cedo demais gasta o susto.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-text-aa"></i></div><h3 class="heading-6">Título em dois tempos</h3><p>Uma chamada curta entra primeiro. O bloco de impacto entra inteiro logo depois, nunca letra por letra, e assenta com um leve recuo.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-hand"></i></div><h3 class="heading-6">O boneco tem gramática</h3><p>Cabeça redonda branca, olhos pretos pequenos, corpo de traço preto e luvas brancas arredondadas. Cabelo ou acessório só para diferenciar personagens.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-subtitles"></i></div><h3 class="heading-6">Legenda por sentido</h3><p>Uma linha por grupo de palavras que faz sentido junto, quebrada onde a fala respira. Sem caixa de fundo e sem palavra colorida obrigatória.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="custo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Custo e tropeços</span>
+      <h2 class="heading-2">Quanto custou e onde travou</h2>
+    </div>
+    <div class="grid g4 reveal">
+      <div class="stat"><strong>1.168</strong><span class="caption-2">créditos da ElevenLabs na narração de 1 min 30 s</span></div>
+      <div class="stat"><strong>0</strong><span class="caption-2">créditos nas 30 imagens do Google Flow</span></div>
+      <div class="stat"><strong>456</strong><span class="caption-2">créditos gastos em 3 imagens de teste na ElevenLabs</span></div>
+      <div class="stat"><strong>90 MB</strong><span class="caption-2">o MP4 final em 1080x1920, com 2.703 quadros. Nesta página ele está em 720p</span></div>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Os três erros que o guia original avisa</h3>
+    <ul class="list no reveal" style="margin-top:16px">
+      <li><b>Chave gratuita do Gemini não gera imagem.</b> A API pede uma chave com cobrança ativa. A saída gratuita é gerar dentro do Google Flow.</li>
+      <li><b>O Flow recusa nome de pessoa real.</b> Descreva o personagem em vez de dar o nome.</li>
+      <li><b>O navegador pode barrar vários downloads.</b> Libere downloads múltiplos para o site do Flow antes do primeiro lote, ou os arquivos parecem baixados e não chegam.</li>
+    </ul>
+
+    <h3 class="heading-5 sub reveal">Os que encontramos por conta própria</h3>
+    <ul class="list no reveal" style="margin-top:16px">
+      <li><b>Imagem na ElevenLabs tem limite por dia.</b> No plano gratuito a quarta imagem do dia é recusada, mesmo com créditos sobrando.</li>
+      <li><b>O modelo muda muito o preço.</b> Com duas imagens de referência anexadas, um modelo cobrou cerca de 150 créditos por imagem e outro mais de 600.</li>
+      <li><b>Peça espaço vazio para o título.</b> A primeira abertura veio com a janela ocupando o alto da imagem. Só deu certo pedindo a metade de cima vazia.</li>
+      <li><b>A imagem do Flow é menor que a tela.</b> Elas saem com 768 por 1.376 pontos. Em closes muito fechados a ampliação fica macia.</li>
+      <li><b>O vídeo de exemplo ainda não tem som de ambiente.</b> Só a voz. O estilo B4 pede ambiência baixa e efeitos ligados à história, e isso ficou para a próxima versão.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="cuidados">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Cuidados</span>
+      <h2 class="heading-2">Antes de publicar</h2>
+    </div>
+    <div class="grid g2 reveal">
+      <div class="card"><div class="ico"><i class="ph ph-book-open"></i></div><h3 class="heading-6">Folclore é de todos, a versão da TV não</h3><p>A Cuca é uma lenda. O desenho dela em livros, séries e programas tem dono. Crie o seu visual e não imite o de uma obra conhecida.</p></div>
+      <div class="card"><div class="ico"><i class="ph ph-scales"></i></div><h3 class="heading-6">Cada peça tem a própria licença</h3><p>O skill é MIT e pode ser usado em vídeo comercial. Música, efeitos, voz e imagens seguem as regras de cada serviço. O plano gratuito da ElevenLabs não dá licença comercial.</p></div>
+      <div class="card"><div class="ico"><i class="ph ph-robot"></i></div><h3 class="heading-6">Conteúdo feito com IA</h3><p>Confira as regras de cada plataforma sobre avisar que o vídeo usa imagem ou voz geradas por IA.</p></div>
+      <div class="card"><div class="ico"><i class="ph ph-baby"></i></div><h3 class="heading-6">Terror e público jovem</h3><p>Sem sangue e sem violência mostrada. Mesmo assim, marque o vídeo como não feito para crianças.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <h2 class="heading-2">Comece pequeno: um estilo, uma ideia, um vídeo curto.</h2>
+    <p class="lead">O primeiro costuma pedir ajustes, e ajustar roteiro não custa nada.</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn button-md" href="#prompts">Copiar o Prompt P3 <i class="ph ph-arrow-up"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h4 class="title-3">Referências</h4>
+      <ul class="caption-2">
+        <li><a href="https://github.com/kaomei/stickman-video-director" rel="noopener" target="_blank">Stickman Video Director, de kaomei (MIT)</a></li>
+        <li><a href="https://x.com/AveryRunsAI/status/2124444676937621723" rel="noopener" target="_blank">Guia de Avery no X</a></li>
+        <li>Fontes do vídeo: Anton e Nunito (licença OFL).</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="title-3">Neste site</h4>
+      <ul class="caption-2">
+        <li><a href="index.html">Tutorial completo</a></li>
+        <li><a href="resumo-de-jogos.html">Resumo de jogos</a></li>
+        <li><a href="viralizar.html">Viralizar</a></li>
+      </ul>
+    </div>
+    <div id="privacidade">
+      <h4 class="title-3">Privacidade e termos</h4>
+      <ul class="caption-2">
+        <li>Esta página não usa cookies, formulários nem análise de acesso.</li>
+        <li>Conteúdo informativo, feito com Claude Fable 5.2 no Claude Code.</li>
+        <li><a href="#topo">Voltar ao topo</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/base.js"></script>
+</body>
+</html>
