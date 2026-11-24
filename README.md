@@ -9,6 +9,7 @@ Tutorial completo para criar Shorts de histórias animadas com Claude: os dois c
 - `index.html`: o tutorial, em uma página só
 - `assets/short.mp4`: o vídeo de exemplo em 720p (o original foi renderizado em 1080x1920, 30 fps)
 - `assets/quadros/`: os 6 quadros usados na aprovação
+- `assets/kit/ricksclips-style-kit.zip`: cópia do Ricks Clips Style Kit, de @caesarscales (licença MIT), sem os quadros e as transcrições de vídeos de terceiros que acompanham o original
 - `404.html`: página de endereço não encontrado
 
 ## Créditos

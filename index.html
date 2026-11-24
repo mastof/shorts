@@ -258,8 +258,10 @@ footer a:hover{color:var(--tx)}
     <li><a href="#claude">O que o Claude faz</a></li>
     <li><a href="#caminho-a">Caminho A</a></li>
     <li><a href="#caminho-b">Caminho B</a></li>
+    <li><a href="#kit">Caminho C: kit 3D</a></li>
     <li><a href="#vozes">Opções de voz</a></li>
     <li><a href="#formula">Fórmula e prompts</a></li>
+    <li><a href="#referencias">Referências</a></li>
     <li><a href="#seedance">Animação infantil</a></li>
     <li><a href="#roteiro">Roteiro de teste</a></li>
     <li><a href="#metricas">Métricas</a></li>
@@ -441,6 +443,61 @@ npx remotion render src/index.ts Short out/short.mp4 --codec=h264 --crf=18</pre>
       <div class="card"><h4 class="title-3">O render final travou baixando a fonte</h4><p>A fonte vinha da internet a cada quadro e a rede falhou. Solução: guardar o arquivo da fonte dentro do projeto.</p></div>
       <div class="card"><h4 class="title-3">A fonte local saiu serifada</h4><p>O primeiro render completo veio com a letra errada, porque o nome da família estava registrado diferente. Só apareceu porque conferimos um quadro do MP4 final. Corrigido e renderizado de novo.</p></div>
     </div>
+  </div>
+</section>
+
+<!-- KIT 3D -->
+<section id="kit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Caminho C</span>
+      <h2 class="heading-2">Kit pronto: mundo 3D no Blender com bonecos 2D</h2>
+      <p class="lead">Um terceiro caminho, para quem quer cenário em 3D sem depender de gerador de vídeo. O kit foi criado por @caesarscales e é distribuído com licença MIT. Ele ensina o Claude Code a produzir Shorts em que bonecos 2D de cabeça redonda atuam dentro de um mundo 3D com contorno de tinta, em um único voo de câmera.</p>
+      <div class="hero-cta">
+        <a class="btn ghost button-md" href="assets/kit/ricksclips-style-kit.zip" download><i class="ph ph-download-simple"></i> Baixar o kit (1,4 MB)</a>
+      </div>
+    </div>
+    <div class="grid g3 reveal">
+      <article class="card"><div class="ico"><i class="ph ph-package"></i></div><h3 class="heading-6">O que vem dentro</h3><p>Livro de regras, bíblia de estilo, fórmula de roteiro e de gancho, o motor em three.js, cenários em Python para o Blender e as ferramentas de voz, tempo e legenda.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-path"></i></div><h3 class="heading-6">Como o vídeo nasce</h3><p>Roteiro aprovado, voz em uma tomada só, tempo de cada palavra, elenco novo, mundo 3D, quadros de conferência, mixagem e render no seu computador.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-wrench"></i></div><h3 class="heading-6">O que você precisa</h3><p>Python 3.10 ou mais novo, Node.js 18 ou mais novo, ffmpeg, Blender 4.2 ou mais novo e uma chave da ElevenLabs, ou a sua própria gravação.</p></article>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Instalação em 5 passos</h3>
+    <ol class="steps reveal" style="margin-top:16px">
+      <li><b>Descompacte</b> em um lugar fácil de achar, como a Área de Trabalho. Aparece uma pasta chamada <code>ricksclips-style</code>.</li>
+      <li><b>Instale as ferramentas</b> e pule as que já tiver.
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Windows, no PowerShell</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>winget install Python.Python.3.12; winget install OpenJS.NodeJS.LTS; winget install Gyan.FFmpeg; winget install BlenderFoundation.Blender</pre>
+        </div>
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Mac, no Terminal</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>brew install python node ffmpeg; brew install --cask blender</pre>
+        </div>
+      </li>
+      <li><b>Abra a pasta no Claude Code</b> e deixe ele se configurar. Ele instala os extras pequenos, como o Whisper e o navegador de render, e roda um teste 3D rápido.
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Diga isto ao Claude</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>set up this kit and run the Blender demo</pre>
+        </div>
+      </li>
+      <li><b>Conte a sua ideia.</b> O Claude lê as regras do kit e conduz o resto: roteiro para o seu ok, voz, personagens, plano de câmera, conferência de quadros e o pacote de render.
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Diga isto ao Claude, trocando o tema pelo seu</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>make a 60 second cartoon short about why ships carried storm oil</pre>
+        </div>
+      </li>
+      <li><b>Deixe a chave da ElevenLabs pronta</b> para a narração, ou grave a sua própria voz. O kit informa o custo em créditos antes de cada tomada. O render pesado roda na sua placa de vídeo a partir de um arquivo <code>.bat</code>, então não consome o seu uso do Claude.</li>
+    </ol>
+
+    <div class="grid g2 reveal" style="margin-top:24px">
+      <div class="card"><h4 class="title-3">Quanto de voz um vídeo do kit gasta</h4><p>Pelo ritmo do nosso vídeo de exemplo, 60 segundos de narração gastam perto de 950 caracteres. No plano gratuito da ElevenLabs isso daria uns 10 vídeos por mês, mas sem direito de uso comercial. Os detalhes estão em <a href="#vozes">Opções de voz</a>.</p></div>
+      <div class="card"><h4 class="title-3">Onde guardar a chave</h4><p>Em um arquivo <code>.env</code> dentro da pasta do kit, na linha <code>ELEVEN_API_KEY=</code> seguida da sua chave. Esse arquivo já fica fora do controle de versão. Nunca cole a chave em código nem em conversa.</p></div>
+    </div>
+
+    <p class="note reveal"><b>Sobre esta cópia.</b> O arquivo original traz folhas de quadros e transcrições de vídeos de outros canais, usadas como material de estudo. Elas não estão nesta cópia, porque pertencem aos criadores daqueles vídeos. O código, os documentos, as medições e a licença estão completos, e uma nota dentro do arquivo lista o que saiu.</p>
+    <p class="note reveal"><b>Use o método, não o personagem.</b> O kit nasceu do estudo de um canal específico, e o boneco padrão lembra o personagem daquele canal. Aproveite o motor e o processo, e desenhe elenco, paleta e histórias seus. O próprio kit manda criar um elenco novo a cada vídeo, escrever roteiros originais e fugir de temas que já viraram cópia em série. A frase do passo 4 é só o exemplo que acompanha o kit.</p>
   </div>
 </section>
 
@@ -658,6 +715,57 @@ Entregue só o texto da narração, uma frase por linha.</pre>
         <p class="note"><b>Se quiser usar o universo SCP de verdade.</b> O material da SCP Foundation é publicado sob a licença <code>CC BY-SA 3.0</code>. Usar exige dar crédito ao autor de cada artigo, incluir o link e manter a mesma licença no seu vídeo. Criar a sua própria organização e os seus próprios itens, como o prompt T1 pede, evita essa obrigação e deixa o canal com identidade.</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- REFERÊNCIAS -->
+<section id="referencias">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Referências</span>
+      <h2 class="heading-2">Três canais para estudar e um prompt para trocar a embalagem</h2>
+      <p class="lead">Referência boa não é para copiar. É para entender por que funciona e levar a fórmula para outro nicho, com outra textura, outro personagem e outro tipo de animação. As observações abaixo são a nossa leitura de cada canal.</p>
+    </div>
+    <div class="grid g3 reveal">
+      <article class="card">
+        <div class="ico"><i class="ph ph-flame"></i></div>
+        <h3 class="heading-6">Ember &amp; Shadow</h3>
+        <p>Canal de psicologia. Um vídeo só já mostra o estilo inteiro do canal, o que facilita recriar a ideia com outra textura, outra animação e outro personagem. Uma troca possível: sair da psicologia e levar o mesmo formato para o terror.</p>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://www.youtube.com/shorts/gv3dz-pdmm8" rel="noopener" target="_blank"><i class="ph ph-play"></i> Mean to yourself vs kind to yourself</a></p>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-columns"></i></div>
+        <h3 class="heading-6">Bygone Philosophy</h3>
+        <p>O acabamento mais alto dos três. Quem chega nesse nível consegue embalar qualquer assunto. O tema nem precisa ser filosofia: a mesma embalagem serve para histórias e motivações de pessoas do esporte, por exemplo.</p>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://www.youtube.com/shorts/D-RiErb4cmg" rel="noopener" target="_blank"><i class="ph ph-play"></i> He Had Absolute Power Over Rome</a></p>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-leaf"></i></div>
+        <h3 class="heading-6">Deep Primate</h3>
+        <p>O visual mais simples dos três, com imagens paradas, e mesmo assim passa paz para quem assiste. Se parado já agrada, animado tem espaço para ir além. Repare também nos títulos, que são muito bem construídos.</p>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://www.youtube.com/watch?v=y_MkdysPlco" rel="noopener" target="_blank"><i class="ph ph-play"></i> The Psychology of People Who…</a></p>
+      </article>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Prompt R: estudar uma referência e criar um formato próprio</h3>
+    <p class="reveal">Serve para qualquer um dos três canais acima, ou para outro que você escolher. Se o Claude não conseguir abrir o link, baixe o vídeo e aponte o arquivo.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Análise com agentes e três embalagens novas</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Analise este vídeo de referência e me ajude a criar um formato próprio inspirado nele:
+[COLE O LINK OU APONTE O ARQUIVO BAIXADO]
+
+1. Assista ao vídeo inteiro e leia a transcrição. Use agentes em paralelo, um para cada frente: roteiro, visual, som e título.
+2. Roteiro: o gancho dos 3 primeiros segundos, a estrutura bloco a bloco com os tempos, o tamanho das frases, as palavras por minuto e como o vídeo termina.
+3. Visual: tipo de imagem (parada ou animada, 2D ou 3D), paleta, textura, personagem, movimento de câmera, legendas e quanto tempo dura cada plano.
+4. Som: tipo de voz, ritmo, música, efeitos e silêncios.
+5. Título e capa: o padrão de construção dos títulos em pelo menos 10 vídeos do canal, o que cada título promete e o que esconde.
+6. Separe o que é fórmula, que posso reaproveitar, do que é identidade do canal, que não posso copiar: personagens, frases, roteiros, artes e trilhas.
+7. Proponha 3 embalagens novas para a mesma fórmula, cada uma com outro nicho, outra textura, outro personagem e outro estilo de animação. Exemplos de troca: de psicologia para terror, de filosofia para histórias do esporte, de imagem parada para animação leve.
+8. Para a embalagem que eu escolher, escreva as regras do canal em um CLAUDE.md e 10 títulos no padrão encontrado.
+
+Não reproduza trechos do roteiro original e não recrie personagens nem artes do canal.</pre>
+    </div>
+    <p class="note reveal"><b>Depois da análise.</b> Com o CLAUDE.md da nova embalagem pronto, volte aos prompts 1, 2 e 3 desta página: eles passam a produzir premissas, roteiro e vídeo já dentro das regras do seu formato.</p>
   </div>
 </section>
 
@@ -991,6 +1099,7 @@ E deixo minha avó me acender.</pre></div></details>
         <li>Roteiro, código, vídeo e página: Claude Fable 5.2 no Claude Code</li>
         <li>Voz: Kokoro, voz pm_alex</li>
         <li>Fonte do vídeo: Baloo 2, licença OFL</li>
+        <li>Kit 3D: Ricks Clips Style Kit, de @caesarscales, licença MIT</li>
         <li><a href="https://github.com/mastof/shorts-animados-com-claude" rel="noopener">Repositório no GitHub</a></li>
       </ul>
     </div>
@@ -1031,7 +1140,7 @@ E deixo minha avó me acender.</pre></div></details>
 
   // item atual da navegação
   var links=[].slice.call(d.querySelectorAll('.nav-links a'));
-  var alvo={elementos:'#elementos',claude:'#claude','caminho-a':'#claude','caminho-b':'#claude',vozes:'#vozes',formula:'#formula',seedance:'#seedance',roteiro:'#roteiro',metricas:'#metricas',cuidados:'#cuidados',faq:'#cuidados'};
+  var alvo={elementos:'#elementos',claude:'#claude','caminho-a':'#claude','caminho-b':'#claude',kit:'#claude',vozes:'#vozes',formula:'#formula',referencias:'#formula',seedance:'#seedance',roteiro:'#roteiro',metricas:'#metricas',cuidados:'#cuidados',faq:'#cuidados'};
   if('IntersectionObserver' in window){
     var spy=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var h=alvo[e.target.id];links.forEach(function(a){a.setAttribute('aria-current',a.getAttribute('href')===h?'true':'false');});}});},{rootMargin:'-45% 0px -50% 0px'});
     Object.keys(alvo).forEach(function(id){var s=d.getElementById(id);if(s)spy.observe(s);});
