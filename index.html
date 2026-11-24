@@ -261,6 +261,7 @@ footer a:hover{color:var(--tx)}
     <li><a href="#caminho-a">Caminho A</a></li>
     <li><a href="#caminho-b">Caminho B</a></li>
     <li><a href="#kit">Caminho C: kit 3D</a></li>
+    <li><a href="#skills">Skills para fazer vídeo</a></li>
     <li><a href="#vozes">Opções de voz</a></li>
     <li><a href="#formula">Fórmula e prompts</a></li>
     <li><a href="#referencias">Referências</a></li>
@@ -502,6 +503,128 @@ npx remotion render src/index.ts Short out/short.mp4 --codec=h264 --crf=18</pre>
 
     <p class="note reveal"><b>Sobre esta cópia.</b> O arquivo original traz folhas de quadros e transcrições de vídeos de outros canais, usadas como material de estudo. Elas não estão nesta cópia, porque pertencem aos criadores daqueles vídeos. O código, os documentos, as medições e a licença estão completos, e uma nota dentro do arquivo lista o que saiu.</p>
     <p class="note reveal"><b>Use o método, não o personagem.</b> O kit nasceu do estudo de um canal específico, e o boneco padrão lembra o personagem daquele canal. Aproveite o motor e o processo, e desenhe elenco, paleta e histórias seus. O próprio kit manda criar um elenco novo a cada vídeo, escrever roteiros originais e fugir de temas que já viraram cópia em série. A frase do passo 4 é só o exemplo que acompanha o kit.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Skills e projetos abertos</span>
+      <h2 class="heading-2">Oito repositórios para fazer vídeo com o Claude Code</h2>
+      <p class="lead">Abrir o projeto de outra pessoa é o jeito mais rápido de encurtar caminho. Estes oito apareceram no GitHub com código e prompts abertos. Seis são skills que você instala no Claude Code. Dois são material de consulta, que você usa sem instalar nada.</p>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Para produzir</h3>
+    <div class="grid g2 reveal" style="margin-top:16px">
+      <article class="card">
+        <div class="ico"><i class="ph ph-film-reel"></i></div>
+        <h3 class="heading-6">animate</h3>
+        <p>Vídeos curtos animados feitos inteiros em código, do desenho à trilha, com o mesmo resultado a cada render. Traz sete estilos prontos: papel recortado, hachura, risografia, caderno de esboço, matemática, pixel e isométrico. Também aprende um visual novo a partir das suas referências, e para em três pontos para você aprovar história, visual e storyboard.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">Bom para.</b> Explicativos e histórias curtas. É o parente mais próximo do Caminho B desta página.</p>
+        <ul class="proof caption-2"><li>Licença MIT</li><li>Node 18, Playwright e ffmpeg</li><li>Plugin do Claude Code</li></ul>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://github.com/cth9191/animate" rel="noopener" target="_blank"><i class="ph ph-github-logo"></i> cth9191/animate</a></p>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-megaphone"></i></div>
+        <h3 class="heading-6">huashu-motion</h3>
+        <p>Você pede um filme de lançamento de 30 segundos para o seu produto. O agente estuda o produto, mostra três direções e monta o vídeo com trilha composta por ele. Para corrigir, você aponta direto no quadro e ele mexe só naquele ponto.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">Bom para.</b> Vídeo de produto, anúncio e lançamento.</p>
+        <ul class="proof caption-2"><li>Licença MIT</li><li>Node 22 ou mais novo</li><li>Instalador de Agent Skills</li></ul>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://github.com/alchaincyf/huashu-motion" rel="noopener" target="_blank"><i class="ph ph-github-logo"></i> alchaincyf/huashu-motion</a></p>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-graduation-cap"></i></div>
+        <h3 class="heading-6">vibe-knowledge-film</h3>
+        <p>Feita para vídeo curto educativo, no estilo que faz sucesso no Douyin, o TikTok da China. Você entrega o tema ou o texto pronto. Ela escolhe entre dois visuais, escreve a legenda, monta a tabela de planos e coloca os efeitos sonoros. Primeiro sai um trecho de uns 30 segundos, e o resto só é feito depois da sua aprovação.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">Bom para.</b> Ciência, psicologia e curiosidades explicadas com imagem.</p>
+        <ul class="proof caption-2"><li>Licença MIT</li><li>Python, Chrome e ffmpeg</li><li>Documentação em chinês</li></ul>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://github.com/HeyChengC/vibe-knowledge-film" rel="noopener" target="_blank"><i class="ph ph-github-logo"></i> HeyChengC/vibe-knowledge-film</a></p>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-book-open-text"></i></div>
+        <h3 class="heading-6">story-studio</h3>
+        <p>Para vídeos narrados de história e biografia. Vai do tema ao roteiro, à voz, às imagens e ao rascunho pronto para abrir no Jianying, a versão chinesa do CapCut. Dá para usar só uma parte, como o roteiro ou o gancho, e entregar a sua própria gravação no lugar da voz sintética.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">Bom para.</b> Canais de história narrada com imagem parada e câmera lenta.</p>
+        <ul class="proof caption-2"><li>CC BY-NC-SA 4.0, uso não comercial</li><li>Voz por serviço chinês ou áudio próprio</li><li>Documentação em chinês</li></ul>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://github.com/konlu/story-studio" rel="noopener" target="_blank"><i class="ph ph-github-logo"></i> konlu/story-studio</a></p>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-scissors"></i></div>
+        <h3 class="heading-6">video-editor-skills</h3>
+        <p>Ensina o Claude Code a fazer o primeiro corte de um vlog ou de uma aula no DaVinci Resolve: tira pausas e erros pela transcrição, mantém as imagens de apoio, coloca trilha, efeitos e legendas e exporta para o YouTube. O pacote traz só o método. Os scripts o Claude escreve com você, para a sua câmera e o seu projeto.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">Bom para.</b> Quem grava com rosto e perde horas no corte bruto.</p>
+        <ul class="proof caption-2"><li>CC BY-NC 4.0, uso não comercial</li><li>Pede o DaVinci Resolve Studio, que é pago</li><li>Chave de transcrição</li></ul>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://github.com/appariciojunior/video-editor-skills" rel="noopener" target="_blank"><i class="ph ph-github-logo"></i> appariciojunior/video-editor-skills</a></p>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-fire"></i></div>
+        <h3 class="heading-6">pixelfx</h3>
+        <p>Uma biblioteca com 244 efeitos em pixel art, cada um em um pedaço pequeno de código: fogo, explosão, magia, clima. A skill ensina o Claude a achar, usar, exportar e criar efeitos novos em um ciclo de desenhar, renderizar, olhar e refazer.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">Bom para.</b> Dar impacto a cenas de jogo, terror e fantasia sem gerador de imagem.</p>
+        <ul class="proof caption-2"><li>Licença MIT</li><li>Exporta folha de sprites e GIF</li><li>Plugin do Claude Code</li></ul>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://github.com/patch-gg/pixelfx" rel="noopener" target="_blank"><i class="ph ph-github-logo"></i> patch-gg/pixelfx</a> <a class="btn ghost button-sm" href="https://patch-gg.github.io/pixelfx/" rel="noopener" target="_blank"><i class="ph ph-arrow-square-out"></i> Galeria</a></p>
+      </article>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Para estudar e consultar</h3>
+    <div class="grid g2 reveal" style="margin-top:16px">
+      <article class="card">
+        <div class="ico"><i class="ph ph-squares-four"></i></div>
+        <h3 class="heading-6">mg-styles-15</h3>
+        <p>Quinze estilos de motion graphics, cada um com um filme de 10 segundos feito pelo Claude Opus 5.5 escrevendo código. O repositório publica o filme, as notas do estilo, o prompt completo e o código de todos. Até a trilha sonora é gerada por código.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">Bom para.</b> Escolher um estilo e ver como ele foi pedido, palavra por palavra.</p>
+        <ul class="proof caption-2"><li>Licença MIT</li><li>Nada para instalar</li></ul>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://github.com/Vincentwei1021/mg-styles-15" rel="noopener" target="_blank"><i class="ph ph-github-logo"></i> Vincentwei1021/mg-styles-15</a> <a class="btn ghost button-sm" href="https://vincentwei1021.github.io/mg-styles-15/" rel="noopener" target="_blank"><i class="ph ph-play"></i> Ver os 15 filmes</a></p>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-text-aa"></i></div>
+        <h3 class="heading-6">motion-prompt</h3>
+        <p>Um catálogo de nomes para o que você quer pedir: movimentos de motion graphics, de câmera, transições, estilos de foto e de arte. Cada nome tem uma amostra em movimento, o significado em uma linha e um exemplo de pedido. No dia da nossa consulta eram 240 nomes em 10 conjuntos.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">Bom para.</b> Quando você sabe o efeito que quer, mas não sabe como ele se chama.</p>
+        <ul class="proof caption-2"><li>Licença MIT</li><li>Funciona sem instalar</li><li>Também vem como skill</li></ul>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://github.com/showheyohtaki/motion-prompt" rel="noopener" target="_blank"><i class="ph ph-github-logo"></i> showheyohtaki/motion-prompt</a> <a class="btn ghost button-sm" href="https://showheyohtaki.github.io/motion-prompt/" rel="noopener" target="_blank"><i class="ph ph-arrow-square-out"></i> Abrir o catálogo</a></p>
+      </article>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Como instalar</h3>
+    <p class="reveal">Os comandos com barra são digitados dentro do Claude Code. Os outros, no terminal.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Três formas de instalar, conforme o repositório</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre># 1. Plugin do Claude Code: pixelfx, animate e motion prompt
+/plugin marketplace add patch-gg/pixelfx
+/plugin install pixelfx@pixelfx
+
+/plugin marketplace add cth9191/animate
+/plugin install animate@animate
+
+/plugin marketplace add showheyohtaki/motion-prompt
+/plugin install motion-prompt@motion-prompt
+
+# 2. Instalador de Agent Skills: huashu-motion
+npx skills add alchaincyf/huashu-motion
+
+# 3. Copiando a pasta: vibe-knowledge-film, story-studio e video-editor-skills
+# Baixe o repositório e coloque a pasta da skill em .claude/skills/ dentro do projeto,
+# ou em ~/.claude/skills/ para valer em todos os projetos.</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Prompt S: avaliar uma skill antes de instalar</h3>
+    <p class="reveal">Uma skill é um conjunto de instruções e, muitas vezes, de scripts que rodam no seu computador. Vale ler antes. Este prompt faz o Claude ler por você e só instalar com o seu sim.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Troque o link pelo repositório que você quer avaliar</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Quero avaliar esta skill antes de instalar: [LINK DO REPOSITÓRIO]
+Não instale nem execute nada ainda.
+
+1. Leia o README, o SKILL.md e a licença. Diga em 5 linhas o que a skill faz e o que ela exige: programas, chaves e serviços pagos.
+2. Liste todo script que ela roda na minha máquina e tudo o que ela baixa ou envia para a internet.
+3. Diga o que a licença permite: uso em canal monetizado, alteração e redistribuição.
+4. Compare com o que já temos neste projeto e diga se vale instalar, só estudar ou ignorar.
+
+Só instale depois de eu responder "pode instalar", e na pasta do projeto (.claude/skills), não na pasta global.</pre>
+    </div>
+    <p class="note reveal"><b>Duas licenças pedem atenção.</b> O story-studio e o video-editor-skills são de uso não comercial. O segundo deixa claro que não pode ser vendido nem entrar em curso, modelo ou serviço pago. Se o seu canal é monetizado, leia a licença inteira ou fale com o autor antes de usar.</p>
+    <p class="note reveal"><b>O que nós fizemos.</b> Lemos o README e a licença de cada repositório em 24 de novembro de 2026. Não instalamos nem testamos os oito, então os números e os recursos acima são os que cada autor descreve. Repositórios mudam: confira antes de instalar.</p>
   </div>
 </section>
 
