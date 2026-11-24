@@ -16,3 +16,4 @@ Tutorial completo para criar Shorts de histórias animadas com Claude: os dois c
 
 Roteiro, código, vídeo e página feitos com Claude Fable 5.2 no Claude Code. Voz gerada localmente com Kokoro (voz `pm_alex`), tempos de legenda com Whisper, animação com Remotion. Fonte do vídeo: Baloo 2 (licença OFL).
 - `viralizar.html`: aba à parte com os quatro passos para um canal de IA crescer e monetizar (resumo próprio do relato de Matheus Celtic, com link para o original)
+- `resumo-de-jogos.html`: aba à parte sobre resumo de jogos em Short cinematográfico, com os prompts, os repositórios de referência (The Last Page e Abyssal Garden) e o vídeo de exemplo `assets/jogos.mp4` (720p), um resumo de fã da saga Resident Evil sem imagens, trilhas nem logotipos dos jogos

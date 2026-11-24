@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resumo de jogos em Short cinematográfico | Shorts com Claude</title>
+<meta name="description" content="Como resumir a história de uma saga de jogos em um Short de 2 min 35 s com narração da ElevenLabs e cenários 3D pintados por código: prompts, repositórios de referência e o vídeo de exemplo.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Resumo de jogos em Short cinematográfico">
+<meta property="og:description" content="Os prompts, os repositórios de referência e o vídeo de exemplo: 34 cenas pintadas por código.">
+<meta property="og:image" content="https://mastof.github.io/shorts-animados-com-claude/assets/jogos-og.jpg">
+<meta property="og:url" content="https://mastof.github.io/shorts-animados-com-claude/resumo-de-jogos.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181818'/%3E%3Ccircle cx='32' cy='34' r='20' fill='%23F6C9A4' stroke='%23FFFFFF' stroke-width='3'/%3E%3Ctext x='32' y='32' font-family='Arial' font-weight='700' font-size='18' text-anchor='middle' fill='%23FF2D3D'%3E1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.nav-links a{white-space:nowrap}
+.pedidos{display:grid;gap:12px;margin-top:16px}
+.pedido{display:grid;grid-template-columns:32px minmax(0,1fr);gap:16px;align-items:start;padding:16px;border:1px solid var(--line);border-radius:12px;background:var(--s1)}
+.pedido b{display:grid;place-items:center;width:32px;height:32px;border-radius:8px;background:var(--s2);color:var(--tx);font-family:var(--mono);font-weight:500}
+.pedido p{color:var(--tx)}
+.pedido small{display:block;margin-top:4px;color:var(--tx3)}
+.repo-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.cap{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+@media (max-width:820px){.cap{grid-template-columns:1fr}}
+</style>
+</head>
+<body class="no-js">
+<a class="skip button-sm" href="#conteudo">Pular para o conteúdo</a>
+
+<nav class="nav" aria-label="Seções desta página">
+  <a class="brand title-4" href="index.html"><b class="caption-3">1</b>Shorts com Claude</a>
+  <ul class="nav-links title-4">
+    <li><a href="index.html">Tutorial</a></li>
+    <li><a href="#exemplos">Exemplos</a></li>
+    <li><a href="#passos">Passos</a></li>
+    <li><a href="#prompts">Prompts</a></li>
+    <li><a href="#tecnica">Técnica</a></li>
+    <li><a href="#metricas">Números</a></li>
+    <li><a href="#cuidados">Cuidados</a></li>
+    <li><a href="viralizar.html">Viralizar</a></li>
+  </ul>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="painel"><span></span><span></span></button>
+</nav>
+<div class="panel" id="painel">
+  <ul class="heading-5">
+    <li><a href="index.html">Voltar ao tutorial</a></li>
+    <li><a href="#diferencas">O que muda neste formato</a></li>
+    <li><a href="#exemplos">Repositórios de exemplo</a></li>
+    <li><a href="#passos">Os 8 passos</a></li>
+    <li><a href="#roteiro">O roteiro completo</a></li>
+    <li><a href="#prompts">Os prompts</a></li>
+    <li><a href="#tecnica">A receita técnica</a></li>
+    <li><a href="#metricas">Os números</a></li>
+    <li><a href="#cuidados">Cuidados com obras de terceiros</a></li>
+    <li><a href="viralizar.html">Viralizar: como fazer o canal crescer</a></li>
+  </ul>
+</div>
+
+<main id="conteudo">
+
+<header class="hero" id="topo">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow caption-3"><i class="ph ph-game-controller"></i> Aba Resumo de jogos</span>
+      <h1 class="heading-1">A história de uma saga inteira<br>em um Short pintado por código</h1>
+      <p class="lead">Como contamos quase trinta anos de uma série de terror em 2 min 35 s, com narração da ElevenLabs e cenários 3D que nascem do código e ganham acabamento de pintura. Aqui estão os prompts, os repositórios que serviram de referência e o vídeo que saiu deles.</p>
+      <div class="hero-cta">
+        <a class="btn button-md" href="#prompts">Ver os prompts <i class="ph ph-arrow-down"></i></a>
+      </div>
+      <ul class="proof caption-2" aria-label="Números do vídeo de exemplo">
+        <li>34 cenas</li>
+        <li>2 min 35 s</li>
+        <li>377 palavras narradas</li>
+        <li>nenhum arquivo de imagem</li>
+      </ul>
+    </div>
+    <div>
+      <div class="phone">
+        <video controls playsinline preload="metadata" poster="assets/jogos-poster.jpg" aria-label="Vídeo de exemplo: Tudo começou com uma flor, um resumo narrado da saga Resident Evil com cenários pintados e figuras em silhueta">
+          <source src="assets/jogos.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="phone-cap caption-2">O vídeo de exemplo: "Tudo começou com uma flor"</p>
+    </div>
+  </div>
+  <div class="wrap">
+    <p class="note" style="max-width:680px"><b>Vídeo de fã.</b> O exemplo resume a saga Resident Evil com palavras nossas e não tem vínculo com a Capcom, dona da marca. Ele não usa imagens, trilhas, logotipos nem rostos de personagens dos jogos: tudo o que aparece foi desenhado por código para este vídeo.</p>
+  </div>
+</header>
+
+<section id="diferencas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Outro formato</span>
+      <h2 class="heading-2">O que muda em relação ao tutorial</h2>
+      <p class="lead">A linha de produção é a mesma do <a href="index.html#caminho-b">Caminho B</a>: uma cena por frase, tempo de cada palavra tirado do áudio e aprovação de quadros antes do render. O que muda é a matéria prima da história e a cara da imagem.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Peça</th><th>Histórias "Nesse mundo"</th><th>Resumo de jogos</th></tr></thead>
+        <tbody>
+          <tr><td>Roteiro</td><td>História inventada, em primeira pessoa</td><td>Fatos de uma obra que já existe, conferidos um a um, com narrador de fora</td></tr>
+          <tr><td>Imagem</td><td>Bonecos 2D desenhados em SVG</td><td>Cenários 3D gerados por código, com figuras só em silhueta</td></tr>
+          <tr><td>Acabamento</td><td>Cor chapada e contorno grosso</td><td>Filtro de pintura, névoa, feixes de luz e grão de película</td></tr>
+          <tr><td>Voz</td><td>Kokoro, no próprio computador</td><td>ElevenLabs, em uma tomada só</td></tr>
+          <tr><td>Legenda</td><td>Palavra forte em amarelo</td><td>Palavra forte em vermelho, mais letreiro de lugar e ano</td></tr>
+          <tr><td>Render</td><td class="num">144 s</td><td class="num">198 s</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="exemplos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Repositórios de exemplo</span>
+      <h2 class="heading-2">Dois projetos abertos que mostraram o caminho</h2>
+      <p class="lead">A direção de arte não saiu de um texto descrevendo um estilo. Saiu de dois repositórios públicos, cada um com o prompt usado pelo autor. Demos os dois links ao Claude e pedimos a técnica, não a obra.</p>
+    </div>
+    <div class="grid g2 reveal">
+      <article class="card">
+        <div class="ico"><i class="ph ph-paint-brush"></i></div>
+        <h3 class="heading-6">The Last Page, de ChetasLua</h3>
+        <p>Um curta de 65 segundos com cara de anime desenhado à mão, pintado, animado e sonorizado só com Python. Não há modelo de imagem nem arquivo pronto: cada pincelada, nuvem e nota musical sai do código, com as sementes fixas para o resultado se repetir.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">O que levamos daqui.</b> A pincelada de guache, o traço de nanquim nos contornos, os feixes de luz e o acabamento de película.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">Onde olhar.</b> O prompt está em <code>PROMPT.md</code> e o plano de cada tomada em <code>docs/CONTRACT.md</code>.</p>
+        <div class="repo-links">
+          <a class="btn ghost button-sm" href="https://github.com/ChetasLua/the-last-page" rel="noopener" target="_blank"><i class="ph ph-github-logo"></i> Repositório</a>
+          <a class="btn ghost button-sm" href="https://x.com/chetaslua/status/2125226204764733481" rel="noopener" target="_blank"><i class="ph ph-play"></i> Vídeo no X</a>
+        </div>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-waves"></i></div>
+        <h3 class="heading-6">Abyssal Garden, de Noniv</h3>
+        <p>Um mundo submarino para nadar dentro do navegador: florestas de algas, raios de sol, um navio afundado e arraias. Tudo é gerado por código com WebGPU, sem imagens, modelos 3D nem arquivos de som, em um único arquivo HTML de 97 KB.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">O que levamos daqui.</b> A luz atravessando a névoa, as partículas em suspensão e a prova de que um cenário inteiro pode ser procedural.</p>
+        <p style="margin-top:12px"><b style="color:var(--tx);font-weight:600">Onde olhar.</b> O prompt está em <code>prompt.txt</code>. A licença é MIT.</p>
+        <div class="repo-links">
+          <a class="btn ghost button-sm" href="https://github.com/Noniv/abyssal-garden" rel="noopener" target="_blank"><i class="ph ph-github-logo"></i> Repositório</a>
+          <a class="btn ghost button-sm" href="https://noniv.github.io/abyssal-garden/" rel="noopener" target="_blank"><i class="ph ph-arrow-square-out"></i> Abrir a demonstração</a>
+        </div>
+      </article>
+    </div>
+    <p class="note reveal"><b>Referência não é molde.</b> O repositório The Last Page não declara licença, então o código dele serve para estudo e não para cópia. Nenhuma linha dos dois projetos entrou no nosso vídeo: o que reaproveitamos foram as ideias de luz, textura e ritmo.</p>
+    <p class="note reveal"><b>Com os pés no chão.</b> O nosso resultado é uma aproximação. As duas referências têm um nível de desenho que este vídeo não alcança: aqui as pessoas são silhuetas feitas de blocos, e o que carrega a cena é a luz, a cor e a câmera.</p>
+  </div>
+</section>
+
+<section class="tagline" aria-label="Ideia central">
+  <div class="wrap">
+    <p class="heading-2" id="tagline">Um bom resumo não lista acontecimentos. Ele escolhe um fio, e cada cena existe para puxar esse fio até a última frase.</p>
+  </div>
+</section>
+
+<section id="passos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Passo a passo</span>
+      <h2 class="heading-2">Como o vídeo nasce, em 8 passos</h2>
+      <p class="lead">Do tema ao MP4. Os prompts de cada etapa estão na seção seguinte.</p>
+    </div>
+    <ol class="steps reveal">
+      <li><b>Escolha um fio.</b> No exemplo, o fio é uma flor: ela abre o vídeo e volta na penúltima frase, como a coisa em que alguém viu um preço. Sem fio, o resumo vira lista de jogos.</li>
+      <li><b>Confira os fatos.</b> Datas, lugares, ordem dos acontecimentos e quem fez o quê. Quem conhece o jogo percebe o erro no primeiro segundo e avisa nos comentários.</li>
+      <li><b>Escreva em capítulos.</b> Uma frase por linha e uma linha em branco entre capítulos. O exemplo tem 34 frases em 7 capítulos e 377 palavras.</li>
+      <li><b>Grave a voz em uma tomada.</b> O texto inteiro de uma vez na ElevenLabs, para o tom não mudar no meio. Custou 2.103 créditos.</li>
+      <li><b>Tire o tempo de cada palavra.</b> O Whisper ouve o áudio e devolve o início e o fim de cada palavra. É isso que sincroniza cortes, legendas e efeitos.</li>
+      <li><b>Monte cenários, não cenas.</b> Foram 14 cenários 3D, cada um com opções de luz, clima e figuras. Mudando a câmera e as opções, eles renderam as 34 cenas.</li>
+      <li><b>Pinte e revise.</b> O acabamento de pintura entra por cima do 3D. Depois sai um quadro de cada cena em baixa resolução, em folhas de contato, para achar o que ficou escuro, estourado ou fora do quadro. Foram três rodadas.</li>
+      <li><b>Aprove, renderize e confira.</b> Seis quadros em tamanho real para aprovar, render em 1080x1920 e uma última conferência em quadros tirados do próprio MP4.</li>
+    </ol>
+    <div class="frames reveal">
+      <figure><img src="assets/quadros-jogos/cena01.webp" alt="Flor branca brilhando sob um feixe de luz azul dentro de uma caverna" loading="lazy"><figcaption class="caption-4">0:01 a flor</figcaption></figure>
+      <figure><img src="assets/quadros-jogos/cena07.webp" alt="Mansão com janelas acesas entre pinheiros, sob a lua, com quatro silhuetas se aproximando" loading="lazy"><figcaption class="caption-4">0:28 a mansão</figcaption></figure>
+      <figure><img src="assets/quadros-jogos/cena12.webp" alt="Rua entre prédios com o céu em chamas e uma silhueta caminhando na direção de vultos" loading="lazy"><figcaption class="caption-4">0:54 a cidade</figcaption></figure>
+      <figure><img src="assets/quadros-jogos/cena20.webp" alt="Silhueta de casaco longo sobre um rochedo diante de um sol vermelho enorme" loading="lazy"><figcaption class="caption-4">1:27 África</figcaption></figure>
+      <figure><img src="assets/quadros-jogos/cena23.webp" alt="Casa de madeira sobre palafitas em um pântano verde, com uma janela acesa e uma vela em primeiro plano" loading="lazy"><figcaption class="caption-4">1:41 o pântano</figcaption></figure>
+      <figure><img src="assets/quadros-jogos/cena30.webp" alt="Homem de costas caminhando na neve em direção a um vilarejo, com um castelo apagado na névoa" loading="lazy"><figcaption class="caption-4">2:15 o vilarejo</figcaption></figure>
+    </div>
+    <p class="caption-2 muted reveal" style="margin-top:12px">Os 6 quadros enviados para aprovação antes do render.</p>
+  </div>
+</section>
+
+<section id="roteiro">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">O texto</span>
+      <h2 class="heading-2">O roteiro, capítulo por capítulo</h2>
+      <p class="lead">Cada capítulo cobre uma fase da saga e termina em uma frase que empurra para a próxima. As frases mais curtas ficam nos cortes de capítulo, onde a narração respira.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Capítulo</th><th>Frases</th><th>O que conta</th></tr></thead>
+        <tbody>
+          <tr><td>A origem</td><td class="num">1 a 5</td><td>A flor, os três fundadores e o nome da empresa</td></tr>
+          <tr><td>A mansão</td><td class="num">6 a 10</td><td>Julho de 1998, a equipe de elite e a traição do capitão</td></tr>
+          <tr><td>A cidade</td><td class="num">11 a 16</td><td>O surto, quatro pontos de vista e o clarão que apaga tudo</td></tr>
+          <tr><td>O vírus muda de dono</td><td class="num">17 a 22</td><td>Espanha, África e o terror que se espalha pelo mundo</td></tr>
+          <tr><td>A casa</td><td class="num">23 a 26</td><td>O pântano da Louisiana e a menina que não é filha de ninguém</td></tr>
+          <tr><td>O vilarejo</td><td class="num">27 a 30</td><td>A neve, o castelo e o pai que continua andando</td></tr>
+          <tr><td>O retorno</td><td class="num">31 a 34</td><td>A volta às ruínas e o fio da flor amarrado</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="reveal" style="margin-top:24px">
+      <details>
+        <summary class="title-3">Ler a narração completa<i class="ph ph-plus"></i></summary>
+        <div>
+<pre>Tudo começou com uma flor.
+Ela nascia numa caverna da África, e quem a provava morria ou mudava para sempre.
+Três homens viram nela um remédio, depois uma arma, depois um império.
+Chamaram o império de Umbrella.
+Um guarda-chuva, para um mundo que eles mesmos fariam chover.
+
+Julho de mil novecentos e noventa e oito.
+Nas montanhas Arklay, uma equipe de elite entra numa mansão para fugir de cães que não morrem.
+Atrás de cada porta, a casa guarda alguém que esqueceu de morrer.
+E o capitão deles sorri, porque sempre soube o que havia no porão.
+A mansão explode ao amanhecer, mas o segredo já corria pelos esgotos da cidade vizinha.
+
+Dois meses depois, Raccoon City acorda com fome.
+Um policial no primeiro dia de trabalho atravessa uma cidade que mastiga.
+Uma irmã procura o irmão entre os que já não lembram o próprio nome.
+Uma mulher é caçada por uma coisa que repete uma única palavra.
+O governo resolve o problema do único jeito que conhece.
+Um clarão, e cem mil histórias viram um mapa em branco.
+
+A Umbrella caiu, mas vírus não vai à falência.
+Ele só troca de dono.
+Numa vila da Espanha, um parasita antigo ensina os fiéis a obedecer.
+Na África, um homem que se achava deus tenta escolher quem merece o amanhã.
+Ele termina dentro de um vulcão.
+Depois o medo ganha passaporte, e cidades inteiras somem numa névoa azul.
+
+Então o horror desiste do mundo e volta para dentro de casa.
+Num pântano da Louisiana, uma família põe a mesa para um homem que procura a esposa.
+A menina da casa não é filha de ninguém.
+É uma arma com rosto de criança, que só queria uma família.
+
+Anos depois, o mesmo homem perde a filha num vilarejo coberto de neve.
+Quatro senhores, uma mãe de asas negras e um castelo que tem sede.
+Ele descobre que já estava morto desde o pântano.
+E mesmo assim caminha, porque pai não precisa de coração batendo para carregar uma filha.
+
+Quase trinta anos depois do clarão, alguém volta às ruínas de Raccoon City.
+Porque essa história nunca foi sobre monstros.
+Foi sobre gente que olhou para uma flor e viu um preço.
+E sobre os poucos que, no escuro, ainda escolhem abrir a próxima porta.</pre>
+        </div>
+      </details>
+    </div>
+    <p class="note reveal"><b>Repare no texto.</b> Os anos estão por extenso, porque o texto vai para a voz. Nenhum personagem é chamado pelo nome: "um policial", "uma irmã", "um pai". Isso deixa a narração mais próxima de uma lenda e ajuda a imagem, que só mostra silhuetas.</p>
+  </div>
+</section>
+
+<section id="prompts">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Prompts</span>
+      <h2 class="heading-2">O que pedimos, e os prompts prontos para reusar</h2>
+      <p class="lead">Primeiro, os pedidos reais da conversa, que foram curtos. Depois, cinco prompts completos que juntam esses pedidos com as regras que o Claude seguiu no caminho.</p>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Os pedidos desta conversa</h3>
+    <div class="pedidos reveal">
+      <div class="pedido"><b class="caption-3">1</b><div><p>"Vamos utilizar esse exemplo para criar algo mais poético e cinematográfico", com o link do repositório The Last Page.</p><small class="caption-4">Define a direção de arte</small></div></div>
+      <div class="pedido"><b class="caption-3">2</b><div><p>"Vamos fazer um resumo das histórias dos jogos de Resident Evil, com elemento de terror."</p><small class="caption-4">Define o tema e o tom</small></div></div>
+      <div class="pedido"><b class="caption-3">3</b><div><p>"Mais um exemplo de CGI cinematográfico para usarmos", com o link do repositório Abyssal Garden.</p><small class="caption-4">Soma uma segunda referência no meio do trabalho</small></div></div>
+      <div class="pedido"><b class="caption-3">4</b><div><p>"Deixe ainda mais performáticas as imagens, crie como o primeiro exemplo que te enviei", com o link do vídeo no X.</p><small class="caption-4">Foi o que gerou o acabamento de pintura</small></div></div>
+      <div class="pedido"><b class="caption-3">5</b><div><p>"Aprovar e renderizar."</p><small class="caption-4">Depois de ver os 6 quadros</small></div></div>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Prompt J1: roteiro do resumo</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Troque [JOGO OU SAGA] pelo seu tema</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Escreva a narração de um Short de 2:30 que resume a história de [JOGO OU SAGA], em português do Brasil, com tom poético e de terror.
+
+Antes de escrever, pesquise e confira os fatos: ordem dos acontecimentos, datas, lugares e quem fez o quê. Liste as fontes e me avise do que não conseguiu confirmar.
+
+Escolha um fio condutor: uma imagem ou ideia que abre o vídeo e volta nas últimas frases. Todo capítulo precisa puxar esse fio.
+
+Estrutura: gancho de 1 frase → origem → um capítulo por jogo ou fase da saga, na ordem da história → fecho que retoma o gancho.
+
+Regras:
+- 360 a 400 palavras;
+- frases de até 20 palavras, uma frase por linha;
+- uma linha em branco entre capítulos;
+- toda frase precisa de uma imagem concreta, que dê para animar;
+- anos e números por extenso, porque o texto vai para a voz;
+- não chame os personagens pelo nome: descreva quem são ("um policial no primeiro dia de trabalho").
+
+Não copie falas, textos nem descrições oficiais do jogo. Conte com palavras suas e não entregue o final de um lançamento recente.
+Entregue só a narração.</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Prompt J2: direção de arte a partir de um repositório</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Funciona com qualquer projeto aberto que publique o prompt</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Vamos usar este repositório como referência de direção de arte, para criar algo mais poético e cinematográfico:
+[LINK DO REPOSITÓRIO, por exemplo https://github.com/ChetasLua/the-last-page]
+Vídeo de demonstração: [LINK DO VÍDEO]
+
+1. Leia o README e o prompt publicado e veja o vídeo.
+2. Me diga em uma lista curta o que faz aquela imagem funcionar: paleta, luz, textura, movimento de câmera e ritmo de corte.
+3. Proponha como chegar perto disso neste projeto Remotion, em 1080x1920, sem usar nenhum arquivo de imagem: cenários 3D gerados por código com three.js e um acabamento aplicado por cima.
+4. Não copie código, personagens nem cenas da referência. Quero a técnica, não a obra. Confira a licença do repositório e me diga o que ela permite.
+5. Antes de montar o vídeo inteiro, faça 4 cenas de teste e me mostre um quadro de cada.</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Prompt J3: voz na ElevenLabs</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Uma tomada, com o custo avisado antes</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Gere a narração de [ARQUIVO DO ROTEIRO] na ElevenLabs, em português do Brasil, com uma voz grave e calma, de narrador de documentário.
+
+- Faça uma tomada só, com o texto inteiro, para o tom não mudar no meio.
+- Antes de gerar, me diga quantos créditos vai gastar. Não gere de novo sem eu pedir.
+- Salve o áudio em public/ e use o Whisper para tirar o início e o fim de cada palavra, alinhando com o texto original do roteiro.
+- A chave da ElevenLabs fica só no arquivo .env. Nunca mostre a chave no chat, no código nem em commit.</pre>
+    </div>
+    <p class="note reveal"><b>Um tropeço que vale saber.</b> No plano gratuito, a API da ElevenLabs recusa as vozes da biblioteca. A saída foi gerar pelo conector da ElevenLabs dentro do Claude. Gerar pelo site e entregar o MP3 pronto também resolve. A comparação entre as opções de voz está em <a href="index.html#vozes">Opções de voz</a>.</p>
+
+    <h3 class="heading-5 sub reveal">Prompt J4: o vídeo completo</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Cenários reaproveitados, silhuetas e aprovação antes do render</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Crie o vídeo completo desta narração neste projeto Remotion, seguindo a direção de arte que combinamos.
+
+1. Uma cena por frase, com a duração exata da fala.
+2. Monte poucos cenários 3D reaproveitáveis, cada um com opções de luz, clima e figuras. Use câmeras diferentes para tirar várias cenas do mesmo cenário.
+3. Pessoas e criaturas aparecem só como silhuetas genéricas. Nenhum logotipo, rosto, roupa ou arte de personagem que exista no jogo.
+4. Câmera sempre em movimento lento. Em vídeo vertical o campo de visão horizontal é estreito: mantenha o assunto perto do centro.
+5. Quando a história mudar de lugar, mostre um letreiro com o lugar e o ano no alto da tela.
+6. Legendas palavra por palavra, brancas com contorno, com a palavra mais forte de cada frase em vermelho, no terço inferior e longe dos botões do Shorts.
+7. Tudo o que se move precisa ser calculado a partir do número do quadro, sem sorteio, para o render em paralelo não piscar.
+8. Gere um quadro de cada cena em baixa resolução, monte folhas de contato, revise e corrija o que estiver escuro, estourado ou fora do quadro.
+
+Antes do render final, salve 6 quadros de momentos diferentes em tamanho real e me mostre.
+Depois de eu aprovar, renderize em 1080x1920, 30 fps, MP4, e confira quadros tirados do próprio MP4.</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Prompt J5: acabamento de pintura</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Para quando o 3D ainda parece 3D</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Deixe as imagens mais fortes, no estilo de pintura à mão da referência.
+
+Aplique um acabamento em tela cheia por cima do 3D, com:
+- filtro de Kuwahara, para transformar o degradê liso em manchas de pincel;
+- traço de nanquim nos contornos, tirado da profundidade da cena;
+- halo suave em volta das luzes;
+- manchas de guache e um leve tremor de mão;
+- céu com nuvens e estrelas geradas por código.
+
+Deixe a força de cada efeito ajustável por cenário e me mostre o antes e o depois do mesmo quadro.</pre>
+    </div>
+  </div>
+</section>
+
+<section id="tecnica">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Por dentro</span>
+      <h2 class="heading-2">A receita técnica</h2>
+      <p class="lead">Para quem quer entender o que o Claude montou, ou cobrar isso dele no próximo vídeo.</p>
+    </div>
+    <div class="grid g2 reveal">
+      <article class="card"><div class="ico"><i class="ph ph-cube"></i></div><h3 class="heading-6">Um palco 3D dentro do Remotion</h3><p>O three.js roda dentro do Remotion pelo pacote <code>@remotion/three</code>. Cada cenário é um componente React com céu, névoa, terreno, luzes e figuras. O render precisa da opção <code>--gl=angle</code> para a placa de vídeo entrar.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-paint-brush-broad"></i></div><h3 class="heading-6">A pintura vem depois do 3D</h3><p>A cena é desenhada primeiro em uma textura, junto com a profundidade de cada ponto. Um segundo passo lê as duas e pinta a tela: manchas de pincel, traço onde a profundidade muda de repente, halo nas luzes e grão.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-clock-countdown"></i></div><h3 class="heading-6">Nada de sorteio</h3><p>Neve, chuva, brasa e fumaça são calculadas a partir do número do quadro e de uma semente fixa. O Remotion renderiza quadros fora de ordem e em paralelo, então qualquer valor sorteado faria a imagem piscar.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-device-mobile"></i></div><h3 class="heading-6">A tela em pé é estreita</h3><p>Em 1080x1920, a câmera enxerga só uns 12 graus para cada lado. Figura posta um pouco fora do centro some do quadro. Foi o erro mais repetido nas folhas de contato.</p></article>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Um cenário rende várias cenas</h3>
+    <p class="reveal">As frases 20 e 21 usam o mesmo cenário de savana. A segunda liga a opção do vulcão, muda a câmera e ganha um leve tremor.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Trecho do arquivo de cenas</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>/* 20: "Na África, um homem que se achava deus..." */
+({f, dur}) => quadro(
+  &lt;SetSavana f={f} dur={dur}
+    cam={{de: [3.5, 2, 16], para: [1.6, 2.6, 7], olhaDe: [0, 9, -120], olhaPara: [0, 12, -120], fov: 40}} /&gt;,
+  f, {veu: '#a8321a', veuOp: 0.18},
+  &lt;Carimbo f={f} dur={dur} texto="ÁFRICA" sub="2009" /&gt;),
+
+/* 21: "Ele termina dentro de um vulcão." */
+({f, dur}) => quadro(
+  &lt;SetSavana f={f} dur={dur} vulcao
+    cam={{de: [2.5, 2, 22], para: [1.2, 2.2, 14], olhaDe: [0, 40, -190], olhaPara: [0, 58, -190], fov: 44, tremor: 0.03}} /&gt;,
+  f, {veu: '#a8321a', veuOp: 0.2}),</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Os comandos</h3>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Na pasta do projeto</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre># pacotes do 3D
+npm i three @react-three/fiber @remotion/three
+
+# 1. áudio já gravado → tempo de cada palavra
+python tts/gerar2.py re --audio public/re-eleven.mp3
+
+# 2. um quadro de cada cena, para as folhas de contato
+node tools/quadros.mjs todas --comp=RE --escala=0.33 --pasta=out/re
+
+# 3. render final (o 3D precisa do ANGLE)
+npx remotion render src/index.ts RE out/re.mp4 --codec=h264 --crf=18 --gl=angle</pre>
+    </div>
+    <p class="note reveal"><b>Os arquivos são deste projeto.</b> <code>gerar2.py</code> e <code>quadros.mjs</code> foram escritos pelo Claude durante a conversa, a partir dos prompts acima. No seu projeto os nomes podem ser outros: o que importa é a ordem das três etapas.</p>
+  </div>
+</section>
+
+<section id="metricas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Métricas</span>
+      <h2 class="heading-2">Os números deste vídeo</h2>
+    </div>
+    <div class="grid g4 reveal">
+      <div class="stat"><strong>34</strong><span class="caption-2">cenas, tiradas de 14 cenários 3D</span></div>
+      <div class="stat"><strong>2.103</strong><span class="caption-2">créditos da ElevenLabs, dos 10 mil mensais do plano gratuito</span></div>
+      <div class="stat"><strong>198 s</strong><span class="caption-2">de render para 4.650 quadros em um PC comum</span></div>
+      <div class="stat"><strong>169 MB</strong><span class="caption-2">o MP4 em 1080x1920. Nesta página ele está em 720p</span></div>
+    </div>
+    <p class="note reveal"><b>Quanto rende o plano gratuito.</b> Uma narração deste tamanho gasta perto de um quinto dos créditos do mês. Dá para fazer 4 vídeos como este sem pagar, desde que cada um saia em uma tomada só.</p>
+
+    <h3 class="heading-5 sub reveal">O que ainda não ficou bom</h3>
+    <ul class="list no reveal" style="margin-top:16px">
+      <li><b>As figuras são blocos.</b> Funcionam contra a luz, como no quadro da África. De perto parecem bonecos.</li>
+      <li><b>A legenda cobre a figura em duas cenas.</b> Na rua em chamas e na neve, a palavra cai em cima de quem está andando.</li>
+      <li><b>Duas cenas são difíceis de ler.</b> O objeto caído na chuva e a subida da câmera na cena 5 pedem um desenho mais claro.</li>
+      <li><b>O pai de costas esconde a filha.</b> A frase mais forte do vídeo merecia um ângulo que mostrasse os dois.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="cuidados">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Cuidados</span>
+      <h2 class="heading-2">Resumir a obra de outra pessoa pede mais cuidado</h2>
+      <p class="lead">A história de um jogo tem dono. O que é seu é a forma de contar: o texto, a voz e a imagem. Vale somar estes pontos aos <a href="index.html#cuidados">cuidados do tutorial</a>.</p>
+    </div>
+    <div class="grid g2 reveal">
+      <div class="card"><div class="ico"><i class="ph ph-pencil-line"></i></div><h3 class="heading-6">Conte com as suas palavras</h3><p>Nada de falas, textos de menu ou descrições oficiais copiadas. Um resumo é um texto novo sobre a obra.</p></div>
+      <div class="card"><div class="ico"><i class="ph ph-prohibit"></i></div><h3 class="heading-6">Nada tirado do jogo</h3><p>Sem capturas de tela, trechos de trailer, trilha sonora, logotipos ou rostos de personagens. No exemplo, a empresa da história aparece só como um objeto comum, sem logotipo.</p></div>
+      <div class="card"><div class="ico"><i class="ph ph-identification-badge"></i></div><h3 class="heading-6">Avise que é vídeo de fã</h3><p>Diga na descrição que o vídeo não tem vínculo com o estúdio e que os nomes e as marcas pertencem aos donos.</p></div>
+      <div class="card"><div class="ico"><i class="ph ph-magnifying-glass"></i></div><h3 class="heading-6">Fato errado custa caro</h3><p>Peça as fontes ao Claude e confira você também. E não conte o final de um jogo que acabou de sair.</p></div>
+    </div>
+    <p class="note reveal"><b>Sem garantia.</b> Fazer tudo isso reduz o risco, mas não elimina. O dono da marca pode pedir a retirada de um vídeo mesmo assim, e cada plataforma tem as próprias regras. Este texto é informativo e não substitui orientação jurídica.</p>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <h2 class="heading-2">Tem uma saga para contar? Comece pelo fio.</h2>
+    <p class="lead">O Prompt J1 entrega o roteiro com os fatos conferidos. O resto da linha de produção está no tutorial.</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn button-md" href="#prompts">Copiar o Prompt J1 <i class="ph ph-arrow-up"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h4 class="title-3">Referências</h4>
+      <ul class="caption-2">
+        <li><a href="https://github.com/ChetasLua/the-last-page" rel="noopener" target="_blank">The Last Page, de ChetasLua</a></li>
+        <li><a href="https://github.com/Noniv/abyssal-garden" rel="noopener" target="_blank">Abyssal Garden, de Noniv (MIT)</a></li>
+        <li>Resident Evil é marca da Capcom. Este site não tem vínculo com a empresa.</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="title-3">Neste site</h4>
+      <ul class="caption-2">
+        <li><a href="index.html">Tutorial completo</a></li>
+        <li><a href="index.html#vozes">Opções de voz</a></li>
+        <li><a href="viralizar.html">Viralizar</a></li>
+      </ul>
+    </div>
+    <div id="privacidade">
+      <h4 class="title-3">Privacidade e termos</h4>
+      <ul class="caption-2">
+        <li>Esta página não usa cookies, formulários nem análise de acesso.</li>
+        <li>Conteúdo informativo, feito com Claude Fable 5.2 no Claude Code.</li>
+        <li><a href="#topo">Voltar ao topo</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/base.js"></script>
+</body>
+</html>
