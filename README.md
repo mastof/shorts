@@ -20,3 +20,15 @@ Roteiro, código, vídeo e página feitos com Claude Fable 5.2 no Claude Code. V
 - Seção `#skills` do `index.html`: oito repositórios abertos para fazer vídeo com o Claude Code (descrições tiradas do README e da licença de cada um, sem instalação nem teste)
 - Seção `#nicho` do `viralizar.html`: resumo próprio e leitura crítica de um fio de @MatheusGK sobre a escolha do nicho, com crédito e link
 - `boneco-palito.html`: aba à parte com o método do Stickman Video Director (kaomei e Avery, MIT) resumido com palavras próprias, os prompts e o vídeo de exemplo `assets/cuca.mp4` (720p), um suspense no estilo B4 sobre a Cuca com ilustrações geradas no Google Flow e narração da ElevenLabs
+
+## Organização do site (desde 24/11/2026)
+
+O tutorial de uma página só foi repartido em um guia para quem está começando:
+
+- `index.html`: início, com a propaganda (`assets/promo.mp4`), a escolha do método, os exemplos, os fundamentos, os cuidados e as perguntas frequentes
+- `metodo-facil.html`, `metodo-medio.html`, `metodo-avancado.html`: os três métodos, do navegador ao visual próprio
+- `prompts.html`: cinco prompts mãe por tipo de vídeo, os prompts por etapa e o prompt para estudar referências
+- `skills.html`: o que é uma skill, como usar, as três instaladas e testadas e a lista dos oito repositórios
+- `viralizar.html`, `resumo-de-jogos.html`, `boneco-palito.html`: páginas de aprofundamento
+
+A propaganda usa quatro movimentos do catálogo Motion Prompt, de Shohei Ohtaki (licença MIT).

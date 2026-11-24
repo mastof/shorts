@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Método avançado: um visual que é só seu | Shorts com Claude</title>
+<meta name="description" content="Três rotas para depois do primeiro vídeo: cenário 3D pintado por código, ilustrações com cortes rápidos e um kit de mundo 3D. E como transformar o seu formato em uma skill.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Método avançado: um visual que é só seu">
+<meta property="og:description" content="Três rotas para depois do primeiro vídeo: cenário 3D pintado por código, ilustrações com cortes rápidos e um kit de mundo 3D. E como transformar o seu formato em uma skill.">
+<meta property="og:image" content="https://mastof.github.io/shorts-animados-com-claude/assets/og.jpg">
+<meta property="og:url" content="https://mastof.github.io/shorts-animados-com-claude/metodo-avancado.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181818'/%3E%3Ccircle cx='32' cy='34' r='20' fill='%23F6C9A4' stroke='%23FFFFFF' stroke-width='3'/%3E%3Ctext x='32' y='32' font-family='Arial' font-weight='700' font-size='18' text-anchor='middle' fill='%23FF2D3D'%3E1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.nav-links a{white-space:nowrap}
+.metodo .nivel{display:inline-block;padding:4px 8px;border-radius:8px;background:var(--s2);border:1px solid var(--line);color:var(--yellow)}
+.metodo h3{margin-top:16px}
+.metodo dl{display:grid;gap:12px;margin-top:16px}
+.metodo dt{color:var(--tx3)}
+.metodo dd{color:var(--tx2);margin:0}
+.metodo .btn{margin-top:24px}
+.capa{padding:0;overflow:hidden}
+.capa img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top}
+.capa .dentro{padding:24px}
+.telao{margin-top:48px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#000}
+.telao video,.telao img{display:block;width:100%}
+.telao video{aspect-ratio:16/9}
+.atalhos{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+</style>
+</head>
+<body class="no-js">
+<a class="skip button-sm" href="#conteudo">Pular para o conteúdo</a>
+
+<nav class="nav" aria-label="Páginas do guia">
+  <a class="brand title-4" href="index.html"><b class="caption-3">1</b>Shorts com Claude</a>
+  <ul class="nav-links title-4">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="metodo-facil.html">Método fácil</a></li>
+    <li><a href="metodo-medio.html">Médio</a></li>
+    <li><a href="metodo-avancado.html" aria-current="true">Avançado</a></li>
+    <li><a href="prompts.html">Prompts</a></li>
+    <li><a href="viralizar.html">Viralizar</a></li>
+    <li><a href="skills.html">Skills</a></li>
+  </ul>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="painel"><span></span><span></span></button>
+</nav>
+<div class="panel" id="painel">
+  <ul class="heading-5">
+    <li><a href="index.html">Início do guia</a></li>
+    <li><a href="metodo-facil.html">Método fácil: sem instalar nada</a></li>
+    <li><a href="metodo-medio.html">Método médio: Claude Code e Remotion</a></li>
+    <li><a href="metodo-avancado.html">Método avançado: visual próprio</a></li>
+    <li><a href="prompts.html">Prompts mãe e passo a passo</a></li>
+    <li><a href="viralizar.html">Viralizar: como fazer o canal crescer</a></li>
+    <li><a href="skills.html">Pacote de skills</a></li>
+  </ul>
+</div>
+
+<main id="conteudo">
+
+<header class="hero" id="topo">
+  <div class="wrap">
+    <span class="eyebrow caption-3"><i class="ph ph-crown-simple"></i> Método avançado</span>
+    <h1 class="heading-1">Um visual que é só seu,<br>repetido em todo vídeo</h1>
+    <p class="lead">Depois do primeiro vídeo, o que separa um canal dos outros é a direção de arte. Aqui estão três rotas que testamos ou estudamos, cada uma com os prompts, os números e os tropeços, e o jeito de guardar o seu formato em uma skill.</p>
+    <div class="hero-cta">
+      <a class="btn button-md" href="#rotas">Ver as três rotas <i class="ph ph-arrow-down"></i></a>
+    </div>
+    <ul class="proof caption-2" aria-label="Resumo do método">
+      <li>2 vídeos de exemplo</li>
+      <li>1 kit pronto</li>
+      <li>para depois do método médio</li>
+    </ul>
+  </div>
+</header>
+
+<section id="rotas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Três rotas</span>
+      <h2 class="heading-2">Escolha pela imagem que você quer na tela</h2>
+      <p class="lead">As três partem do método médio. Mude uma coisa por vez: primeiro a imagem, depois a voz, depois o ritmo.</p>
+    </div>
+    <div class="grid g3 reveal">
+      <article class="card capa">
+        <img src="assets/jogos-poster.jpg" alt="Silhueta de casaco longo diante de um sol vermelho enorme" loading="lazy">
+        <div class="dentro">
+          <h3 class="heading-6">3D pintado por código</h3>
+          <p>Cenários 3D que nascem do código e ganham acabamento de pintura. Nenhum arquivo de imagem. Foi assim o resumo de jogos.</p>
+          <p style="margin-top:16px"><a class="btn ghost button-sm" href="resumo-de-jogos.html">Abrir a página <i class="ph ph-arrow-right"></i></a></p>
+        </div>
+      </article>
+      <article class="card capa">
+        <img src="assets/cuca-poster.jpg" alt="Quadro do vídeo de terror da Cuca, com boneco palito de cabeça branca" loading="lazy">
+        <div class="dentro">
+          <h3 class="heading-6">Ilustrações com cortes rápidos</h3>
+          <p>Imagens geradas por IA, animadas com câmera e trocadas a cada poucos segundos. Foi assim o terror do boneco palito.</p>
+          <p style="margin-top:16px"><a class="btn ghost button-sm" href="boneco-palito.html">Abrir a página <i class="ph ph-arrow-right"></i></a></p>
+        </div>
+      </article>
+      <article class="card capa">
+        <img src="assets/poster.jpg" alt="Boneco 2D de contorno grosso, exemplo de personagem desenhado por código" loading="lazy">
+        <div class="dentro">
+          <h3 class="heading-6">Kit de mundo 3D</h3>
+          <p>Um kit aberto que põe bonecos 2D dentro de um mundo 3D no Blender, em um único voo de câmera. Não testamos: só empacotamos.</p>
+          <p style="margin-top:16px"><a class="btn ghost button-sm" href="#kit">Ver o kit <i class="ph ph-arrow-down"></i></a></p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="skill-propria">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Produção em série</span>
+      <h2 class="heading-2">Guarde o seu formato em uma skill</h2>
+      <p class="lead">Quando um vídeo dá certo, as regras dele valem ouro: o estilo do personagem, o ritmo dos cortes, a voz, a legenda. Uma skill guarda tudo isso, e o próximo vídeo começa com uma frase.</p>
+    </div>
+    <ol class="steps reveal">
+      <li><b>Termine um vídeo de que você goste.</b> A skill nasce de um resultado aprovado, não de uma ideia.</li>
+      <li><b>Peça ao Claude para escrever as regras.</b> Ele lê o projeto e descreve o que se repete: estrutura do roteiro, elenco, paleta, câmera, legenda e conferências.</li>
+      <li><b>Empacote.</b> As regras viram um arquivo SKILL.md dentro de uma pasta, junto com os scripts que o projeto já usa.</li>
+      <li><b>Teste com um tema novo.</b> Abra uma conversa nova, peça um vídeo em uma frase e veja se sai no mesmo padrão. Ajuste a skill onde ele errar.</li>
+    </ol>
+    <h3 class="heading-5 sub reveal">Prompt X: transformar o projeto em skill</h3>
+    <p class="reveal">Use dentro da pasta do projeto, depois de um vídeo aprovado.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Cria a skill a partir do que já funciona</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Este projeto já produziu um vídeo que eu aprovei. Quero transformar o formato em uma skill do Claude Code, para pedir os próximos vídeos em uma frase.
+
+1. Leia o projeto e liste o que se repete em todo vídeo: estrutura do roteiro, elenco, paleta, câmera, legendas, voz e as conferências antes do render.
+2. Separe o que é regra do formato do que foi escolha só daquele vídeo. Me mostre as duas listas e espere eu aprovar.
+3. Crie a pasta .claude/skills/[NOME DO FORMATO] com um SKILL.md: quando usar, o que perguntar, as etapas na ordem, onde parar para a minha aprovação e os comandos de cada etapa.
+4. Aponte no SKILL.md para os scripts que já existem no projeto, sem duplicar código.
+5. Escreva no fim do SKILL.md os erros que já cometemos e como evitar cada um.
+
+Depois me diga a frase exata que eu uso para pedir um vídeo novo, e faça um teste com o tema: [TEMA DE TESTE].</pre>
+    </div>
+    <p class="note reveal"><b>Skills prontas de outras pessoas.</b> Antes de escrever a sua, veja o <a href="skills.html">pacote de skills</a>: pode ser que o formato que você quer já exista.</p>
+  </div>
+</section>
+
+<section id="kit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Caminho C</span>
+      <h2 class="heading-2">Kit pronto: mundo 3D no Blender com bonecos 2D</h2>
+      <p class="lead">Um terceiro caminho, para quem quer cenário em 3D sem depender de gerador de vídeo. O kit foi criado por @caesarscales e é distribuído com licença MIT. Ele ensina o Claude Code a produzir Shorts em que bonecos 2D de cabeça redonda atuam dentro de um mundo 3D com contorno de tinta, em um único voo de câmera.</p>
+      <div class="hero-cta">
+        <a class="btn ghost button-md" href="assets/kit/ricksclips-style-kit.zip" download><i class="ph ph-download-simple"></i> Baixar o kit (1,4 MB)</a>
+      </div>
+    </div>
+    <div class="grid g3 reveal">
+      <article class="card"><div class="ico"><i class="ph ph-package"></i></div><h3 class="heading-6">O que vem dentro</h3><p>Livro de regras, bíblia de estilo, fórmula de roteiro e de gancho, o motor em three.js, cenários em Python para o Blender e as ferramentas de voz, tempo e legenda.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-path"></i></div><h3 class="heading-6">Como o vídeo nasce</h3><p>Roteiro aprovado, voz em uma tomada só, tempo de cada palavra, elenco novo, mundo 3D, quadros de conferência, mixagem e render no seu computador.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-wrench"></i></div><h3 class="heading-6">O que você precisa</h3><p>Python 3.10 ou mais novo, Node.js 18 ou mais novo, ffmpeg, Blender 4.2 ou mais novo e uma chave da ElevenLabs, ou a sua própria gravação.</p></article>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Instalação em 5 passos</h3>
+    <ol class="steps reveal" style="margin-top:16px">
+      <li><b>Descompacte</b> em um lugar fácil de achar, como a Área de Trabalho. Aparece uma pasta chamada <code>ricksclips-style</code>.</li>
+      <li><b>Instale as ferramentas</b> e pule as que já tiver.
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Windows, no PowerShell</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>winget install Python.Python.3.12; winget install OpenJS.NodeJS.LTS; winget install Gyan.FFmpeg; winget install BlenderFoundation.Blender</pre>
+        </div>
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Mac, no Terminal</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>brew install python node ffmpeg; brew install --cask blender</pre>
+        </div>
+      </li>
+      <li><b>Abra a pasta no Claude Code</b> e deixe ele se configurar. Ele instala os extras pequenos, como o Whisper e o navegador de render, e roda um teste 3D rápido.
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Diga isto ao Claude</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>set up this kit and run the Blender demo</pre>
+        </div>
+      </li>
+      <li><b>Conte a sua ideia.</b> O Claude lê as regras do kit e conduz o resto: roteiro para o seu ok, voz, personagens, plano de câmera, conferência de quadros e o pacote de render.
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Diga isto ao Claude, trocando o tema pelo seu</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>make a 60 second cartoon short about why ships carried storm oil</pre>
+        </div>
+      </li>
+      <li><b>Deixe a chave da ElevenLabs pronta</b> para a narração, ou grave a sua própria voz. O kit informa o custo em créditos antes de cada tomada. O render pesado roda na sua placa de vídeo a partir de um arquivo <code>.bat</code>, então não consome o seu uso do Claude.</li>
+    </ol>
+
+    <div class="grid g2 reveal" style="margin-top:24px">
+      <div class="card"><h4 class="title-3">Quanto de voz um vídeo do kit gasta</h4><p>Pelo ritmo do nosso vídeo de exemplo, 60 segundos de narração gastam perto de 950 caracteres. No plano gratuito da ElevenLabs isso daria uns 10 vídeos por mês, mas sem direito de uso comercial. Os detalhes estão em <a href="metodo-medio.html#vozes">Opções de voz</a>.</p></div>
+      <div class="card"><h4 class="title-3">Onde guardar a chave</h4><p>Em um arquivo <code>.env</code> dentro da pasta do kit, na linha <code>ELEVEN_API_KEY=</code> seguida da sua chave. Esse arquivo já fica fora do controle de versão. Nunca cole a chave em código nem em conversa.</p></div>
+    </div>
+
+    <p class="note reveal"><b>Sobre esta cópia.</b> O arquivo original traz folhas de quadros e transcrições de vídeos de outros canais, usadas como material de estudo. Elas não estão nesta cópia, porque pertencem aos criadores daqueles vídeos. O código, os documentos, as medições e a licença estão completos, e uma nota dentro do arquivo lista o que saiu.</p>
+    <p class="note reveal"><b>Use o método, não o personagem.</b> O kit nasceu do estudo de um canal específico, e o boneco padrão lembra o personagem daquele canal. Aproveite o motor e o processo, e desenhe elenco, paleta e histórias seus. O próprio kit manda criar um elenco novo a cada vídeo, escrever roteiros originais e fugir de temas que já viraram cópia em série. A frase do passo 4 é só o exemplo que acompanha o kit.</p>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <h2 class="heading-2">Formato pronto? Agora faça o canal crescer.</h2>
+    <p class="lead">A página Viralizar mostra como escolher o nicho, o que medir e por que o vídeo longo importa.</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn button-md" href="viralizar.html">Abrir a página Viralizar <i class="ph ph-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h4 class="title-3">Fontes e ferramentas</h4>
+      <ul class="caption-2">
+        <li><a href="https://thomazrb.github.io/posts/python-tts-kokoro/" rel="noopener">Gerando áudio com IA local usando Kokoro (thomazrb)</a></li>
+        <li><a href="https://www.remotion.dev/" rel="noopener">Remotion: vídeos em React</a></li>
+        <li><a href="https://elevenlabs.io/pricing" rel="noopener">ElevenLabs: planos e créditos</a></li>
+        <li><a href="https://showheyohtaki.github.io/motion-prompt/" rel="noopener">Motion Prompt, de Shohei Ohtaki (MIT)</a></li>
+        <li><a href="https://github.com/mastof/shorts-animados-com-claude" rel="noopener">Repositório deste guia no GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="title-3">Neste guia</h4>
+      <ul class="caption-2">
+        <li><a href="metodo-facil.html">Método fácil</a>, <a href="metodo-medio.html">médio</a> e <a href="metodo-avancado.html">avançado</a></li>
+        <li><a href="prompts.html">Prompts mãe e passo a passo</a></li>
+        <li><a href="viralizar.html">Como fazer o canal crescer</a></li>
+        <li><a href="skills.html">Pacote de skills</a></li>
+        <li><a href="index.html#cuidados">Cuidados</a> e <a href="index.html#faq">perguntas frequentes</a></li>
+      </ul>
+    </div>
+    <div id="privacidade">
+      <h4 class="title-3">Privacidade e termos</h4>
+      <ul class="caption-2">
+        <li>Este site não usa cookies, formulários nem análise de acesso. As caixas marcadas ficam só no seu navegador.</li>
+        <li>Conteúdo informativo, feito com Claude Fable 5.2 no Claude Code. Regras de plataformas mudam: confira sempre a fonte oficial.</li>
+        <li><a href="#topo">Voltar ao topo</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/base.js"></script>
+</body>
+</html>

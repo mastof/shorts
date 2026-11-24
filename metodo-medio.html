@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Método médio: o Claude Code monta o vídeo por código | Shorts com Claude</title>
+<meta name="description" content="O Claude Code escreve um projeto Remotion que desenha, narra, legenda e renderiza o Short no seu computador. Passo a passo, vozes, roteiro de teste e métricas reais.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Método médio: o Claude Code monta o vídeo por código">
+<meta property="og:description" content="O Claude Code escreve um projeto Remotion que desenha, narra, legenda e renderiza o Short no seu computador. Passo a passo, vozes, roteiro de teste e métricas reais.">
+<meta property="og:image" content="https://mastof.github.io/shorts-animados-com-claude/assets/og.jpg">
+<meta property="og:url" content="https://mastof.github.io/shorts-animados-com-claude/metodo-medio.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181818'/%3E%3Ccircle cx='32' cy='34' r='20' fill='%23F6C9A4' stroke='%23FFFFFF' stroke-width='3'/%3E%3Ctext x='32' y='32' font-family='Arial' font-weight='700' font-size='18' text-anchor='middle' fill='%23FF2D3D'%3E1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.nav-links a{white-space:nowrap}
+.metodo .nivel{display:inline-block;padding:4px 8px;border-radius:8px;background:var(--s2);border:1px solid var(--line);color:var(--yellow)}
+.metodo h3{margin-top:16px}
+.metodo dl{display:grid;gap:12px;margin-top:16px}
+.metodo dt{color:var(--tx3)}
+.metodo dd{color:var(--tx2);margin:0}
+.metodo .btn{margin-top:24px}
+.capa{padding:0;overflow:hidden}
+.capa img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top}
+.capa .dentro{padding:24px}
+.telao{margin-top:48px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#000}
+.telao video,.telao img{display:block;width:100%}
+.telao video{aspect-ratio:16/9}
+.atalhos{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+</style>
+</head>
+<body class="no-js">
+<a class="skip button-sm" href="#conteudo">Pular para o conteúdo</a>
+
+<nav class="nav" aria-label="Páginas do guia">
+  <a class="brand title-4" href="index.html"><b class="caption-3">1</b>Shorts com Claude</a>
+  <ul class="nav-links title-4">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="metodo-facil.html">Método fácil</a></li>
+    <li><a href="metodo-medio.html" aria-current="true">Médio</a></li>
+    <li><a href="metodo-avancado.html">Avançado</a></li>
+    <li><a href="prompts.html">Prompts</a></li>
+    <li><a href="viralizar.html">Viralizar</a></li>
+    <li><a href="skills.html">Skills</a></li>
+  </ul>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="painel"><span></span><span></span></button>
+</nav>
+<div class="panel" id="painel">
+  <ul class="heading-5">
+    <li><a href="index.html">Início do guia</a></li>
+    <li><a href="metodo-facil.html">Método fácil: sem instalar nada</a></li>
+    <li><a href="metodo-medio.html">Método médio: Claude Code e Remotion</a></li>
+    <li><a href="metodo-avancado.html">Método avançado: visual próprio</a></li>
+    <li><a href="prompts.html">Prompts mãe e passo a passo</a></li>
+    <li><a href="viralizar.html">Viralizar: como fazer o canal crescer</a></li>
+    <li><a href="skills.html">Pacote de skills</a></li>
+  </ul>
+</div>
+
+<main id="conteudo">
+
+<header class="hero" id="topo">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow caption-3"><i class="ph ph-code"></i> Método médio</span>
+      <h1 class="heading-1">O Claude Code monta<br>o vídeo inteiro por código</h1>
+      <p class="lead">Você conversa em português e o Claude Code escreve o projeto: desenha os personagens, gera a voz, sincroniza a legenda e renderiza o MP4 no seu computador. O personagem nunca muda, porque ele é código.</p>
+      <div class="hero-cta">
+        <a class="btn button-md" href="#preparo">Preparar o computador <i class="ph ph-arrow-down"></i></a>
+      </div>
+      <ul class="proof caption-2" aria-label="Números do vídeo de exemplo">
+        <li>47 cenas</li>
+        <li>2 min 23 s</li>
+        <li>31 min até os quadros</li>
+        <li>render em 144 s</li>
+      </ul>
+    </div>
+    <div>
+      <div class="phone">
+        <video controls playsinline preload="metadata" poster="assets/poster.jpg" aria-label="Vídeo de exemplo: Nesse mundo, um número na testa mostra quantas pessoas estão pensando em você">
+          <source src="assets/short.mp4" type="video/mp4">
+        </video>
+      </div>
+      <p class="phone-cap caption-2">O vídeo de exemplo deste método</p>
+    </div>
+  </div>
+</header>
+
+<section id="preparo">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Uma vez só</span>
+      <h2 class="heading-2">Prepare o computador</h2>
+      <p class="lead">São quatro programas. Depois de instalados, você não mexe mais neles: quem usa é o Claude Code.</p>
+    </div>
+    <div class="grid g2 reveal">
+      <div class="card"><div class="ico"><i class="ph ph-terminal-window"></i></div><h3 class="heading-6">Claude Code</h3><p>O Claude que trabalha dentro de uma pasta do seu computador, criando arquivos e rodando comandos. Vem no aplicativo do Claude para computador e pede um plano pago.</p></div>
+      <div class="card"><div class="ico"><i class="ph ph-package"></i></div><h3 class="heading-6">Node.js, Python e FFmpeg</h3><p>O Node roda o Remotion, que monta o vídeo. O Python roda a voz e a transcrição. O FFmpeg junta imagem e som.</p></div>
+    </div>
+    <h3 class="heading-5 sub reveal">Instalação no Windows</h3>
+    <p class="reveal">Abra o PowerShell, cole a linha e espere terminar. No Mac, o Claude Code instala o que faltar se você pedir.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Os três programas de uma vez</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>winget install Python.Python.3.12; winget install OpenJS.NodeJS.LTS; winget install Gyan.FFmpeg</pre>
+    </div>
+  </div>
+</section>
+
+<section id="passos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Passo a passo</span>
+      <h2 class="heading-2">Do tema ao MP4 em 6 passos</h2>
+      <p class="lead">As caixas ficam marcadas neste navegador.</p>
+    </div>
+    <div class="checks reveal" data-lista="medio">
+      <label class="check"><input type="checkbox"><span>Crie uma pasta vazia para o canal e abra o Claude Code nela</span></label>
+      <label class="check"><input type="checkbox"><span>Cole o <a href="prompts.html#mae">prompt mãe</a> do seu tipo de vídeo, com o tema entre os colchetes</span></label>
+      <label class="check"><input type="checkbox"><span>Escolha a ideia e aprove a narração, uma frase por linha</span></label>
+      <label class="check"><input type="checkbox"><span>Deixe o Claude montar o projeto: voz, tempos, cenas e legendas</span></label>
+      <label class="check"><input type="checkbox"><span>Olhe os 6 quadros que ele mostrar e peça correções antes do render</span></label>
+      <label class="check"><input type="checkbox"><span>Depois do render, confira o MP4 inteiro: fonte, legenda nos cortes e áudio</span></label>
+    </div>
+    <p class="note reveal"><b>O primeiro vídeo é o mais lento.</b> Ele inclui instalar tudo e criar os personagens. Do segundo em diante, o Claude reaproveita o boneco, os cenários e as regras do canal.</p>
+    <p class="note reveal"><b>Quer pular a montagem do projeto?</b> A skill <a href="skills.html#testadas">animate</a> já traz sete estilos prontos e o mesmo ritual de aprovações.</p>
+  </div>
+</section>
+
+<section id="caminho-b">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Parte 4</span>
+      <h2 class="heading-2">Caminho B: animação 2D por código <span class="tag caption-3">Recomendado</span></h2>
+      <p class="lead">O Claude Code produz o vídeo inteiro: personagens em SVG, animação em React com Remotion, voz local e render em MP4. Não gasta crédito de gerador, o personagem nunca muda de cara e tudo se refaz com um comando. Foi assim que o vídeo desta página nasceu.</p>
+    </div>
+    <ol class="steps reveal">
+      <li><b>Prepare o ambiente.</b> Claude Code, Node.js, FFmpeg e Python entre as versões 3.10 e 3.12. Peça ao próprio Claude Code para instalar o resto: Remotion, Kokoro e Whisper.</li>
+      <li><b>Escreva as regras do canal em um CLAUDE.md.</b> Formato (1080x1920, 30 fps), paleta, fonte e estilo das legendas, ritmo de cortes. O Claude Code lê esse arquivo a cada sessão, então todo episódio parte das mesmas regras.</li>
+      <li><b>Analise referências.</b> Separe de 5 a 10 Shorts do estilo que quer e peça ao Claude para extrair estrutura e ritmo: gancho, detalhes que escalam, pivô e virada. Copie a estrutura, nunca o conteúdo.</li>
+      <li><b>Crie os personagens como componentes.</b> Aqui usamos um boneco só, com parâmetros: pele, cabelo, roupa, pose e as expressões neutro, feliz, triste, assustado e bravo. Menino, pai, mãe, professora, avó e colegas são o mesmo código com valores diferentes.</li>
+      <li><b>Gere a voz e o tempo de cada palavra.</b> O Kokoro narra localmente, uma frase por vez, o que já entrega o início e o fim exatos de cada cena. O Whisper transcreve o áudio e devolve o tempo de cada palavra para a legenda.</li>
+      <li><b>Peça as cenas.</b> Uma por frase: qual cenário, qual expressão, qual movimento de câmera, quais objetos aparecem e em que palavra cada coisa acontece.</li>
+      <li><b>Revise quadros parados e renderize.</b> Antes do render final, peça 6 quadros de momentos diferentes. Aprovou, renderiza o MP4 e confere no celular.</li>
+    </ol>
+
+    <h3 class="heading-5 sub reveal">O que rodou de verdade</h3>
+    <p class="reveal">A linha de produção do vídeo de exemplo, com os números de cada etapa.</p>
+    <div class="flow body-5 reveal">
+      <span>Narração<small>47 frases</small></span><i class="ph ph-arrow-right"></i>
+      <span>Kokoro<small>áudio de 2:23</small></span><i class="ph ph-arrow-right"></i>
+      <span>Whisper<small>415 tempos</small></span><i class="ph ph-arrow-right"></i>
+      <span>Cenas em SVG<small>47 componentes</small></span><i class="ph ph-arrow-right"></i>
+      <span>Legendas<small>palavra por palavra</small></span><i class="ph ph-arrow-right"></i>
+      <span>6 quadros<small>aprovação</small></span><i class="ph ph-arrow-right"></i>
+      <span>MP4<small>1080x1920, 30 fps</small></span>
+    </div>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Os três comandos do projeto</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre># 1. voz + tempo de cada palavra (Kokoro e Whisper)
+python tts/gerar.py 1.0
+
+# 2. um quadro de cada cena, para revisar antes do render
+node tools/quadros.mjs todas --escala=0.33
+
+# 3. render final
+npx remotion render src/index.ts Short out/short.mp4 --codec=h264 --crf=18</pre>
+    </div>
+    <div class="frames reveal">
+      <figure><img src="assets/quadros/cena01.webp" alt="Rua colorida com quatro pessoas, cada uma com um número vermelho na testa" loading="lazy"><figcaption class="caption-4">0:03 gancho</figcaption></figure>
+      <figure><img src="assets/quadros/cena12.webp" alt="Menino assustado no espelho do banheiro com um zero vermelho na testa" loading="lazy"><figcaption class="caption-4">0:38 zero</figcaption></figure>
+      <figure><img src="assets/quadros/cena19.webp" alt="Colega apontando para o menino com um balão escrito Olha o zerado" loading="lazy"><figcaption class="caption-4">1:02 escalada</figcaption></figure>
+      <figure><img src="assets/quadros/cena28.webp" alt="Quarto escuro com um clarão vermelho na parede ao lado da cama" loading="lazy"><figcaption class="caption-4">1:28 pivô</figcaption></figure>
+      <figure><img src="assets/quadros/cena41.webp" alt="Avó de olhos fechados ao lado de uma vela, com balões mostrando os netos" loading="lazy"><figcaption class="caption-4">2:04 virada</figcaption></figure>
+      <figure><img src="assets/quadros/cena47.webp" alt="Menino sorrindo na cama com o número um aceso e a avó em um círculo ao lado" loading="lazy"><figcaption class="caption-4">2:23 fecho</figcaption></figure>
+    </div>
+
+    <h3 class="heading-5 sub reveal">O que deu errado e como foi resolvido</h3>
+    <p class="reveal">Nenhuma produção sai limpa de primeira. Estes foram os tropeços reais da sessão.</p>
+    <div class="grid g2 reveal" style="margin-top:16px">
+      <div class="card"><h4 class="title-3">O Whisper não abria o áudio</h4><p>A biblioteca de áudio instalada era incompatível com o decodificador. Solução: reamostrar o áudio para 16 kHz no próprio script e entregar os números direto ao Whisper.</p></div>
+      <div class="card"><h4 class="title-3">O número ficava lavado ao brilhar</h4><p>Traço transparente por cima de texto criava riscos dentro dos dígitos. Solução: halo em gradiente radial e contorno opaco.</p></div>
+      <div class="card"><h4 class="title-3">O render final travou baixando a fonte</h4><p>A fonte vinha da internet a cada quadro e a rede falhou. Solução: guardar o arquivo da fonte dentro do projeto.</p></div>
+      <div class="card"><h4 class="title-3">A fonte local saiu serifada</h4><p>O primeiro render completo veio com a letra errada, porque o nome da família estava registrado diferente. Só apareceu porque conferimos um quadro do MP4 final. Corrigido e renderizado de novo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="vozes">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Vozes</span>
+      <h2 class="heading-2">Opções de voz e quanto cada cota rende</h2>
+      <p class="lead">O vídeo de exemplo usou o Kokoro, que roda no seu computador e não tem limite. Dá para trocar por qualquer serviço de voz. As contas abaixo usam a narração real do exemplo: 415 palavras, 2.270 caracteres com espaços, 2 minutos e 23 segundos.</p>
+    </div>
+
+    <p class="note reveal" style="margin-top:0"><b>Crédito não é palavra.</b> O plano gratuito da ElevenLabs dá 10 mil créditos por mês, e no site cada caractere custa 1 crédito, em qualquer modelo. Dez mil créditos são cerca de 1.830 palavras, e não 10 mil palavras.</p>
+
+    <h3 class="heading-5 sub reveal">O plano gratuito da ElevenLabs em vídeo</h3>
+    <div class="grid g4 reveal" style="margin-top:16px">
+      <div class="stat"><strong>4</strong><span class="caption-2">vídeos de 2:23 por mês, se cada um sair de primeira</span></div>
+      <div class="stat"><strong>10 min</strong><span class="caption-2">de narração por mês, no ritmo do vídeo de exemplo</span></div>
+      <div class="stat"><strong>1.830</strong><span class="caption-2">palavras por mês, a 5,5 caracteres por palavra</span></div>
+      <div class="stat"><strong>2.270</strong><span class="caption-2">créditos gastos a cada geração do roteiro inteiro</span></div>
+    </div>
+    <ul class="list reveal" style="margin-top:24px;max-width:860px">
+      <li><b>Cada nova tentativa gasta de novo.</b> Se você regerar o roteiro uma vez por causa de uma pronúncia, os 4 vídeos viram 2. Revise o texto antes e gere tudo em uma chamada só.</li>
+      <li><b>O plano gratuito não serve para canal monetizado.</b> A documentação da ElevenLabs diz que os direitos de uso comercial só existem nos planos pagos.</li>
+      <li><b>O primeiro plano pago resolve.</b> O Starter custa 6 dólares por mês, dá 30 mil créditos e inclui licença comercial. São 13 vídeos, perto de 46 centavos de dólar por vídeo.</li>
+      <li><b>Pela API a conta pode dobrar.</b> Os modelos Flash e Turbo cobram meio crédito por caractere quando usados pela API, o que levaria os mesmos 10 mil créditos a 8 vídeos.</li>
+    </ul>
+
+    <h3 class="heading-5 sub reveal">Comparação das opções</h3>
+    <p class="reveal">Quantos vídeos iguais ao do exemplo cabem na cota de cada serviço. O número de vídeos depende só dos caracteres. O tempo de narração varia com a velocidade de cada voz.</p>
+    <div class="table-wrap reveal" style="margin-top:16px">
+      <table style="min-width:860px">
+        <thead><tr><th>Opção</th><th>Cota por mês</th><th>Vídeos de 2:23</th><th>Narração</th><th>Observação</th></tr></thead>
+        <tbody>
+          <tr><td>Kokoro, local</td><td>Sem limite</td><td class="num">sem limite</td><td class="num">sem limite</td><td>Roda no seu computador, sem conta e sem custo. Foi a voz do vídeo de exemplo.</td></tr>
+          <tr><td>ElevenLabs, plano gratuito</td><td>10 mil créditos</td><td class="num">4</td><td class="num">10 min</td><td>Sem licença comercial.</td></tr>
+          <tr><td>ElevenLabs Starter</td><td>30 mil créditos por 6 dólares</td><td class="num">13</td><td class="num">31 min</td><td>Com licença comercial.</td></tr>
+          <tr><td>ElevenLabs Creator</td><td>121 mil créditos por 22 dólares</td><td class="num">53</td><td class="num">2 h 07</td><td>Com licença comercial.</td></tr>
+          <tr><td>Google Cloud, vozes Chirp 3 HD</td><td>1 milhão de caracteres grátis</td><td class="num">440</td><td class="num">17 h 30</td><td>Depois da cota, 30 dólares por milhão. As vozes WaveNet e padrão têm 4 milhões grátis.</td></tr>
+          <tr><td>Azure Speech, plano F0</td><td>500 mil caracteres grátis</td><td class="num">220</td><td class="num">8 h 45</td><td>Vozes neurais.</td></tr>
+          <tr><td>Amazon Polly, vozes neurais</td><td>1 milhão de caracteres grátis</td><td class="num">440</td><td class="num">17 h 30</td><td>Grátis só nos 12 primeiros meses. Depois, 16 dólares por milhão.</td></tr>
+          <tr><td>OpenAI <code>tts-1</code></td><td>Sem cota grátis</td><td class="num">US$ 0,03 cada</td><td class="num">pago por uso</td><td>15 dólares por milhão de caracteres. A versão <code>tts-1-hd</code> custa o dobro.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note reveal"><b>Sobre estes números.</b> Cotas e preços foram lidos nas páginas oficiais de cada serviço em 24 de novembro de 2026 e mudam com frequência. A tabela trata só de cota e de preço: não comparamos a qualidade das vozes de ouvido nesta sessão. Serviços de nuvem costumam pedir conta com cartão cadastrado mesmo para usar a cota grátis.</p>
+
+    <h3 class="heading-5 sub reveal">A conta para o seu roteiro</h3>
+    <div class="grid g3 reveal" style="margin-top:16px">
+      <div class="card"><h4 class="title-3">Vídeos por mês</h4><p>Divida a cota pelo número de caracteres do roteiro, contando os espaços. Exemplo: 10.000 dividido por 2.270 dá 4 vídeos.</p></div>
+      <div class="card"><h4 class="title-3">Regra de bolso</h4><p>Um minuto de narração rápida em português gasta perto de 950 caracteres, ou 174 palavras.</p></div>
+      <div class="card"><h4 class="title-3">Roteiro de 2:30</h4><p>Com 400 palavras, o roteiro fica perto de 2.200 caracteres. Reserve o dobro se costuma regerar.</p></div>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Como trocar a voz no Caminho B</h3>
+    <p class="reveal">Só o passo 1 do prompt de criação muda. O resto do projeto continua igual, porque o Whisper descobre os tempos em qualquer áudio.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Passo 1 com a API da ElevenLabs</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>1. Gere o áudio da narração em português do Brasil com a API da ElevenLabs: modelo eleven_multilingual_v2, voz [NOME OU ID DA VOZ]. Leia a chave da variável de ambiente ELEVENLABS_API_KEY e nunca escreva a chave no código. Envie o texto inteiro em uma única chamada, para gastar os créditos uma vez só, e me diga quantos caracteres serão cobrados antes de chamar. Depois transcreva com Whisper para ter o tempo de cada palavra e use esses tempos para achar o início e o fim de cada frase.</pre>
+    </div>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Passo 1 com um áudio que você já gerou em qualquer site</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>1. A narração já está gravada em public/narracao.mp3 e o texto exato está em tts/narracao.txt, uma frase por linha. Não gere áudio novo. Transcreva o arquivo com Whisper para ter o tempo de cada palavra, alinhe com o texto e use esses tempos para achar o início e o fim de cada frase.</pre>
+    </div>
+  </div>
+</section>
+
+<section id="roteiro">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Parte 6</span>
+      <h2 class="heading-2">Faça o roteiro de teste: 14 dias, 6 vídeos</h2>
+      <p class="lead">O teste responde a uma pergunta: qual dos dois caminhos dá mais retenção por hora de trabalho? Você publica 3 vídeos de cada estilo, com a mesma fórmula de roteiro, e compara. As caixas ficam marcadas neste navegador.</p>
+    </div>
+    <div class="reveal">
+      <div class="phase"><h3 class="heading-6">Fase 1: preparação, dias 1 e 2</h3>
+        <div class="checks" data-lista="f1">
+          <label class="check"><input type="checkbox"><span>Criar um canal novo ou usar um canal sem histórico de outro nicho</span></label>
+          <label class="check"><input type="checkbox"><span>Rodar o prompt 1 e escolher 6 premissas, sorteando 3 para cada caminho</span></label>
+          <label class="check"><input type="checkbox"><span>Escolher uma voz em português e usar a mesma nos 6 vídeos</span></label>
+          <label class="check"><input type="checkbox"><span>Escolher uma música livre de direitos e um estilo de legenda fixo</span></label>
+          <label class="check"><input type="checkbox"><span>Caminho A: conectar o gerador de vídeo e conferir quantos créditos um clipe consome</span></label>
+          <label class="check"><input type="checkbox"><span>Caminho B: instalar Claude Code, Node.js, FFmpeg e Remotion, e escrever o CLAUDE.md do canal</span></label>
+        </div>
+      </div>
+      <div class="phase"><h3 class="heading-6">Fase 2: piloto, dias 3 a 5</h3>
+        <div class="checks" data-lista="f2">
+          <label class="check"><input type="checkbox"><span>Produzir 1 vídeo de cada caminho, do roteiro ao MP4</span></label>
+          <label class="check"><input type="checkbox"><span>Anotar horas gastas e custo de cada um</span></label>
+          <label class="check"><input type="checkbox"><span>Assistir os dois no celular, do início ao fim, e listar o que parece falso ou lento</span></label>
+          <label class="check"><input type="checkbox"><span>Ajustar a frase de estilo, a bíblia de personagens e o CLAUDE.md com o que aprendeu</span></label>
+        </div>
+      </div>
+      <div class="phase"><h3 class="heading-6">Fase 3: publicação, dias 6 a 11</h3>
+        <div class="checks" data-lista="f3">
+          <label class="check"><input type="checkbox"><span>Produzir os 4 vídeos restantes com os ajustes</span></label>
+          <label class="check"><input type="checkbox"><span>Publicar 1 vídeo por dia, alternando A e B, sempre no mesmo horário</span></label>
+          <label class="check"><input type="checkbox"><span>Usar o mesmo padrão de título e de hashtags nos 6</span></label>
+          <label class="check"><input type="checkbox"><span>Responder os primeiros comentários de cada vídeo nas primeiras horas</span></label>
+        </div>
+      </div>
+      <div class="phase"><h3 class="heading-6">Fase 4: análise, dias 12 a 14</h3>
+        <div class="checks" data-lista="f4">
+          <label class="check"><input type="checkbox"><span>Esperar pelo menos 72 horas após o último vídeo</span></label>
+          <label class="check"><input type="checkbox"><span>Preencher a tabela de métricas do canal com os dados do YouTube Studio</span></label>
+          <label class="check"><input type="checkbox"><span>Ver no gráfico de retenção de cada vídeo o segundo em que a curva mais cai</span></label>
+          <label class="check"><input type="checkbox"><span>Decidir: ficar com o caminho vencedor e testar a próxima variável, como gancho, duração ou voz</span></label>
+        </div>
+      </div>
+      <p class="note"><b>Uma variável por rodada.</b> Se trocar estilo e duração ao mesmo tempo, você não sabe o que causou a diferença. Seis vídeos são pouco para conclusões firmes: trate o resultado como direção, não como prova.</p>
+    </div>
+  </div>
+</section>
+
+<section id="metricas">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Parte 7</span>
+      <h2 class="heading-2">Nossas métricas: o que esta conversa gastou</h2>
+      <p class="lead">Tudo nesta página saiu de uma única conversa com o Claude Fable 5.2 no Claude Code: as 20 premissas, a narração, o projeto Remotion, o vídeo e este tutorial. Os números abaixo foram lidos do registro da própria sessão.</p>
+    </div>
+
+    <h3 class="heading-5 reveal" style="margin-bottom:16px">O vídeo</h3>
+    <div class="grid g4 reveal">
+      <div class="stat"><strong>2:23</strong><span class="caption-2">duração final, 4.304 quadros a 30 fps</span></div>
+      <div class="stat"><strong>47</strong><span class="caption-2">cenas, uma por frase da narração</span></div>
+      <div class="stat"><strong>415</strong><span class="caption-2">palavras narradas, 174 por minuto</span></div>
+      <div class="stat"><strong>94,7%</strong><span class="caption-2">das palavras casadas direto pelo Whisper (393 de 415)</span></div>
+      <div class="stat"><strong>3.119</strong><span class="caption-2">linhas de código em 14 arquivos</span></div>
+      <div class="stat"><strong>25 + 22</strong><span class="caption-2">peças de cenário e objetos de cena, em SVG</span></div>
+      <div class="stat"><strong>144 s</strong><span class="caption-2">de render do MP4 final em um PC comum</span></div>
+      <div class="stat"><strong>100 MB</strong><span class="caption-2">o MP4 em 1080x1920. Nesta página ele está em 720p</span></div>
+    </div>
+
+    <h3 class="heading-5 sub reveal">O tempo</h3>
+    <div class="table-wrap reveal" style="margin-top:16px">
+      <table>
+        <thead><tr><th>Etapa</th><th>Tempo de relógio</th><th>O que entrou</th></tr></thead>
+        <tbody>
+          <tr><td>Premissas e narração</td><td class="num">8 min</td><td>Prompts 1 e 2, com a contagem de palavras conferida frase a frase</td></tr>
+          <tr><td>Do pedido do vídeo aos 6 quadros</td><td class="num">31 min</td><td>Instalação, voz, transcrição, 47 cenas, legendas e duas rodadas de revisão de quadros</td></tr>
+          <tr><td>Render final</td><td class="num">2 min 24 s</td><td>Feito três vezes. A fonte errada e uma legenda que sobrava 2 quadros depois de cada corte só apareceram ao conferir o MP4</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Os tokens e o custo</h3>
+    <p class="reveal">A sessão rodou em um plano de assinatura, então não houve cobrança por token. Para dar uma ordem de grandeza, a última coluna mostra quanto o mesmo uso custaria na API, pelos preços de tabela do Claude Fable 5.2: 8 dólares por milhão de tokens de entrada, 40 por milhão de saída e 0,20 por milhão de leitura de cache.</p>
+    <div class="table-wrap reveal" style="margin-top:16px">
+      <table>
+        <thead><tr><th>Medida</th><th>Produção do vídeo</th><th>Tutorial e publicação</th></tr></thead>
+        <tbody>
+          <tr><td>Respostas do modelo</td><td class="num">36</td><td class="num" id="m-resp">30</td></tr>
+          <tr><td>Chamadas de ferramenta</td><td class="num">76</td><td class="num" id="m-tools">63</td></tr>
+          <tr><td>Tokens de saída</td><td class="num">190.260</td><td class="num" id="m-out">80.327</td></tr>
+          <tr><td>Tokens gravados em cache</td><td class="num">269.786</td><td class="num" id="m-cw">206.517</td></tr>
+          <tr><td>Tokens lidos do cache</td><td class="num">7.607.049</td><td class="num" id="m-cr">13.243.810</td></tr>
+          <tr><td>Equivalente na API</td><td class="num">US$ 12 a 13</td><td class="num" id="m-usd">US$ 8 a 9</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note reveal"><b>Como ler esses números.</b> A leitura de cache parece enorme porque cada resposta relê a conversa inteira, mas é a parte barata: no vídeo, ela responde por cerca de 1,50 dólar. Mais da metade do custo equivalente do vídeo vem dos tokens de saída, ou seja, do código e do raciocínio que o modelo escreveu. A faixa de valores existe porque gravar em cache custa de 1,25 a 2 vezes o preço de entrada, conforme a duração do cache. A coluna do tutorial foi fechada pouco antes de publicar, então ficou um pouco abaixo do total real.</p>
+
+    <h3 class="heading-5 sub reveal">A tabela para o seu canal</h3>
+    <p class="reveal">A métrica principal é a porcentagem de pessoas que viram o Short em vez de deslizar, que o YouTube Studio chama de "Visualizado vs. deslizado". Depois, a porcentagem média assistida. Uma linha por vídeo.</p>
+    <div class="table-wrap reveal" style="margin-top:16px">
+      <table style="min-width:880px">
+        <thead><tr><th>Vídeo</th><th>Caminho</th><th>Horas gastas</th><th>Custo</th><th>Visualizações</th><th>Viu vs. deslizou</th><th>Média assistida</th><th>Curtidas por visualização</th><th>Inscritos ganhos</th></tr></thead>
+        <tbody>
+          <tr><td>1</td><td>A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>2</td><td>B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>3</td><td>A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>4</td><td>B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>5</td><td>A</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr><td>6</td><td>B</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <h2 class="heading-2">Já fez o primeiro? Dê um visual próprio ao canal.</h2>
+    <p class="lead">O método avançado mostra três rotas: 3D pintado por código, ilustrações com cortes rápidos e um kit de mundo 3D.</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn button-md" href="metodo-avancado.html">Ver o método avançado <i class="ph ph-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h4 class="title-3">Fontes e ferramentas</h4>
+      <ul class="caption-2">
+        <li><a href="https://thomazrb.github.io/posts/python-tts-kokoro/" rel="noopener">Gerando áudio com IA local usando Kokoro (thomazrb)</a></li>
+        <li><a href="https://www.remotion.dev/" rel="noopener">Remotion: vídeos em React</a></li>
+        <li><a href="https://elevenlabs.io/pricing" rel="noopener">ElevenLabs: planos e créditos</a></li>
+        <li><a href="https://showheyohtaki.github.io/motion-prompt/" rel="noopener">Motion Prompt, de Shohei Ohtaki (MIT)</a></li>
+        <li><a href="https://github.com/mastof/shorts-animados-com-claude" rel="noopener">Repositório deste guia no GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="title-3">Neste guia</h4>
+      <ul class="caption-2">
+        <li><a href="metodo-facil.html">Método fácil</a>, <a href="metodo-medio.html">médio</a> e <a href="metodo-avancado.html">avançado</a></li>
+        <li><a href="prompts.html">Prompts mãe e passo a passo</a></li>
+        <li><a href="viralizar.html">Como fazer o canal crescer</a></li>
+        <li><a href="skills.html">Pacote de skills</a></li>
+        <li><a href="index.html#cuidados">Cuidados</a> e <a href="index.html#faq">perguntas frequentes</a></li>
+      </ul>
+    </div>
+    <div id="privacidade">
+      <h4 class="title-3">Privacidade e termos</h4>
+      <ul class="caption-2">
+        <li>Este site não usa cookies, formulários nem análise de acesso. As caixas marcadas ficam só no seu navegador.</li>
+        <li>Conteúdo informativo, feito com Claude Fable 5.2 no Claude Code. Regras de plataformas mudam: confira sempre a fonte oficial.</li>
+        <li><a href="#topo">Voltar ao topo</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/base.js"></script>
+</body>
+</html>

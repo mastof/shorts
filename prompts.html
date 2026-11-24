@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prompts mãe para Shorts animados: histórias, terror, jogos e mais | Shorts com Claude</title>
+<meta name="description" content="Cinco prompts mãe para copiar e colar no Claude, um para cada tipo de Short animado, mais os prompts separados por etapa e o prompt para estudar um vídeo de referência.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Prompts mãe para Shorts animados: histórias, terror, jogos e mais">
+<meta property="og:description" content="Cinco prompts mãe para copiar e colar no Claude, um para cada tipo de Short animado, mais os prompts separados por etapa e o prompt para estudar um vídeo de referência.">
+<meta property="og:image" content="https://mastof.github.io/shorts-animados-com-claude/assets/og.jpg">
+<meta property="og:url" content="https://mastof.github.io/shorts-animados-com-claude/prompts.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181818'/%3E%3Ccircle cx='32' cy='34' r='20' fill='%23F6C9A4' stroke='%23FFFFFF' stroke-width='3'/%3E%3Ctext x='32' y='32' font-family='Arial' font-weight='700' font-size='18' text-anchor='middle' fill='%23FF2D3D'%3E1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.nav-links a{white-space:nowrap}
+.metodo .nivel{display:inline-block;padding:4px 8px;border-radius:8px;background:var(--s2);border:1px solid var(--line);color:var(--yellow)}
+.metodo h3{margin-top:16px}
+.metodo dl{display:grid;gap:12px;margin-top:16px}
+.metodo dt{color:var(--tx3)}
+.metodo dd{color:var(--tx2);margin:0}
+.metodo .btn{margin-top:24px}
+.capa{padding:0;overflow:hidden}
+.capa img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top}
+.capa .dentro{padding:24px}
+.telao{margin-top:48px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#000}
+.telao video,.telao img{display:block;width:100%}
+.telao video{aspect-ratio:16/9}
+.atalhos{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.mae{scroll-margin-top:96px}
+</style>
+</head>
+<body class="no-js">
+<a class="skip button-sm" href="#conteudo">Pular para o conteúdo</a>
+
+<nav class="nav" aria-label="Páginas do guia">
+  <a class="brand title-4" href="index.html"><b class="caption-3">1</b>Shorts com Claude</a>
+  <ul class="nav-links title-4">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="metodo-facil.html">Método fácil</a></li>
+    <li><a href="metodo-medio.html">Médio</a></li>
+    <li><a href="metodo-avancado.html">Avançado</a></li>
+    <li><a href="prompts.html" aria-current="true">Prompts</a></li>
+    <li><a href="viralizar.html">Viralizar</a></li>
+    <li><a href="skills.html">Skills</a></li>
+  </ul>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="painel"><span></span><span></span></button>
+</nav>
+<div class="panel" id="painel">
+  <ul class="heading-5">
+    <li><a href="index.html">Início do guia</a></li>
+    <li><a href="metodo-facil.html">Método fácil: sem instalar nada</a></li>
+    <li><a href="metodo-medio.html">Método médio: Claude Code e Remotion</a></li>
+    <li><a href="metodo-avancado.html">Método avançado: visual próprio</a></li>
+    <li><a href="prompts.html">Prompts mãe e passo a passo</a></li>
+    <li><a href="viralizar.html">Viralizar: como fazer o canal crescer</a></li>
+    <li><a href="skills.html">Pacote de skills</a></li>
+  </ul>
+</div>
+
+<main id="conteudo">
+
+<header class="hero" id="topo">
+  <div class="wrap">
+    <span class="eyebrow caption-3"><i class="ph ph-chat-text"></i> Prompts</span>
+    <h1 class="heading-1">Um prompt mãe<br>para cada tipo de vídeo</h1>
+    <p class="lead">O prompt mãe é a primeira mensagem da conversa. Ele explica ao Claude o tipo de vídeo, as regras e onde parar para você aprovar. Você troca o que está entre colchetes, envia e depois só responde.</p>
+    <div class="hero-cta">
+      <a class="btn button-md" href="#mae">Escolher o tipo de vídeo <i class="ph ph-arrow-down"></i></a>
+    </div>
+    <ul class="proof caption-2" aria-label="O que há nesta página">
+      <li>5 prompts mãe</li>
+      <li>prompts por etapa</li>
+      <li>prompt para estudar referências</li>
+    </ul>
+  </div>
+</header>
+
+<section id="como-usar">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Como usar</span>
+      <h2 class="heading-2">Copie, troque os colchetes e envie</h2>
+    </div>
+    <ol class="steps reveal">
+      <li><b>Escolha o tipo.</b> Se estiver em dúvida, comece por Histórias: é o mais tolerante a erro.</li>
+      <li><b>Troque o que está entre colchetes.</b> Tema, tom e o seu método. Onde houver opções separadas por barra, deixe só uma.</li>
+      <li><b>Cole no lugar certo.</b> No método fácil, em uma conversa nova do Claude. No médio e no avançado, no Claude Code aberto na pasta do canal.</li>
+      <li><b>Responda nas paradas.</b> O Claude para depois das ideias, da narração e dos quadros. Se algo não agradar, diga o que mudar e ele refaz só aquela etapa.</li>
+    </ol>
+    <div class="atalhos reveal">
+      <a class="btn ghost button-sm" href="#mae-historias"><i class="ph ph-book-open"></i> Histórias "Nesse mundo"</a>
+      <a class="btn ghost button-sm" href="#mae-terror"><i class="ph ph-ghost"></i> Terror</a>
+      <a class="btn ghost button-sm" href="#mae-jogos"><i class="ph ph-game-controller"></i> Resumo de jogos</a>
+      <a class="btn ghost button-sm" href="#mae-infantil"><i class="ph ph-balloon"></i> Infantil sem fala</a>
+      <a class="btn ghost button-sm" href="#mae-curiosidades"><i class="ph ph-lightbulb"></i> Curiosidades e explicativos</a>
+    </div>
+  </div>
+</section>
+
+<section id="mae">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Prompts mãe</span>
+      <h2 class="heading-2">Os cinco tipos</h2>
+      <p class="lead">Todos seguem o mesmo ritual: ideias, narração, visual, produção e entrega, com uma parada para você entre cada etapa.</p>
+    </div>
+    <h3 class="heading-5 sub reveal mae" id="mae-historias"><i class="ph ph-book-open"></i> Histórias "Nesse mundo"</h3>
+    <p class="reveal">Uma regra absurda muda o mundo, o narrador tem um problema com ela e o final vira o jogo. Foi o formato do primeiro vídeo de exemplo. <a href="metodo-medio.html">Ver o vídeo e o método</a>.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Prompt mãe: Histórias "Nesse mundo"</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Você vai dirigir comigo um Short animado de história, no formato "Nesse mundo, [regra absurda]". Público de 10 a 25 anos, português do Brasil.
+Tema ou assunto que eu quero: [TEMA, ou escreva "livre"].
+Trabalhe em etapas e pare em cada PARE, esperando a minha resposta.
+
+ETAPA 1, ideias. Crie 10 premissas. Cada regra cabe em uma frase de até 15 palavras, tem uma consequência visual fácil de animar (cor, número, objeto, marca no corpo) e permite uma virada emocional. Para cada uma: a regra, o problema do narrador e a virada, uma linha cada.
+PARE e espere eu escolher.
+
+ETAPA 2, narração. Escreva em primeira pessoa, para 2:30: gancho de 1 frase → regra e consequência → problema do narrador → escalada com 3 situações → virada → frase final. De 380 a 420 palavras, frases de até 15 palavras, linguagem falada, toda frase com uma ação ou imagem concreta. Uma frase por linha.
+PARE e espere eu aprovar.
+
+ETAPA 3, visual. Proponha o elenco e o estilo: personagens 2D de contorno grosso, com as expressões neutro, feliz, triste, assustado e bravo, e de 3 a 5 cenários.
+PARE e espere eu aprovar.
+
+ETAPA 4, produção. Meu método é: [FÁCIL: Claude no app com gerador de vídeo | MÉDIO: Claude Code com Remotion].
+- No método fácil: crie uma imagem de referência de cada personagem e cenário, espere eu aprovar e me diga quantos créditos as cenas vão gastar antes de gerar. Depois gere imagem e clipe de cada cena, sempre com movimento de câmera.
+- No método médio: monte o projeto Remotion nesta pasta. Gere a voz, tire o tempo de cada palavra com o Whisper e faça uma cena por frase, com a duração exata da fala.
+PARE e me mostre 6 quadros de momentos diferentes.
+
+ETAPA 5, entrega. Depois de eu aprovar os quadros, finalize em 1080x1920, 30 fps, MP4. Confira o arquivo final (fonte, legenda nos cortes e áudio) e me diga o que você não conseguiu verificar.
+
+Regras fixas: legenda palavra por palavra no terço inferior, longe dos botões do Shorts, com a palavra mais forte de cada frase em destaque. Nenhum plano parado por mais de 3 segundos. Não use personagens, marcas, músicas nem trechos de obras que existem.</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal mae" id="mae-terror"><i class="ph ph-ghost"></i> Terror</h3>
+    <p class="reveal">Dois sabores que funcionam sem rosto: o arquivo de uma anomalia, lido como relatório, e as regras de sobrevivência ditas direto para quem assiste. <a href="boneco-palito.html">Ver o terror do boneco palito</a>.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Prompt mãe: Terror</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Você vai dirigir comigo um Short animado de terror, em português do Brasil.
+Sabor: [ARQUIVO: relatório sobre uma anomalia | REGRAS: instruções de sobrevivência ditas para "você"].
+Tema ou criatura: [TEMA, de preferência do folclore ou inventado por nós].
+Trabalhe em etapas e pare em cada PARE, esperando a minha resposta.
+
+ETAPA 1, ideias. Crie 8 conceitos originais. Para cada um: o que é, a regra que não pode ser quebrada, o que acontece com quem quebra e a imagem mais forte do vídeo. Nada de personagens ou entidades de obras que existem.
+PARE e espere eu escolher.
+
+ETAPA 2, narração. Para 1:30 a 2:00, de 230 a 320 palavras, uma frase por linha.
+- No sabor ARQUIVO: voz fria de registro, com data, local, procedimentos e um incidente que quebra o tom no fim.
+- No sabor REGRAS: segunda pessoa, três regras numeradas, cada uma mais difícil de cumprir, e um final em que quem assiste precisa escolher.
+O medo vem do que não aparece: sugira, não mostre. Sem sangue e sem violência explícita.
+PARE e espere eu aprovar.
+
+ETAPA 3, visual. Proponha paleta escura com uma cor de alerta, figuras simples ou em silhueta, e de onde vem a luz em cada cenário. Liste os sons de ambiente e os silêncios.
+PARE e espere eu aprovar.
+
+ETAPA 4, produção. Meu método é: [FÁCIL: Claude no app com gerador de vídeo | MÉDIO: Claude Code com Remotion].
+- No método fácil: crie uma imagem de referência de cada personagem e cenário, espere eu aprovar e me diga quantos créditos as cenas vão gastar antes de gerar. Depois gere imagem e clipe de cada cena, sempre com movimento de câmera.
+- No método médio: monte o projeto Remotion nesta pasta. Gere a voz, tire o tempo de cada palavra com o Whisper e faça uma cena por frase, com a duração exata da fala.
+PARE e me mostre 6 quadros de momentos diferentes.
+
+ETAPA 5, entrega. Depois de eu aprovar os quadros, finalize em 1080x1920, 30 fps, MP4. Confira o arquivo final (fonte, legenda nos cortes e áudio) e me diga o que você não conseguiu verificar.
+
+Regras fixas: legenda palavra por palavra no terço inferior, longe dos botões do Shorts, com a palavra mais forte de cada frase em destaque. Nenhum plano parado por mais de 3 segundos. Não use personagens, marcas, músicas nem trechos de obras que existem.</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal mae" id="mae-jogos"><i class="ph ph-game-controller"></i> Resumo de jogos</h3>
+    <p class="reveal">A história de um jogo ou de uma saga contada em um fio só. Os fatos são de uma obra que existe, então conferir e contar com as próprias palavras é parte do trabalho. <a href="resumo-de-jogos.html">Ver o vídeo e os prompts por etapa</a>.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Prompt mãe: Resumo de jogos</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Você vai dirigir comigo um Short que resume a história de [JOGO OU SAGA], em português do Brasil, com tom [POÉTICO E DE TERROR | ÉPICO | BEM HUMORADO].
+Trabalhe em etapas e pare em cada PARE, esperando a minha resposta.
+
+ETAPA 1, fatos. Pesquise e monte a linha do tempo: ordem dos acontecimentos, datas, lugares e quem fez o quê. Liste as fontes e marque o que você não conseguiu confirmar.
+PARE e espere eu conferir.
+
+ETAPA 2, fio. Proponha 3 fios condutores: uma imagem ou ideia que abre o vídeo e volta nas últimas frases.
+PARE e espere eu escolher.
+
+ETAPA 3, narração. Para 2:30: gancho de 1 frase → origem → um capítulo por jogo ou fase, na ordem da história → fecho que retoma o gancho. De 360 a 400 palavras, frases de até 20 palavras, uma por linha, uma linha em branco entre capítulos. Anos e números por extenso. Não chame os personagens pelo nome: descreva quem são. Não copie falas nem textos do jogo e não conte o final de um lançamento recente.
+PARE e espere eu aprovar.
+
+ETAPA 4, visual. Pessoas e criaturas só em silhueta genérica. Nenhum logotipo, rosto, roupa, tela ou trilha do jogo. Um letreiro com lugar e ano quando a história muda de lugar.
+
+ETAPA 5, produção. Meu método é: [FÁCIL: Claude no app com gerador de vídeo | MÉDIO: Claude Code com Remotion].
+- No método fácil: crie uma imagem de referência de cada personagem e cenário, espere eu aprovar e me diga quantos créditos as cenas vão gastar antes de gerar. Depois gere imagem e clipe de cada cena, sempre com movimento de câmera.
+- No método médio: monte o projeto Remotion nesta pasta. Gere a voz, tire o tempo de cada palavra com o Whisper e faça uma cena por frase, com a duração exata da fala.
+PARE e me mostre 6 quadros de momentos diferentes.
+
+ETAPA 6, entrega. Depois de eu aprovar os quadros, finalize em 1080x1920, 30 fps, MP4. Confira o arquivo final (fonte, legenda nos cortes e áudio) e me diga o que você não conseguiu verificar.
+
+Regras fixas: legenda palavra por palavra no terço inferior, longe dos botões do Shorts, com a palavra mais forte de cada frase em destaque. Nenhum plano parado por mais de 3 segundos. Não use personagens, marcas, músicas nem trechos de obras que existem.</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal mae" id="mae-infantil"><i class="ph ph-balloon"></i> Infantil sem fala</h3>
+    <p class="reveal">Comédia física em clipes curtos, sem diálogo: a história é contada por gesto, expressão e som. Pede um gerador de vídeo, então combina com o método fácil. <a href="metodo-facil.html#seedance">Ver a receita completa</a>.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Prompt mãe: Infantil sem fala</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Você vai dirigir comigo um episódio infantil animado sem fala, de 45 a 60 segundos, para crianças de 2 a 6 anos.
+Dupla de personagens: [DOIS PERSONAGENS ORIGINAIS, por exemplo "um pintinho curioso e uma tartaruga calma"].
+Trabalhe em etapas e pare em cada PARE, esperando a minha resposta.
+
+ETAPA 1, mundo. Descreva os dois personagens (formas simples, cores fortes, um traço que os diferencia) e um cenário único. Nada parecido com personagens que existem.
+PARE e espere eu aprovar.
+
+ETAPA 2, episódio. Escreva em pantomima: um desejo simples, três tentativas que dão errado de jeitos diferentes e um final carinhoso. Sem fala e sem texto na tela. Divida em clipes de 4 a 10 segundos e, para cada um, diga a ação, a expressão e o som.
+PARE e espere eu aprovar.
+
+ETAPA 3, sons. Liste a paleta de sons do episódio: passos, quedas, surpresas e uma música leve. Nada assustador e nada de violência, mesmo de brincadeira.
+
+ETAPA 4, produção. Crie uma imagem de referência de cada personagem e do cenário e espere eu aprovar. Me diga quantos créditos os clipes vão gastar antes de gerar. Depois escreva o prompt de cada clipe para o gerador de vídeo, repetindo a mesma descrição dos personagens, palavra por palavra.
+PARE e me mostre os primeiros 2 clipes antes de gerar o resto.
+
+ETAPA 5, entrega. Junte os clipes na ordem, em 1080x1920, e me diga o que você não conseguiu verificar.
+
+Regras fixas: conteúdo seguro para criança pequena, sem sustos, sem perigo imitável e sem marcas.</pre>
+    </div>
+
+    <h3 class="heading-5 sub reveal mae" id="mae-curiosidades"><i class="ph ph-lightbulb"></i> Curiosidades e explicativos</h3>
+    <p class="reveal">Uma pergunta que a pessoa quer ver respondida, a resposta que surpreende e a prova na tela. É o tipo que mais depende de fato conferido. <a href="viralizar.html#nicho">Ver como escolher o assunto</a>.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Prompt mãe: Curiosidades e explicativos</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Você vai dirigir comigo um Short animado de curiosidade, em português do Brasil, de 45 a 60 segundos.
+Assunto: [ASSUNTO, por exemplo "por que o céu é azul" ou "como funciona um elevador"].
+Trabalhe em etapas e pare em cada PARE, esperando a minha resposta.
+
+ETAPA 1, fatos. Pesquise o assunto e liste de 5 a 8 fatos com a fonte de cada um. Marque o que é consenso e o que é disputado. Nunca escreva "o primeiro" ou "o maior" sem fonte.
+PARE e espere eu conferir.
+
+ETAPA 2, ângulo. Proponha 5 perguntas de abertura que alguém leria e pensaria "eu sempre quis saber". Para cada uma, a resposta em uma frase.
+PARE e espere eu escolher.
+
+ETAPA 3, narração. De 130 a 160 palavras, uma frase por linha: a pergunta → o que todo mundo acha → a resposta de verdade → a prova, mostrada com um exemplo do dia a dia → uma frase final que dá vontade de comentar. Sem enrolação no começo.
+PARE e espere eu aprovar.
+
+ETAPA 4, visual. Um desenho simples por ideia: esquema, comparação de tamanho, antes e depois ou passo a passo. Um personagem pequeno pode apontar para o que importa. Todo número que aparecer na tela precisa estar na lista de fatos.
+
+ETAPA 5, produção. Meu método é: [FÁCIL: Claude no app com gerador de vídeo | MÉDIO: Claude Code com Remotion].
+- No método fácil: crie uma imagem de referência de cada personagem e cenário, espere eu aprovar e me diga quantos créditos as cenas vão gastar antes de gerar. Depois gere imagem e clipe de cada cena, sempre com movimento de câmera.
+- No método médio: monte o projeto Remotion nesta pasta. Gere a voz, tire o tempo de cada palavra com o Whisper e faça uma cena por frase, com a duração exata da fala.
+PARE e me mostre 6 quadros de momentos diferentes.
+
+ETAPA 6, entrega. Depois de eu aprovar os quadros, finalize em 1080x1920, 30 fps, MP4. Confira o arquivo final (fonte, legenda nos cortes e áudio) e me diga o que você não conseguiu verificar.
+
+Regras fixas: legenda palavra por palavra no terço inferior, longe dos botões do Shorts, com a palavra mais forte de cada frase em destaque. Nenhum plano parado por mais de 3 segundos. Não use personagens, marcas, músicas nem trechos de obras que existem.</pre>
+    </div>
+    <p class="note reveal"><b>Estes prompts são novos.</b> Eles juntam, em uma mensagem só, as regras que seguimos nos três vídeos de exemplo. Os prompts por etapa, logo abaixo, são os que usamos de verdade nas conversas.</p>
+  </div>
+</section>
+
+<section id="formula">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Parte 5</span>
+      <h2 class="heading-2">A fórmula do roteiro e os prompts</h2>
+      <p class="lead">A estrutura é sempre a mesma. Os tempos abaixo são para um vídeo de 2:30, e os exemplos vêm do vídeo desta página.</p>
+    </div>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Bloco</th><th>Tempo</th><th>O que acontece</th><th>No vídeo de exemplo</th></tr></thead>
+        <tbody>
+          <tr><td>Gancho</td><td class="num">0 a 3 s</td><td>A regra do mundo em uma frase</td><td>"Nesse mundo, um número na testa mostra quantas pessoas estão pensando em você."</td></tr>
+          <tr><td>Regra e consequência</td><td class="num">3 a 20 s</td><td>Como a regra funciona e por que importa</td><td>O número brilha, não dá para cobrir. Cantor famoso anda com cinquenta mil, bebê já nasce com oito.</td></tr>
+          <tr><td>Problema do narrador</td><td class="num">20 a 50 s</td><td>O narrador foge da regra ou sofre por ela</td><td>A família muda de cidade e o doze dele cai até zero.</td></tr>
+          <tr><td>Escalada</td><td class="num">50 a 110 s</td><td>3 situações que pioram a tensão</td><td>A turma inteira olhando, o "olha o zerado" no recreio, o aniversário sozinho.</td></tr>
+          <tr><td>Virada</td><td class="num">110 a 140 s</td><td>Revelação que muda o sentido da regra</td><td>Toda noite, às dez em ponto, o zero vira um. É a hora em que a avó reza.</td></tr>
+          <tr><td>Fecho</td><td class="num">140 a 150 s</td><td>Frase emocional curta</td><td>"E deixo minha avó me acender."</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note reveal"><b>Quantas palavras pedir.</b> Uma narração rápida em português fica entre 150 e 170 palavras por minuto. No nosso teste, o Kokoro em velocidade 1.0 leu 415 palavras em 2 minutos e 23 segundos, cerca de 174 por minuto contando as pausas. Para 2:30, peça entre 380 e 420 palavras.</p>
+
+    <h3 class="heading-4 sub reveal" id="prompts">Prompts</h3>
+    <p class="reveal">Dois conjuntos prontos para copiar. O primeiro é exatamente o que gerou o vídeo de exemplo. O segundo adapta a mesma fórmula para terror de arquivo, no clima dos relatórios de contenção.</p>
+
+    <div class="reveal" style="margin-top:24px">
+      <div class="tabs" role="tablist" aria-label="Tipo de prompt">
+        <button class="tab button-sm" role="tab" id="tab-mundo" aria-controls="painel-mundo" aria-selected="true" type="button">Histórias "Nesse mundo"</button>
+        <button class="tab button-sm" role="tab" id="tab-terror" aria-controls="painel-terror" aria-selected="false" type="button">Terror de arquivo, estilo SCP</button>
+      </div>
+
+      <div role="tabpanel" id="painel-mundo" aria-labelledby="tab-mundo">
+        <h4 class="title-2">Prompt 1: premissas</h4>
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Rende 20 ideias com problema e virada</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Você é roteirista de YouTube Shorts de histórias animadas em português do Brasil, público de 10 a 25 anos.
+Crie 20 premissas no formato "Nesse mundo, [regra absurda]". Cada regra precisa:
+- caber numa frase de até 15 palavras;
+- ter uma consequência visual fácil de animar (cor, número, objeto, marca no corpo);
+- permitir uma virada emocional no final.
+Para cada premissa, dê: a regra, o problema do narrador e a virada em uma linha cada.
+Não use personagens, marcas ou nomes de obras existentes.</pre>
+        </div>
+
+        <h4 class="title-2" style="margin-top:32px">Prompt 2: roteiro de narração</h4>
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Troque [NÚMERO] pela premissa escolhida. Usamos a 2</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Escreva a narração completa da premissa [NÚMERO], em primeira pessoa, para um Short de 2:30.
+Estrutura: gancho (1 frase) → regra e consequência → problema do narrador → escalada com 3 situações → virada → frase final.
+Regras: 380 a 420 palavras; frases curtas (máximo 15 palavras); linguagem falada do Brasil; nenhuma frase sem ação ou imagem concreta; a primeira frase é a regra do mundo.
+Entregue só o texto da narração, uma frase por linha.</pre>
+        </div>
+
+        <h4 class="title-2" style="margin-top:32px">Prompt 3, versão B: criação do vídeo no Claude Code</h4>
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">O prompt que produziu o vídeo desta página</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Crie o vídeo completo desta narração neste projeto Remotion, seguindo as regras do CLAUDE.md:
+[COLE A NARRAÇÃO OU APONTE O ARQUIVO]
+
+1. Gere o áudio da narração em português do Brasil com Kokoro (https://thomazrb.github.io/posts/python-tts-kokoro/) e transcreva com Whisper para ter o tempo de cada palavra.
+2. Divida em cenas, uma por frase, com a duração da frase narrada.
+3. Crie os personagens em SVG como componentes React: estilo 2D vetorial plano, contorno grosso, paleta. Cada um com as expressões neutro, feliz, triste, assustado e bravo. Crie também os cenários que a história pede.
+4. Monte cada cena: cenário, personagem com a expressão e a pose da frase, ícones de apoio (ex.: coração partido, números) e movimento de câmera lento (zoom ou pan). Nenhum plano parado por mais de 3 segundos.
+5. Legendas palavra por palavra, sincronizadas com o áudio: brancas com contorno, palavra-chave em amarelo, no terço inferior, longe dos botões do Shorts.
+6. Antes do render final, salve 6 quadros de momentos diferentes e me mostre. Depois de eu aprovar, renderize em 1080x1920, 30 fps, MP4.</pre>
+        </div>
+        <p class="note"><b>Para ter trilha.</b> O vídeo de exemplo saiu só com a narração. Se quiser música, acrescente um passo: "Música de fundo [ARQUIVO] bem abaixo da voz."</p>
+
+        <h4 class="title-2" style="margin-top:32px">Prompt 3, versão A: criação do vídeo com conector</h4>
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Para o Claude no app com gerador de vídeo ligado</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Usando o conector de geração de vídeo ligado a esta conversa, crie o vídeo completo desta narração:
+[COLE A NARRAÇÃO]
+
+1. Divida a narração em cenas, uma por frase. A duração de cada cena é o tempo da frase narrada.
+2. Antes de gerar as cenas, crie uma imagem de referência de cada personagem (de frente, fundo neutro) e de cada cenário, no estilo: "[COLE SUA FRASE DE ESTILO]". Mostre e espere minha aprovação.
+3. Para cada cena: gere a imagem usando as referências aprovadas e depois anime em 9:16, sempre com movimento de câmera (push-in lento, órbita, câmera seguindo o personagem). Nenhum plano parado.
+4. Gere a narração em português do Brasil com uma única voz [DESCREVA A VOZ] e uma música de fundo calma, bem abaixo da voz.
+5. Junte tudo num vídeo vertical 1080x1920 com legendas grandes, palavra por palavra, brancas com contorno preto, palavra-chave em amarelo, no terço inferior.
+
+Antes da etapa 3, me diga quantos créditos vão ser gastos e espere meu ok.
+Se o conector não fizer alguma etapa (voz, música ou montagem), diga qual e me entregue os clipes numerados e o roteiro de cortes para eu montar no editor.
+Personagens — use estas descrições iguais em todas as cenas:
+[COLE A BÍBLIA DE PERSONAGENS]</pre>
+        </div>
+
+        <h4 class="title-2" style="margin-top:32px">Prompt 4: publicação</h4>
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Título, descrição e hashtags</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Para este Short, escreva: 5 opções de título com até 50 caracteres (curiosidade, sem entregar a virada), uma descrição de 1 frase que repete a premissa, e 3 a 5 hashtags.</pre>
+        </div>
+      </div>
+
+      <div role="tabpanel" id="painel-terror" aria-labelledby="tab-terror">
+        <p class="muted" style="max-width:680px">A fórmula é a mesma, com três trocas. A regra do mundo vira a regra de contenção de um objeto anômalo. O narrador é alguém que trabalha perto dele. E a virada muda quem é a ameaça. O tom é burocrático e calmo: o medo vem do detalhe, não do grito.</p>
+
+        <h4 class="title-2" style="margin-top:24px">Prompt T1: fichas de anomalias</h4>
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Rende 20 itens originais, com a regra que alguém vai quebrar</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Você é roteirista de YouTube Shorts de terror de arquivo em português do Brasil, público acima de 16 anos.
+Crie 20 fichas de anomalias ORIGINAIS no formato de relatório de contenção:
+"Item [código]: [objeto ou lugar comum] que [regra impossível]".
+Cada ficha precisa:
+- de uma regra em até 15 palavras;
+- de um procedimento de contenção simples, que um funcionário cansado quebraria;
+- de uma consequência visual fácil de animar (sombra, contagem, porta, sinal, foto que muda, luz que apaga);
+- de uma virada final que muda quem é a ameaça.
+Para cada ficha, dê em uma linha cada: o item, a regra de contenção, o erro humano e a virada.
+Crie uma organização própria, com nome e sistema de códigos seus.
+Não use o universo, os códigos, os nomes ou os personagens da SCP Foundation nem de outras obras.
+Sem gore explícito e sem crianças em perigo.</pre>
+        </div>
+
+        <h4 class="title-2" style="margin-top:32px">Prompt T2: narração em registro de áudio</h4>
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">Mais lento e mais curto que o roteiro emocional</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Escreva a narração do item [NÚMERO] como o registro de áudio de um funcionário novo, em primeira pessoa, para um Short de 2:00.
+Estrutura: gancho (a regra de contenção, 1 frase) → o que o item faz → o turno do narrador → 3 sinais de que a regra está sendo quebrada, cada um pior que o anterior → virada → última frase fria ou cortada no meio.
+Regras: 300 a 340 palavras; frases curtas (máximo 15 palavras); tom burocrático e calmo, como quem preenche um formulário; o horror vem do detalhe concreto, nunca de adjetivo; nenhuma frase sem ação ou imagem; horários e números exatos; sem gore.
+A primeira frase é a regra de contenção.
+Entregue só o texto da narração, uma frase por linha.</pre>
+        </div>
+
+        <h4 class="title-2" style="margin-top:32px">Prompt T3: criação do vídeo de terror no Claude Code</h4>
+        <div class="prompt">
+          <div class="prompt-head"><span class="title-4">A versão B com a direção de arte trocada</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Crie o vídeo completo desta narração neste projeto Remotion, seguindo as regras do CLAUDE.md:
+[COLE A NARRAÇÃO]
+
+1. Gere o áudio em português do Brasil com Kokoro, voz grave e velocidade 0.92, e transcreva com Whisper para ter o tempo de cada palavra.
+2. Divida em cenas, uma por frase, com a duração da frase narrada.
+3. Direção de arte: 2D vetorial plano, contorno grosso, paleta dessaturada (preto, cinza esverdeado, branco sujo) com um único vermelho de alerta. Granulação leve e vinheta em todas as cenas.
+4. Crie os personagens em SVG como componentes React, sempre de uniforme e crachá, com as expressões neutro, tenso, assustado e vazio. O item anômalo nunca aparece inteiro: só sombra, recorte, reflexo ou parte.
+5. Elementos de arquivo: cabeçalho de relatório com o código do item, carimbo, tarjas pretas escrito [DADOS APAGADOS], visão de câmera de segurança com horário no canto, contador de dias sem incidente.
+6. Monte cada cena com movimento de câmera lento e contínuo (push-in muito lento, leve tremor). A cada sinal da escalada, um corte seco com falha de imagem de 3 quadros.
+7. Legendas palavra por palavra: brancas com contorno, palavra-chave em vermelho, no terço inferior, longe dos botões do Shorts.
+8. Som: zumbido grave contínuo bem abaixo da voz [ARQUIVO], silêncio total de meio segundo antes da virada.
+9. Antes do render final, salve 6 quadros de momentos diferentes e me mostre. Depois de eu aprovar, renderize em 1080x1920, 30 fps, MP4.</pre>
+        </div>
+        <p class="note"><b>Se quiser usar o universo SCP de verdade.</b> O material da SCP Foundation é publicado sob a licença <code>CC BY-SA 3.0</code>. Usar exige dar crédito ao autor de cada artigo, incluir o link e manter a mesma licença no seu vídeo. Criar a sua própria organização e os seus próprios itens, como o prompt T1 pede, evita essa obrigação e deixa o canal com identidade.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="referencias">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Referências</span>
+      <h2 class="heading-2">Três canais para estudar e um prompt para trocar a embalagem</h2>
+      <p class="lead">Referência boa não é para copiar. É para entender por que funciona e levar a fórmula para outro nicho, com outra textura, outro personagem e outro tipo de animação. As observações abaixo são a nossa leitura de cada canal.</p>
+    </div>
+    <div class="grid g3 reveal">
+      <article class="card">
+        <div class="ico"><i class="ph ph-flame"></i></div>
+        <h3 class="heading-6">Ember &amp; Shadow</h3>
+        <p>Canal de psicologia. Um vídeo só já mostra o estilo inteiro do canal, o que facilita recriar a ideia com outra textura, outra animação e outro personagem. Uma troca possível: sair da psicologia e levar o mesmo formato para o terror.</p>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://www.youtube.com/shorts/gv3dz-pdmm8" rel="noopener" target="_blank"><i class="ph ph-play"></i> Mean to yourself vs kind to yourself</a></p>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-columns"></i></div>
+        <h3 class="heading-6">Bygone Philosophy</h3>
+        <p>O acabamento mais alto dos três. Quem chega nesse nível consegue embalar qualquer assunto. O tema nem precisa ser filosofia: a mesma embalagem serve para histórias e motivações de pessoas do esporte, por exemplo.</p>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://www.youtube.com/shorts/D-RiErb4cmg" rel="noopener" target="_blank"><i class="ph ph-play"></i> He Had Absolute Power Over Rome</a></p>
+      </article>
+      <article class="card">
+        <div class="ico"><i class="ph ph-leaf"></i></div>
+        <h3 class="heading-6">Deep Primate</h3>
+        <p>O visual mais simples dos três, com imagens paradas, e mesmo assim passa paz para quem assiste. Se parado já agrada, animado tem espaço para ir além. Repare também nos títulos, que são muito bem construídos.</p>
+        <p style="margin-top:16px"><a class="btn ghost button-sm" href="https://www.youtube.com/watch?v=y_MkdysPlco" rel="noopener" target="_blank"><i class="ph ph-play"></i> The Psychology of People Who…</a></p>
+      </article>
+    </div>
+
+    <h3 class="heading-5 sub reveal">Prompt R: estudar uma referência e criar um formato próprio</h3>
+    <p class="reveal">Serve para qualquer um dos três canais acima, ou para outro que você escolher. Se o Claude não conseguir abrir o link, baixe o vídeo e aponte o arquivo.</p>
+    <div class="prompt reveal">
+      <div class="prompt-head"><span class="title-4">Análise com agentes e três embalagens novas</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Analise este vídeo de referência e me ajude a criar um formato próprio inspirado nele:
+[COLE O LINK OU APONTE O ARQUIVO BAIXADO]
+
+1. Assista ao vídeo inteiro e leia a transcrição. Use agentes em paralelo, um para cada frente: roteiro, visual, som e título.
+2. Roteiro: o gancho dos 3 primeiros segundos, a estrutura bloco a bloco com os tempos, o tamanho das frases, as palavras por minuto e como o vídeo termina.
+3. Visual: tipo de imagem (parada ou animada, 2D ou 3D), paleta, textura, personagem, movimento de câmera, legendas e quanto tempo dura cada plano.
+4. Som: tipo de voz, ritmo, música, efeitos e silêncios.
+5. Título e capa: o padrão de construção dos títulos em pelo menos 10 vídeos do canal, o que cada título promete e o que esconde.
+6. Separe o que é fórmula, que posso reaproveitar, do que é identidade do canal, que não posso copiar: personagens, frases, roteiros, artes e trilhas.
+7. Proponha 3 embalagens novas para a mesma fórmula, cada uma com outro nicho, outra textura, outro personagem e outro estilo de animação. Exemplos de troca: de psicologia para terror, de filosofia para histórias do esporte, de imagem parada para animação leve.
+8. Para a embalagem que eu escolher, escreva as regras do canal em um CLAUDE.md e 10 títulos no padrão encontrado.
+
+Não reproduza trechos do roteiro original e não recrie personagens nem artes do canal.</pre>
+    </div>
+    <p class="note reveal"><b>Depois da análise.</b> Com o CLAUDE.md da nova embalagem pronto, volte aos prompts 1, 2 e 3 desta página: eles passam a produzir premissas, roteiro e vídeo já dentro das regras do seu formato.</p>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <h2 class="heading-2">Prompt copiado? Falta escolher onde colar.</h2>
+    <p class="lead">Se você ainda não escolheu o método, a comparação entre os três leva dois minutos.</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn button-md" href="index.html#comecar">Comparar os métodos <i class="ph ph-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h4 class="title-3">Fontes e ferramentas</h4>
+      <ul class="caption-2">
+        <li><a href="https://thomazrb.github.io/posts/python-tts-kokoro/" rel="noopener">Gerando áudio com IA local usando Kokoro (thomazrb)</a></li>
+        <li><a href="https://www.remotion.dev/" rel="noopener">Remotion: vídeos em React</a></li>
+        <li><a href="https://elevenlabs.io/pricing" rel="noopener">ElevenLabs: planos e créditos</a></li>
+        <li><a href="https://showheyohtaki.github.io/motion-prompt/" rel="noopener">Motion Prompt, de Shohei Ohtaki (MIT)</a></li>
+        <li><a href="https://github.com/mastof/shorts-animados-com-claude" rel="noopener">Repositório deste guia no GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="title-3">Neste guia</h4>
+      <ul class="caption-2">
+        <li><a href="metodo-facil.html">Método fácil</a>, <a href="metodo-medio.html">médio</a> e <a href="metodo-avancado.html">avançado</a></li>
+        <li><a href="prompts.html">Prompts mãe e passo a passo</a></li>
+        <li><a href="viralizar.html">Como fazer o canal crescer</a></li>
+        <li><a href="skills.html">Pacote de skills</a></li>
+        <li><a href="index.html#cuidados">Cuidados</a> e <a href="index.html#faq">perguntas frequentes</a></li>
+      </ul>
+    </div>
+    <div id="privacidade">
+      <h4 class="title-3">Privacidade e termos</h4>
+      <ul class="caption-2">
+        <li>Este site não usa cookies, formulários nem análise de acesso. As caixas marcadas ficam só no seu navegador.</li>
+        <li>Conteúdo informativo, feito com Claude Fable 5.2 no Claude Code. Regras de plataformas mudam: confira sempre a fonte oficial.</li>
+        <li><a href="#topo">Voltar ao topo</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/base.js"></script>
+</body>
+</html>

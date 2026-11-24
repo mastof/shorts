@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Método fácil: Short animado sem instalar nada | Shorts com Claude</title>
+<meta name="description" content="O caminho mais simples para o primeiro Short animado com IA: o Claude no navegador escreve e dirige, um gerador de vídeo cria as cenas e você monta em um editor.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Método fácil: Short animado sem instalar nada">
+<meta property="og:description" content="O caminho mais simples para o primeiro Short animado com IA: o Claude no navegador escreve e dirige, um gerador de vídeo cria as cenas e você monta em um editor.">
+<meta property="og:image" content="https://mastof.github.io/shorts-animados-com-claude/assets/og.jpg">
+<meta property="og:url" content="https://mastof.github.io/shorts-animados-com-claude/metodo-facil.html">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23181818'/%3E%3Ccircle cx='32' cy='34' r='20' fill='%23F6C9A4' stroke='%23FFFFFF' stroke-width='3'/%3E%3Ctext x='32' y='32' font-family='Arial' font-weight='700' font-size='18' text-anchor='middle' fill='%23FF2D3D'%3E1%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/@phosphor-icons/web@2.1.1" defer></script>
+<link rel="stylesheet" href="assets/base.css">
+<style>
+.nav-links a{white-space:nowrap}
+.metodo .nivel{display:inline-block;padding:4px 8px;border-radius:8px;background:var(--s2);border:1px solid var(--line);color:var(--yellow)}
+.metodo h3{margin-top:16px}
+.metodo dl{display:grid;gap:12px;margin-top:16px}
+.metodo dt{color:var(--tx3)}
+.metodo dd{color:var(--tx2);margin:0}
+.metodo .btn{margin-top:24px}
+.capa{padding:0;overflow:hidden}
+.capa img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover;object-position:top}
+.capa .dentro{padding:24px}
+.telao{margin-top:48px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#000}
+.telao video,.telao img{display:block;width:100%}
+.telao video{aspect-ratio:16/9}
+.atalhos{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+</style>
+</head>
+<body class="no-js">
+<a class="skip button-sm" href="#conteudo">Pular para o conteúdo</a>
+
+<nav class="nav" aria-label="Páginas do guia">
+  <a class="brand title-4" href="index.html"><b class="caption-3">1</b>Shorts com Claude</a>
+  <ul class="nav-links title-4">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="metodo-facil.html" aria-current="true">Método fácil</a></li>
+    <li><a href="metodo-medio.html">Médio</a></li>
+    <li><a href="metodo-avancado.html">Avançado</a></li>
+    <li><a href="prompts.html">Prompts</a></li>
+    <li><a href="viralizar.html">Viralizar</a></li>
+    <li><a href="skills.html">Skills</a></li>
+  </ul>
+  <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="painel"><span></span><span></span></button>
+</nav>
+<div class="panel" id="painel">
+  <ul class="heading-5">
+    <li><a href="index.html">Início do guia</a></li>
+    <li><a href="metodo-facil.html">Método fácil: sem instalar nada</a></li>
+    <li><a href="metodo-medio.html">Método médio: Claude Code e Remotion</a></li>
+    <li><a href="metodo-avancado.html">Método avançado: visual próprio</a></li>
+    <li><a href="prompts.html">Prompts mãe e passo a passo</a></li>
+    <li><a href="viralizar.html">Viralizar: como fazer o canal crescer</a></li>
+    <li><a href="skills.html">Pacote de skills</a></li>
+  </ul>
+</div>
+
+<main id="conteudo">
+
+<header class="hero" id="topo">
+  <div class="wrap">
+    <span class="eyebrow caption-3"><i class="ph ph-seal-check"></i> Método fácil</span>
+    <h1 class="heading-1">Seu primeiro Short,<br>sem instalar nada</h1>
+    <p class="lead">Tudo acontece no navegador. O Claude escreve a história e divide em cenas, um gerador de vídeo cria os clipes e você junta em um editor simples. É o melhor começo para quem nunca abriu um terminal.</p>
+    <div class="hero-cta">
+      <a class="btn button-md" href="#passos">Ver o passo a passo <i class="ph ph-arrow-down"></i></a>
+    </div>
+    <ul class="proof caption-2" aria-label="Resumo do método">
+      <li>sem terminal</li>
+      <li>no navegador ou no app</li>
+      <li>custo em créditos por clipe</li>
+    </ul>
+    <p class="note" style="max-width:680px"><b>Antes de começar.</b> Este método está descrito com base em como as ferramentas funcionam, mas os três vídeos de exemplo do guia não foram feitos por ele. Gere poucas cenas no primeiro teste e confira o gasto de créditos antes de produzir o vídeo inteiro.</p>
+  </div>
+</header>
+
+<section id="para-quem">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Antes de tudo</span>
+      <h2 class="heading-2">Para quem é e o que você precisa</h2>
+    </div>
+    <div class="grid g3 reveal">
+      <div class="card"><div class="ico"><i class="ph ph-user"></i></div><h3 class="heading-6">Para quem é</h3><p>Quem quer ver um vídeo pronto ainda hoje e prefere clicar a digitar comandos. Também serve para testar um tema antes de investir tempo no método médio.</p></div>
+      <div class="card"><div class="ico"><i class="ph ph-toolbox"></i></div><h3 class="heading-6">O que você precisa</h3><p>Uma conta no Claude, uma ferramenta de geração de vídeo com créditos, uma ferramenta de voz em português e um editor de vídeo com legenda automática.</p></div>
+      <div class="card"><div class="ico"><i class="ph ph-warning"></i></div><h3 class="heading-6">O que esperar</h3><p>Cada clipe gerado custa créditos, e o personagem tende a mudar de uma cena para a outra. As imagens de referência do passo 4 existem para segurar isso.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="passos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Passo a passo</span>
+      <h2 class="heading-2">Do tema ao vídeo em 7 passos</h2>
+      <p class="lead">As caixas ficam marcadas neste navegador, para você continuar de onde parou.</p>
+    </div>
+    <div class="checks reveal" data-lista="facil">
+      <label class="check"><input type="checkbox"><span>Abra o Claude e inicie uma conversa nova</span></label>
+      <label class="check"><input type="checkbox"><span>Copie o <a href="prompts.html#mae">prompt mãe</a> do seu tipo de vídeo, troque o que está entre colchetes e envie</span></label>
+      <label class="check"><input type="checkbox"><span>Escolha uma das ideias e aprove a narração, pedindo ajustes até gostar</span></label>
+      <label class="check"><input type="checkbox"><span>Aprove as imagens de referência de cada personagem e cenário antes de gerar qualquer cena</span></label>
+      <label class="check"><input type="checkbox"><span>Gere as cenas, primeiro a imagem e depois o clipe animado, sempre com movimento de câmera</span></label>
+      <label class="check"><input type="checkbox"><span>Gere a narração com uma voz só e guarde o nome dela para os próximos vídeos</span></label>
+      <label class="check"><input type="checkbox"><span>Monte no editor: áudio por baixo, clipes no ritmo da fala, legenda automática e música baixa</span></label>
+    </div>
+    <p class="note reveal"><b>Com conector ou sem.</b> Se o seu gerador de vídeo oferece um conector para o Claude, as cenas são geradas dentro da própria conversa. Sem conector, o Claude escreve o prompt de cada cena e você cola no gerador. Os detalhes de cada passo estão na seção seguinte.</p>
+  </div>
+</section>
+
+<section id="caminho-a">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Parte 3</span>
+      <h2 class="heading-2">Caminho A: Claude diretor com gerador de vídeo</h2>
+      <p class="lead">O caminho do estilo 3D de blocos. O Claude escreve e divide em cenas, um modelo de imagem cria os quadros e um modelo de vídeo os anima.</p>
+    </div>
+    <ol class="steps reveal">
+      <li><b>Conecte o gerador ao Claude.</b> Na ferramenta de vídeo, copie o link MCP. No Claude, abra Configurações, depois Conectores, adicione um conector personalizado, cole o link e conecte. Sem conector, copie os prompts do Claude e cole no gerador na mão.</li>
+      <li><b>Escreva a narração</b> com o prompt 2 da seção de prompts.</li>
+      <li><b>Monte a bíblia visual.</b> Peça uma ficha por personagem (corpo, roupa, cor do cabelo, expressão padrão) e gere uma imagem de referência de cada um, de frente, em fundo neutro. Faça o mesmo para os 2 ou 3 cenários principais.</li>
+      <li><b>Divida em cenas.</b> Uma cena por frase, em clipes de poucos segundos. Um vídeo de 2:30 costuma dar entre 20 e 35 cenas.</li>
+      <li><b>Gere imagem e depois vídeo.</b> Para cada cena, primeiro a imagem parada usando a referência do personagem, depois o clipe animado a partir dela, com o movimento de câmera descrito no prompt. Gerar direto de texto, sem imagem, quebra a consistência.</li>
+      <li><b>Gere a narração</b> em uma ferramenta de voz em português, com uma voz só para o canal inteiro.</li>
+      <li><b>Monte e legende.</b> No editor: áudio por baixo, clipes cortados no ritmo da fala, legenda automática palavra por palavra, música baixa. Outra opção é pedir ao Claude Code para montar com FFmpeg.</li>
+    </ol>
+    <div class="note reveal"><b>Para o visual de blocos ficar parecido:</b> descreva o estilo de forma genérica, por exemplo <code>blocky low-poly game avatar, cubic head, toy-like 3D render, bright saturated colors, soft lighting</code>. Repita a mesma frase de estilo em todos os prompts, palavra por palavra. Peça movimento de câmera em todo clipe (<code>slow push-in</code>, <code>orbit left</code>, <code>handheld follow</code>), porque plano parado derruba a retenção.</div>
+  </div>
+</section>
+
+<section id="seedance">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow caption-3">Área especial</span>
+      <h2 class="heading-2">Animação infantil com Seedance, sem fala</h2>
+      <p class="lead">Desenho 2D plano e colorido, no clima de Bluey e Galinha Pintadinha, em que ninguém fala. A história anda só com gestos, música e efeitos sonoros de comédia física, como nos desenhos clássicos de gato e rato. Sem dublagem, o mesmo vídeo serve para qualquer país.</p>
+    </div>
+    <div class="grid g3 reveal">
+      <article class="card"><div class="ico"><i class="ph ph-timer"></i></div><h3 class="heading-6">Clipes de 4 a 15 segundos</h3><p>É a faixa que o Seedance 2.0 gera por vez, segundo a própria ByteDance. Uma piada visual cabe inteira em um clipe.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-speaker-high"></i></div><h3 class="heading-6">Áudio no mesmo passo</h3><p>O modelo gera vídeo e som juntos: ambiente, efeitos e fala. Por isso o prompt precisa dizer, com todas as letras, que não há fala.</p></article>
+      <article class="card"><div class="ico"><i class="ph ph-images"></i></div><h3 class="heading-6">Referências de imagem</h3><p>Aceita até 9 imagens de referência por geração. No 2D plano, o quadro inicial decide o estilo mais do que o texto.</p></article>
+    </div>
+    <p class="note reveal"><b>Confira na sua plataforma.</b> Os limites mudam conforme a versão do modelo e o serviço onde ele roda. Recursos como quadro final de referência existem em algumas plataformas e em outras não.</p>
+
+    <h3 class="heading-5 sub reveal">A receita em 6 passos</h3>
+    <ol class="steps reveal" style="margin-top:16px">
+      <li><b>Crie personagens seus.</b> Bluey e Galinha Pintadinha servem só como direção de estilo: formas simples, cores chapadas, contorno limpo, fundo em tons pastel. Os personagens precisam ser novos. Uma ficha por personagem: forma básica, 3 cores, tipo de olho, um acessório.</li>
+      <li><b>Gere a folha de referência.</b> Em um gerador de imagem: o personagem de frente, de lado e com 4 expressões, em fundo liso. Essa folha entra como referência em todos os clipes.</li>
+      <li><b>Escreva o episódio como uma sequência de piadas visuais.</b> Objetivo simples, 3 tentativas que dão errado de formas cada vez mais exageradas, final carinhoso. Um episódio de 40 a 60 segundos dá de 5 a 8 clipes.</li>
+      <li><b>Gere cada clipe a partir de uma imagem.</b> Primeiro o quadro inicial, depois o movimento. Cada prompt descreve uma ação só e termina com o bloco de áudio que proíbe fala.</li>
+      <li><b>Cuide do som.</b> Se o áudio do modelo vier com voz ou ruído estranho, gere o clipe mudo e aplique efeitos de uma biblioteca livre. A lista de efeitos está logo abaixo.</li>
+      <li><b>Monte no ritmo do som.</b> Corte no impacto de cada efeito. Trilha orquestral leve por baixo. Sem legenda, só o título no começo.</li>
+    </ol>
+
+    <h3 class="heading-5 sub reveal">Prompts da área infantil</h3>
+    <p class="reveal">Os dois primeiros são para o Claude. O terceiro é o modelo de prompt para o Seedance, em inglês, que é como os modelos de vídeo costumam responder melhor.</p>
+
+    <div class="reveal">
+      <h4 class="title-2" style="margin-top:24px">Prompt K1: personagens e mundo</h4>
+      <div class="prompt">
+        <div class="prompt-head"><span class="title-4">Bíblia visual pronta para virar imagem de referência</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Você é diretor de arte de animação infantil 2D para crianças de 2 a 6 anos.
+Crie um elenco ORIGINAL de 3 personagens animais e 2 cenários para uma série sem fala.
+Para cada personagem: nome, animal, forma geométrica básica, 3 cores em hexadecimal, tipo de olho, um acessório e um jeito de andar.
+Para cada cenário: lugar, 4 cores em tons pastel e 3 objetos que podem virar piada visual.
+Estilo: formas simples e arredondadas, cores chapadas, contorno fino e limpo, sem sombra realista, sem texto na imagem.
+Não use nem imite personagens, nomes ou marcas de obras existentes.
+No fim, escreva em inglês um prompt de imagem para a folha de referência de cada personagem: frente, lado e 4 expressões, fundo branco liso.</pre>
+      </div>
+
+      <h4 class="title-2" style="margin-top:32px">Prompt K2: episódio em pantomima</h4>
+      <div class="prompt">
+        <div class="prompt-head"><span class="title-4">Roteiro sem nenhuma palavra falada</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>Escreva um episódio de 50 segundos com os personagens da bíblia acima, SEM NENHUMA FALA, narração ou texto na tela.
+Estrutura: objetivo simples (5 s) → tentativa 1 dá errado (10 s) → tentativa 2 dá errado de um jeito maior (10 s) → tentativa 3 quase dá certo e vira a maior bagunça (15 s) → final carinhoso em que os personagens se ajudam (10 s).
+Regras: comédia física leve, sem ninguém se machucar de verdade, sem susto, sem arma, sem nada que uma criança possa imitar e se ferir.
+Entregue uma tabela com uma linha por clipe: duração (de 4 a 12 s), ação única do clipe, emoção de cada personagem, movimento de câmera e a lista dos efeitos sonoros na ordem em que acontecem.</pre>
+      </div>
+
+      <h4 class="title-2" style="margin-top:32px">Prompt K3: modelo de clipe para o Seedance</h4>
+      <div class="prompt">
+        <div class="prompt-head"><span class="title-4">Preencha os colchetes e anexe o quadro inicial</span><button class="copy button-sm" type="button"><i class="ph ph-copy"></i><span>Copiar</span></button></div>
+<pre>[IMAGE 1: start frame] [IMAGE 2: character reference sheet]
+
+Flat 2D children's cartoon, simple rounded shapes, flat color fills, thin clean outlines, pastel background, no shading, no text on screen. Keep the character exactly as in the reference sheet.
+
+Action: [ONE ACTION ONLY, e.g. "the yellow duck tiptoes toward the cake, slips on a banana peel, spins twice and lands sitting, dizzy, with stars circling its head"].
+Acting: exaggerated pantomime, clear silhouette, squash and stretch, big readable expressions.
+Camera: [e.g. "locked wide shot, slow push-in on the landing"].
+Duration: [6] seconds. Vertical 9:16.
+
+Audio: NO dialogue, NO narration, NO singing, NO human voices. Only classic slapstick cartoon sound effects synced to the action: [e.g. "pizzicato tiptoe steps, slide whistle on the slip, boing on the bounce, cymbal crash on the landing, twinkling chimes for the dizzy stars"]. Light playful orchestral music underneath, low volume.</pre>
+      </div>
+    </div>
+
+    <h3 class="heading-5 sub reveal">A paleta de sons da comédia física</h3>
+    <div class="table-wrap reveal" style="margin-top:16px">
+      <table>
+        <thead><tr><th>Ação na tela</th><th>Efeito</th><th>Como pedir em inglês</th></tr></thead>
+        <tbody>
+          <tr><td>Andar na ponta dos pés</td><td>Cordas beliscadas, uma nota por passo</td><td><code>pizzicato tiptoe steps</code></td></tr>
+          <tr><td>Escorregar ou cair</td><td>Apito deslizante descendo</td><td><code>slide whistle down</code></td></tr>
+          <tr><td>Quicar ou pular</td><td>Mola</td><td><code>boing spring</code></td></tr>
+          <tr><td>Bater ou trombar</td><td>Prato de bateria ou bumbo</td><td><code>cymbal crash, bass drum hit</code></td></tr>
+          <tr><td>Correr em disparada</td><td>Escala rápida de xilofone</td><td><code>fast xylophone run</code></td></tr>
+          <tr><td>Ficar tonto</td><td>Sininhos girando</td><td><code>twinkling chimes, bird tweets</code></td></tr>
+          <tr><td>Ter uma ideia</td><td>Um toque de sino</td><td><code>single bell ding</code></td></tr>
+          <tr><td>Passar voando</td><td>Sopro rápido</td><td><code>quick whoosh</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note reveal"><b>Regras de conteúdo infantil.</b> Trilhas e efeitos de desenhos famosos têm dono: use bibliotecas livres ou o som gerado pelo modelo. No YouTube, marque o vídeo como feito para crianças, o que desliga comentários e anúncio personalizado. E prefira poucos episódios bem cuidados a muitos parecidos, porque conteúdo infantil repetitivo é alvo direto das políticas de qualidade da plataforma.</p>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap reveal">
+    <h2 class="heading-2">Gostou do resultado? Suba um degrau.</h2>
+    <p class="lead">No método médio o personagem é sempre igual, porque ele é código, e o custo por vídeo cai para quase zero.</p>
+    <div class="hero-cta" style="justify-content:center">
+      <a class="btn button-md" href="metodo-medio.html">Ver o método médio <i class="ph ph-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap cols">
+    <div>
+      <h4 class="title-3">Fontes e ferramentas</h4>
+      <ul class="caption-2">
+        <li><a href="https://thomazrb.github.io/posts/python-tts-kokoro/" rel="noopener">Gerando áudio com IA local usando Kokoro (thomazrb)</a></li>
+        <li><a href="https://www.remotion.dev/" rel="noopener">Remotion: vídeos em React</a></li>
+        <li><a href="https://elevenlabs.io/pricing" rel="noopener">ElevenLabs: planos e créditos</a></li>
+        <li><a href="https://showheyohtaki.github.io/motion-prompt/" rel="noopener">Motion Prompt, de Shohei Ohtaki (MIT)</a></li>
+        <li><a href="https://github.com/mastof/shorts-animados-com-claude" rel="noopener">Repositório deste guia no GitHub</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="title-3">Neste guia</h4>
+      <ul class="caption-2">
+        <li><a href="metodo-facil.html">Método fácil</a>, <a href="metodo-medio.html">médio</a> e <a href="metodo-avancado.html">avançado</a></li>
+        <li><a href="prompts.html">Prompts mãe e passo a passo</a></li>
+        <li><a href="viralizar.html">Como fazer o canal crescer</a></li>
+        <li><a href="skills.html">Pacote de skills</a></li>
+        <li><a href="index.html#cuidados">Cuidados</a> e <a href="index.html#faq">perguntas frequentes</a></li>
+      </ul>
+    </div>
+    <div id="privacidade">
+      <h4 class="title-3">Privacidade e termos</h4>
+      <ul class="caption-2">
+        <li>Este site não usa cookies, formulários nem análise de acesso. As caixas marcadas ficam só no seu navegador.</li>
+        <li>Conteúdo informativo, feito com Claude Fable 5.2 no Claude Code. Regras de plataformas mudam: confira sempre a fonte oficial.</li>
+        <li><a href="#topo">Voltar ao topo</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/base.js"></script>
+</body>
+</html>

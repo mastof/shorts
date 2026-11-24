@@ -25,7 +25,7 @@
   var links=[].slice.call(d.querySelectorAll('.nav-links a'));
   var alvo={elementos:'#elementos',claude:'#claude','caminho-a':'#claude','caminho-b':'#claude',kit:'#claude',skills:'#claude',vozes:'#vozes',formula:'#formula',referencias:'#formula',seedance:'#seedance',roteiro:'#roteiro',metricas:'#metricas',cuidados:'#cuidados',faq:'#cuidados'};
   if('IntersectionObserver' in window){
-    var spy=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var h=alvo[e.target.id];links.forEach(function(a){a.setAttribute('aria-current',a.getAttribute('href')===h?'true':'false');});}});},{rootMargin:'-45% 0px -50% 0px'});
+    var spy=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var h=alvo[e.target.id];links.forEach(function(a){var hr=a.getAttribute('href');if(hr.charAt(0)==='#')a.setAttribute('aria-current',hr===h?'true':'false');});}});},{rootMargin:'-45% 0px -50% 0px'});
     Object.keys(alvo).forEach(function(id){var s=d.getElementById(id);if(s)spy.observe(s);});
   }
 

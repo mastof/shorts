@@ -32,24 +32,28 @@
 <body class="no-js">
 <a class="skip button-sm" href="#conteudo">Pular para o conteúdo</a>
 
-<nav class="nav" aria-label="Seções desta página">
+<nav class="nav" aria-label="Páginas do guia">
   <a class="brand title-4" href="index.html"><b class="caption-3">1</b>Shorts com Claude</a>
   <ul class="nav-links title-4">
-    <li><a href="index.html">Tutorial</a></li>
-    <li><a href="#exemplos">Exemplos</a></li>
-    <li><a href="#passos">Passos</a></li>
-    <li><a href="#prompts">Prompts</a></li>
-    <li><a href="#tecnica">Técnica</a></li>
-    <li><a href="#metricas">Números</a></li>
-    <li><a href="#cuidados">Cuidados</a></li>
-    <li><a href="boneco-palito.html">Palito</a></li>
+    <li><a href="index.html">Início</a></li>
+    <li><a href="metodo-facil.html">Método fácil</a></li>
+    <li><a href="metodo-medio.html">Médio</a></li>
+    <li><a href="metodo-avancado.html" aria-current="true">Avançado</a></li>
+    <li><a href="prompts.html">Prompts</a></li>
     <li><a href="viralizar.html">Viralizar</a></li>
+    <li><a href="skills.html">Skills</a></li>
   </ul>
   <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="painel"><span></span><span></span></button>
 </nav>
 <div class="panel" id="painel">
   <ul class="heading-5">
-    <li><a href="index.html">Voltar ao tutorial</a></li>
+    <li><a href="index.html">Início do guia</a></li>
+    <li><a href="metodo-facil.html">Método fácil: sem instalar nada</a></li>
+    <li><a href="metodo-medio.html">Método médio: Claude Code e Remotion</a></li>
+    <li><a href="metodo-avancado.html">Método avançado: visual próprio</a></li>
+    <li><a href="prompts.html">Prompts mãe e passo a passo</a></li>
+    <li><a href="viralizar.html">Viralizar: como fazer o canal crescer</a></li>
+    <li><a href="skills.html">Pacote de skills</a></li>
     <li><a href="#diferencas">O que muda neste formato</a></li>
     <li><a href="#exemplos">Repositórios de exemplo</a></li>
     <li><a href="#passos">Os 8 passos</a></li>
@@ -58,8 +62,6 @@
     <li><a href="#tecnica">A receita técnica</a></li>
     <li><a href="#metricas">Os números</a></li>
     <li><a href="#cuidados">Cuidados com obras de terceiros</a></li>
-    <li><a href="boneco-palito.html">Boneco palito: o método e um suspense de exemplo</a></li>
-    <li><a href="viralizar.html">Viralizar: como fazer o canal crescer</a></li>
   </ul>
 </div>
 
@@ -100,7 +102,7 @@
     <div class="sec-head reveal">
       <span class="eyebrow caption-3">Outro formato</span>
       <h2 class="heading-2">O que muda em relação ao tutorial</h2>
-      <p class="lead">A linha de produção é a mesma do <a href="index.html#caminho-b">Caminho B</a>: uma cena por frase, tempo de cada palavra tirado do áudio e aprovação de quadros antes do render. O que muda é a matéria prima da história e a cara da imagem.</p>
+      <p class="lead">A linha de produção é a mesma do <a href="metodo-medio.html#caminho-b">Caminho B</a>: uma cena por frase, tempo de cada palavra tirado do áudio e aprovação de quadros antes do render. O que muda é a matéria prima da história e a cara da imagem.</p>
     </div>
     <div class="table-wrap reveal">
       <table>
@@ -325,7 +327,7 @@ Vídeo de demonstração: [LINK DO VÍDEO]
 - Salve o áudio em public/ e use o Whisper para tirar o início e o fim de cada palavra, alinhando com o texto original do roteiro.
 - A chave da ElevenLabs fica só no arquivo .env. Nunca mostre a chave no chat, no código nem em commit.</pre>
     </div>
-    <p class="note reveal"><b>Um tropeço que vale saber.</b> No plano gratuito, a API da ElevenLabs recusa as vozes da biblioteca. A saída foi gerar pelo conector da ElevenLabs dentro do Claude. Gerar pelo site e entregar o MP3 pronto também resolve. A comparação entre as opções de voz está em <a href="index.html#vozes">Opções de voz</a>.</p>
+    <p class="note reveal"><b>Um tropeço que vale saber.</b> No plano gratuito, a API da ElevenLabs recusa as vozes da biblioteca. A saída foi gerar pelo conector da ElevenLabs dentro do Claude. Gerar pelo site e entregar o MP3 pronto também resolve. A comparação entre as opções de voz está em <a href="metodo-medio.html#vozes">Opções de voz</a>.</p>
 
     <h3 class="heading-5 sub reveal">Prompt J4: o vídeo completo</h3>
     <div class="prompt reveal">
@@ -479,8 +481,8 @@ npx remotion render src/index.ts RE out/re.mp4 --codec=h264 --crf=18 --gl=angle<
     <div>
       <h4 class="title-3">Neste site</h4>
       <ul class="caption-2">
-        <li><a href="index.html">Tutorial completo</a></li>
-        <li><a href="index.html#vozes">Opções de voz</a></li>
+        <li><a href="index.html">Início do guia</a></li>
+        <li><a href="metodo-medio.html#vozes">Opções de voz</a></li>
         <li><a href="viralizar.html">Viralizar</a></li>
       </ul>
     </div>
