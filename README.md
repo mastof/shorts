@@ -32,3 +32,4 @@ O tutorial de uma página só foi repartido em um guia para quem está começand
 - `viralizar.html`, `resumo-de-jogos.html`, `boneco-palito.html`: páginas de aprofundamento
 
 A propaganda usa quatro movimentos do catálogo Motion Prompt, de Shohei Ohtaki (licença MIT).
+- `metodo-avancado.html#kit-exemplo`: o vídeo "Caramelo e o pombo" (`assets/caramelo.mp4`, 720p), feito com o kit de mundo 3D, com os números do teste de movimento e o Prompt C
